@@ -1,7 +1,7 @@
 {
-  "name": "pandemic-globe",
+  "name": "journey",
   "version": "0.0.2",
-  "description": "Pandemic information projected on a globe map",
+  "description": "My journeys and flights",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,7 +15,7 @@
     "3d",
     "threejs"
   ],
-  "author": "Zhanarbek Osmonaliev",
+  "author": "Anubhab Patnaik",
   "license": "ISC",
   "dependencies": {
     "three": "^0.128.0",
