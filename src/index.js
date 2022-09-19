@@ -7,8 +7,8 @@ import { PerspectiveCamera, AmbientLight, DirectionalLight, Color, Fog,
 PointLight, } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import countries from "./files/globe-data-min.json";
-// import travelHistory from "./files/my-flights.json";
-// import locationHistory from "./files/my-visits.json";
+import travelHistory from "./files/my-flights.json";
+import airportHistory from "./files/my-visits.json";
 var renderer, camera, scene, controls;
 let mouseX = 0;
 let mouseY = 0;
@@ -72,6 +72,12 @@ function init() {
     window.addEventListener("resize", onWindowResize, false);
     document.addEventListener("mousemove", onMouseMove);
 }
+const N = 300;
+const gData = [...Array(N).keys()].map(() => ({
+    lat: (Math.random() - 0.5) * 180,
+    lng: (Math.random() - 0.5) * 360,
+    size: Math.random() / 3,
+}));
 // SECTION Globe
 function initGlobe() {
     // Initialize the Globe
@@ -94,39 +100,46 @@ function initGlobe() {
         return "rgba(255,255,255, 1)";
         // } else return "rgba(255,255,255, 0.7)";
     });
+    setTimeout(() => {
+        Globe.pointsData(gData)
+            .pointAltitude('size')
+            .pointColor('white');
+        gData.forEach(d => d.size = Math.random());
+        Globe.pointsData(gData);
+    }, 4000);
     // NOTE Arc animations are followed after the globe enters the scene
-    // setTimeout(() => {
-    //   Globe.arcsData(travelHistory.flights)
-    //     .arcColor((e) => {
-    //       return e.status ? "#9cff00" : "#FF4000";
-    //     })
-    //     .arcAltitude((e) => {
-    //       return e.arcAlt;
-    //     })
-    //     .arcStroke((e) => {
-    //       return e.status ? 0.5 : 0.3;
-    //     })
-    //     .arcDashLength(0.9)
-    //     .arcDashGap(4)
-    //     .arcDashAnimateTime(1000)
-    //     .arcsTransitionDuration(1000)
-    //     .arcDashInitialGap((e) => e.order * 1)
-    //     .labelsData(airportHistory.airports)
-    //     .labelColor(() => "#ffcb21")
-    //     .labelDotOrientation((e) => {
-    //       return e.text === "ALA" ? "top" : "right";
-    //     })
-    //     .labelDotRadius(0.3)
-    //     .labelSize((e) => e.size)
-    //     .labelText("city")
-    //     .labelResolution(6)
-    //     .labelAltitude(0.01)
-    //     .pointsData(airportHistory.airports)
-    //     .pointColor(() => "#ffffff")
-    //     .pointsMerge(true)
-    //     .pointAltitude(0.07)
-    //     .pointRadius(0.05);
-    // }, 1000);
+    setTimeout(() => {
+        Globe.arcsData(travelHistory.flights)
+            .arcColor((e) => {
+            return e.status ? "#9cff00" : "#FF4000";
+        })
+            .arcAltitude((e) => {
+            return e.arcAlt;
+        })
+            .arcStroke((e) => {
+            return e.status ? 0.5 : 0.3;
+        })
+            .arcDashLength(0.9)
+            .arcDashGap(4)
+            .arcDashAnimateTime(1000)
+            .arcsTransitionDuration(1000)
+            .arcDashInitialGap((e) => e.order * 1)
+            .labelsData(airportHistory.locations)
+            .labelColor(() => "#ffcb21")
+            .labelDotOrientation((e) => {
+            return e.text === "ALA" ? "top" : "right";
+        })
+            .labelDotRadius(0.3)
+            .labelSize((e) => e.size)
+            .labelText("city")
+            .labelResolution(6)
+            .labelAltitude(0.01)
+            .pointsData(airportHistory.locations)
+            .pointColor(() => "#ffffff")
+            .pointsMerge(true)
+            .pointAltitude(0.07)
+            .pointRadius(0.05);
+    }, 1000);
     Globe.rotateY(-Math.PI * (4.2 / 9));
     Globe.rotateZ(-Math.PI / 6);
     const globeMaterial = Globe.globeMaterial();
