@@ -72,7 +72,7 @@ function init() {
     window.addEventListener("resize", onWindowResize, false);
     document.addEventListener("mousemove", onMouseMove);
 }
-const N = 300;
+const N = 25;
 const gData = [...Array(N).keys()].map(() => ({
     lat: (Math.random() - 0.5) * 180,
     lng: (Math.random() - 0.5) * 360,

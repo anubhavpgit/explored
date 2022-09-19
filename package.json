@@ -5,7 +5,6 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc -b",
     "build": "webpack --config=webpack.prod.js",
     "build-dev": "webpack --config=webpack.dev.js",
     "start": "webpack serve webpack-dev-server --open --config=webpack.dev.js"
