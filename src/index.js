@@ -73,11 +73,12 @@ function init() {
     document.addEventListener("mousemove", onMouseMove);
 }
 const N = 25;
-const gData = [...Array(N).keys()].map(() => ({
-    lat: (Math.random() - 0.5) * 180,
-    lng: (Math.random() - 0.5) * 360,
-    size: Math.random() / 3,
-}));
+// SECTION Initializing the globe
+const gData = (airportHistory) => ({
+    lat: airportHistory.locations[0].lat,
+    lng: airportHistory.locations[0].lng,
+    size: 0.5,
+});
 // SECTION Globe
 function initGlobe() {
     // Initialize the Globe
@@ -86,7 +87,7 @@ function initGlobe() {
         animateIn: true,
     })
         .hexPolygonsData(countries.features)
-        .hexPolygonResolution(3)
+        .hexPolygonResolution(4)
         .hexPolygonMargin(0.7)
         .showAtmosphere(true)
         .atmosphereColor("#3a228a")
@@ -101,12 +102,13 @@ function initGlobe() {
         // } else return "rgba(255,255,255, 0.7)";
     });
     setTimeout(() => {
+        Globe.pointsData(airportHistory.locations)
+            .pointAltitude('size')
+            .pointColor('white');
         Globe.pointsData(gData)
             .pointAltitude('size')
             .pointColor('white');
-        gData.forEach(d => d.size = Math.random());
-        Globe.pointsData(gData);
-    }, 4000);
+    }, 1000);
     // NOTE Arc animations are followed after the globe enters the scene
     setTimeout(() => {
         Globe.arcsData(travelHistory.flights)

@@ -2,92 +2,124 @@
     "type": "PlacesVisited",
     "locations": [
         {
-            "text": "FRU",
+            "text": "BBI",
             "size": 1.0,
-            "country": "Kyrgyzstan",
-            "city": "Bishkek",
-            "lat": "42.85",
-            "lng": "74.583333333"
+            "country": "India",
+            "city": "Bhubaneswar",
+            "lat": "20.2961",
+            "lng": "85.8245"
         },
         {
-            "text": "TAS",
+            "text": "KOL",
             "size": 1.0,
-            "country": "Uzbekistan",
-            "city": "Tashkent",
-            "lat": "41.266666666667",
-            "lng": "69.366666666667"
+            "country": "India",
+            "city": "Kolkata",
+            "lat": "22.5726",
+            "lng": "88.3639"
         },
         {
-            "text": "ALA",
+            "text": "ASN",
             "size": 1.0,
-            "country": "Kazakhstan",
-            "city": "Almaty",
-            "lat": "43.35",
-            "lng": "75.033333333333"
+            "country": "India",
+            "city": "Asansol",
+            "lat": "23.6833",
+            "lng": "86.9833"
         },
         {
-            "text": "ICN",
+            "text": "JSR",
             "size": 1.0,
-            "country": "South Korea",
-            "city": "Incheon",
-            "lat": "37.472222222222",
-            "lng": "126.60833333333"
+            "country": "India",
+            "city": "Jamshedpur",
+            "lat": "22.8000",
+            "lng": "86.1833"
         },
         {
-            "text": "KJA",
+            "text": "HYD",
             "size": 1.0,
-            "country": "Russia",
-            "city": "Krasnoyarsk",
-            "lat": "56.05",
-            "lng": "92.9"
+            "country": "India",
+            "city": "Hyderabad",
+            "lat": "17.3753",
+            "lng": "78.4744"
         },
         {
-            "text": "OVB",
+            "text": "CHD",
             "size": 1.0,
-            "country": "Russia",
-            "city": "Novosibirsk",
-            "lat": "55.033333333333",
-            "lng": "83"
+            "country": "India",
+            "city": "Chandigarh",
+            "lat": "30.7333",
+            "lng": "76.7794"
         },
         {
-            "text": "KUL",
+            "text": "BLR",
             "size": 1.0,
-            "country": "Malaysia",
-            "city": "Kuala-Lumpur",
-            "lat": "3.11666666666",
-            "lng": "101.7"
+            "country": "India",
+            "city": "Bangalore",
+            "lat": "12.9716",
+            "lng": "77.5946"
         },
         {
-            "text": "SIN",
+            "text": "SML",
             "size": 1.0,
-            "country": "Singapore",
-            "city": "Singapore",
-            "lat": "1.2916666666667",
-            "lng": "103.85"
+            "country": "India",
+            "city": "Shimla",
+            "lat": "31.1048",
+            "lng": "77.1734"
         },
         {
-            "text": "DPS",
+            "text": "DEL",
             "size": 1.0,
-            "country": "Indonesia",
-            "city": "Denpasar",
-            "lat": "-8.75",
-            "lng": "115.16666666667"
+            "country": "India",
+            "city": "New Delhi",
+            "lat": "28.6139",
+            "lng": "77.2090"
         },
         {
-            "text": "DMK",
+            "text": "GOA",
             "size": 1.0,
-            "country": "Thailand",
-            "city": "Bangkok",
-            "lat": "13.9255",
-            "lng": "100.5923"
+            "country": "India",
+            "city": "Goa",
+            "lat": "15.2993",
+            "lng": "74.1240"
         },
         {
-            "text": "BKK",
+            "text": "AMR",
             "size": 1.0,
-            "country": "Thailand",
-            "city": "",
-            "lat": "13.6900",
-            "lng": "100.7501"
+            "country": "India",
+            "city": "Amritsar",
+            "lat": "31.6340",
+            "lng": "74.8723"
+        },
+        {
+            "text": "MNL",
+            "size": 1.0,
+            "country": "India",
+            "city": "Manali",
+            "lat": "32.2394",
+            "lng": "77.1881"
+        },
+        {
+            "text": "GTG",
+            "size": 1.0,
+            "country": "India",
+            "city": "Gangtok",
+            "lat": "27.3333",
+            "lng": "88.6167"
+        },
+        {
+            "text": "PUD",
+            "size": 1.0,
+            "country": "India",
+            "city": "Pudducherry",
+            "lat": "11.9333",
+            "lng": "79.8333"
+        },
+        {
+            "text": "OOTY",
+            "size": 1.0,
+            "country": "India",
+            "city": "Ooty",
+            "lat": "11.4067",
+            "lng": "76.6936"
         }
     ]
 }
