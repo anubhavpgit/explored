@@ -1,6 +1,6 @@
 {
-    "type": "AirportsCollection",
-    "airports": [
+    "type": "PlacesVisited",
+    "locations": [
         {
             "text": "FRU",
             "size": 1.0,
