@@ -23,7 +23,6 @@
     "three": "^0.128.0",
     "three-globe": "^2.18.8",
     "three-glow-mesh": "^0.1.2",
-    "tsc": "^2.0.4",
     "typescript": "^4.8.3"
   },
   "devDependencies": {
