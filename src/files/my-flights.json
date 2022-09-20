@@ -59,7 +59,21 @@
         },
         {
             "type": "flight",
-            "order": 4.5,
+            "order": 4,
+            "from": "GTG",
+            "to": "JMU",
+            "flightCode": "AI-127",
+            "date": "May 15, 2010",
+            "status": true,
+            "startLat": 21.9091,
+            "startLng": 84.1086,
+            "endLat": 32.7266,
+            "endLng": 74.857,
+            "arcAlt": 0.04
+        },
+        {
+            "type": "flight",
+            "order": 5,
             "from": "BBI",
             "to": "JSR",
             "flightCode": " AI-127",
@@ -73,7 +87,7 @@
         },
         {
             "type": "flight",
-            "order": 5,
+            "order": 6,
             "from": "BBI",
             "to": "HYD",
             "flightCode": "AI-128",
@@ -87,7 +101,7 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 7,
             "from": "HYD",
             "to": "DEL",
             "flightCode": "AI-129",
@@ -101,11 +115,11 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 8,
             "from": "HYD",
             "to": "CHD",
             "flightCode": "OD 325",
-            "date": "May 15, 2010",
+            "date": "May 15, 2018",
             "status": true,
             "startLat": 17.385,
             "startLng": 78.4867,
@@ -115,7 +129,21 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 9,
+            "from": "CHD",
+            "to": "AMR",
+            "flightCode": "AI-130",
+            "date": "DEC 12, 2018",
+            "status": true,
+            "startLat": 30.7333,
+            "startLng": 76.7794,
+            "endLat": 31.634,
+            "endLng": 74.8723,
+            "arcAlt": 0.01
+        },
+        {
+            "type": "flight",
+            "order": 9,
             "from": "CHD",
             "to": "HYD",
             "flightCode": "OD 325",
@@ -129,7 +157,7 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 10,
             "from": "HYD",
             "to": "BBI",
             "flightCode": "AI-128",
@@ -143,7 +171,7 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 11,
             "from": "BBI",
             "to": "BLR",
             "flightCode": "AI-123",
@@ -157,7 +185,7 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 11,
             "from": "BLR",
             "to": "BBI",
             "flightCode": "AI-123",
@@ -171,7 +199,7 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 12,
             "from": "BBI",
             "to": "BLR",
             "flightCode": "AI-123",
@@ -185,7 +213,7 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 12,
             "from": "BLR",
             "to": "BBI",
             "flightCode": "AI-123",
@@ -199,7 +227,7 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 13,
             "from": "BBI",
             "to": "BLR",
             "flightCode": "AI-123",
@@ -213,7 +241,7 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 13,
             "from": "BLR",
             "to": "BBI",
             "flightCode": "AI-123",
@@ -227,7 +255,7 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 14,
             "from": "BBI",
             "to": "BLR",
             "flightCode": "AI-123",
@@ -241,7 +269,21 @@
         },
         {
             "type": "flight",
-            "order": 6,
+            "order": 14,
+            "from": "BLR",
+            "to": "GOA",
+            "flightCode": "AI-123",
+            "date": "Aug 15, 2021",
+            "status": true,
+            "startLat": 12.9716,
+            "startLng": 77.5946,
+            "endLat": 15.2993,
+            "endLng": 74.124,
+            "arcAlt": 0.1
+        },
+        {
+            "type": "flight",
+            "order": 14,
             "from": "BLR",
             "to": "BBI",
             "flightCode": "AI-123",

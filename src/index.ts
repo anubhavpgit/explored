@@ -129,7 +129,7 @@ function initGlobe() {
 
   setTimeout(() => {
     Globe.pointsData(airportHistory.locations)
-      .pointAltitude('size')
+      .pointAltitude(0.05)
       .pointColor('white');
 
   }, 4000);
