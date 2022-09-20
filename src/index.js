@@ -70,15 +70,9 @@ function init() {
     controls.minPolarAngle = Math.PI / 3.5;
     controls.maxPolarAngle = Math.PI - Math.PI / 3;
     window.addEventListener("resize", onWindowResize, false);
-    document.addEventListener("mousemove", onMouseMove);
+    // document.addEventListener("mousemove", onMouseMove);
 }
-const N = 25;
 // SECTION Initializing the globe
-const gData = (airportHistory) => ({
-    lat: airportHistory.locations[0].lat,
-    lng: airportHistory.locations[0].lng,
-    size: 0.5,
-});
 // SECTION Globe
 function initGlobe() {
     // Initialize the Globe
@@ -94,7 +88,7 @@ function initGlobe() {
         .atmosphereAltitude(0.25)
         .hexPolygonColor((e) => {
         // if (
-        //   ["KGZ", "KOR", "THA", "RUS", "UZB", "IDN", "KAZ", "MYS"].includes(
+        //   ["HYD", "CHD", "BBI", "BLR"].includes(
         //     e.properties.ISO_A3
         //   )
         // ) {
@@ -102,9 +96,9 @@ function initGlobe() {
         // } else return "rgba(255,255,255, 0.7)";
     });
     setTimeout(() => {
-        Globe.pointsData(airportHistory.locations)
-            .pointAltitude(0.05)
-            .pointColor('white');
+      Globe.pointsData(airportHistory.locations)
+        .pointAltitude(0.02)
+        .pointColor('white');
     }, 4000);
     // NOTE Arc animations are followed after the globe enters the scene
     setTimeout(() => {
@@ -129,7 +123,7 @@ function initGlobe() {
             return e.text === "ALA" ? "top" : "right";
         })
             .labelDotRadius(0.3)
-            .labelSize((e) => e.size)
+            .labelSize((e) => e.size*0.5)
             .labelText("city")
             .labelResolution(6)
             .labelAltitude(0.01)
@@ -153,11 +147,6 @@ function initGlobe() {
 // function write(){
 //   document.getElementById("text").innerHTML = "Hi, these are the places I have visited so far. Click on the locations to view clicks and read about it.";
 // }
-function onMouseMove(event) {
-    mouseX = event.clientX - windowHalfX;
-    mouseY = event.clientY - windowHalfY;
-    // console.log("x: " + mouseX + " y: " + mouseY);
-}
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();

@@ -94,15 +94,9 @@ function init() {
   window.addEventListener("resize", onWindowResize, false);
   document.addEventListener("mousemove", onMouseMove);
 }
-const N = 25;
 
 // SECTION Initializing the globe
 
-const gData = (airportHistory) => ({
-  lat: airportHistory.locations[0].lat,
-  lng: airportHistory.locations[0].lng,
-  size: 0.5,
-});
 // SECTION Globe
 function initGlobe() {
   // Initialize the Globe
@@ -116,9 +110,9 @@ function initGlobe() {
     .showAtmosphere(true)
     .atmosphereColor("#3a228a")
     .atmosphereAltitude(0.25)
-    .hexPolygonColor((e) => {
+    .hexPolygonColor(() => {
       // if (
-      //   ["KGZ", "KOR", "THA", "RUS", "UZB", "IDN", "KAZ", "MYS"].includes(
+      //   ["BBI", "BLR", "HYD", "CHD"].includes(
       //     e.properties.ISO_A3
       //   )
       // ) {
@@ -129,7 +123,7 @@ function initGlobe() {
 
   setTimeout(() => {
     Globe.pointsData(airportHistory.locations)
-      .pointAltitude(0.05)
+      .pointAltitude(0.02)
       .pointColor('white');
 
   }, 4000);

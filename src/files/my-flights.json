@@ -13,7 +13,7 @@
             "startLng": 85.8178,
             "endLat": 12.9716,
             "endLng": 77.5946,
-            "arcAlt": 0.05
+            "arcAlt": 0.2
         },
         {
             "type": "flight",
@@ -27,7 +27,7 @@
             "startLng": 77.5946,
             "endLat": 11.4064,
             "endLng": 76.6932,
-            "arcAlt": 0.2
+            "arcAlt": 0.1
         },
         {
             "type": "flight",
@@ -41,7 +41,7 @@
             "startLng": 85.8178,
             "endLat": 22.5726,
             "endLng": 88.3639,
-            "arcAlt": 0.2
+            "arcAlt": 0.1
         },
         {
             "type": "flight",
@@ -55,7 +55,7 @@
             "startLng": 85.8178,
             "endLat": 21.9091,
             "endLng": 84.1086,
-            "arcAlt": 0.04
+            "arcAlt": 0.1
         },
         {
             "type": "flight",
@@ -69,7 +69,7 @@
             "startLng": 84.1086,
             "endLat": 32.7266,
             "endLng": 74.857,
-            "arcAlt": 0.04
+            "arcAlt": 0.1
         },
         {
             "type": "flight",
@@ -97,7 +97,7 @@
             "startLng": 85.8178,
             "endLat": 17.385,
             "endLng": 78.4867,
-            "arcAlt": 0.1
+            "arcAlt": 0.2
         },
         {
             "type": "flight",
@@ -111,7 +111,7 @@
             "startLng": 78.4867,
             "endLat": 28.7041,
             "endLng": 77.1025,
-            "arcAlt": 0.1
+            "arcAlt": 0.2
         },
         {
             "type": "flight",
@@ -125,7 +125,7 @@
             "startLng": 78.4867,
             "endLat": 30.7333,
             "endLng": 76.7794,
-            "arcAlt": 0.1
+            "arcAlt": 0.2
         },
         {
             "type": "flight",
@@ -139,7 +139,7 @@
             "startLng": 76.7794,
             "endLat": 31.634,
             "endLng": 74.8723,
-            "arcAlt": 0.01
+            "arcAlt": 0.05
         },
         {
             "type": "flight",
@@ -153,7 +153,7 @@
             "startLng": 76.7794,
             "endLat": 17.385,
             "endLng": 78.4867,
-            "arcAlt": 0.1
+            "arcAlt": 0.05
         },
         {
             "type": "flight",
@@ -167,7 +167,7 @@
             "startLng": 78.4867,
             "endLat": 20.2444,
             "endLng": 85.8178,
-            "arcAlt": 0.1
+            "arcAlt": 0.2
         },
         {
             "type": "flight",
@@ -181,7 +181,7 @@
             "startLng": 85.8178,
             "endLat": 12.9716,
             "endLng": 77.5946,
-            "arcAlt": 0.1
+            "arcAlt": 0.2
         },
         {
             "type": "flight",
@@ -195,7 +195,7 @@
             "startLng": 77.5946,
             "endLat": 20.2444,
             "endLng": 85.8178,
-            "arcAlt": 0.15
+            "arcAlt": 0.1
         },
         {
             "type": "flight",
@@ -209,7 +209,7 @@
             "startLng": 85.8178,
             "endLat": 12.9716,
             "endLng": 77.5946,
-            "arcAlt": 0.1
+            "arcAlt": 0.2
         },
         {
             "type": "flight",
@@ -223,7 +223,7 @@
             "startLng": 77.5946,
             "endLat": 20.2444,
             "endLng": 85.8178,
-            "arcAlt": 0.1
+            "arcAlt": 0.2
         },
         {
             "type": "flight",
@@ -279,7 +279,7 @@
             "startLng": 77.5946,
             "endLat": 15.2993,
             "endLng": 74.124,
-            "arcAlt": 0.1
+            "arcAlt": 0.05
         },
         {
             "type": "flight",
