@@ -128,6 +128,14 @@
             "city": "Ooty",
             "lat": "11.4067",
             "lng": "76.6936"
+        },
+        {
+            "text": "AGR",
+            "size": 0.8,
+            "country": "India",
+            "city": "Agra",
+            "lat": "27.1767",
+            "lng": "78.0081"
         }
     ]
 }

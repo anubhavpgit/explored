@@ -70,7 +70,7 @@ function init() {
     controls.minPolarAngle = Math.PI / 3.5;
     controls.maxPolarAngle = Math.PI - Math.PI / 3;
     window.addEventListener("resize", onWindowResize, false);
-    // document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mousemove", onMouseMove);
 }
 // SECTION Initializing the globe
 // SECTION Globe
@@ -86,9 +86,9 @@ function initGlobe() {
         .showAtmosphere(true)
         .atmosphereColor("#3a228a")
         .atmosphereAltitude(0.25)
-        .hexPolygonColor((e) => {
+        .hexPolygonColor(() => {
         // if (
-        //   ["HYD", "CHD", "BBI", "BLR"].includes(
+        //   ["BBI", "BLR", "HYD", "CHD"].includes(
         //     e.properties.ISO_A3
         //   )
         // ) {
@@ -96,9 +96,9 @@ function initGlobe() {
         // } else return "rgba(255,255,255, 0.7)";
     });
     setTimeout(() => {
-      Globe.pointsData(airportHistory.locations)
-        .pointAltitude(0.02)
-        .pointColor('white');
+        Globe.pointsData(airportHistory.locations)
+            .pointAltitude(0.02)
+            .pointColor('white');
     }, 4000);
     // NOTE Arc animations are followed after the globe enters the scene
     setTimeout(() => {
@@ -123,7 +123,7 @@ function initGlobe() {
             return e.text === "ALA" ? "top" : "right";
         })
             .labelDotRadius(0.3)
-            .labelSize((e) => e.size*0.5)
+            .labelSize((e) => e.size)
             .labelText("city")
             .labelResolution(6)
             .labelAltitude(0.01)
@@ -147,6 +147,11 @@ function initGlobe() {
 // function write(){
 //   document.getElementById("text").innerHTML = "Hi, these are the places I have visited so far. Click on the locations to view clicks and read about it.";
 // }
+function onMouseMove(event) {
+    mouseX = event.clientX - windowHalfX;
+    mouseY = event.clientY - windowHalfY;
+    // console.log("x: " + mouseX + " y: " + mouseY);
+}
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
