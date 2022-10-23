@@ -336,6 +336,34 @@
             "endLat": 20.2444,
             "endLng": 85.8178,
             "arcAlt": 0.1
+        },
+        {
+            "type": "flight",
+            "order": 14,
+            "from": "BBI",
+            "to": "SRI",
+            "flightCode": "AI-123",
+            "date": "Sept 30, 2022",
+            "status": true,
+            "startLat": 20.2444,
+            "startLng": 85.8178,
+            "endLat": 34.0837,
+            "endLng": 74.7973,
+            "arcAlt": 0.1
+        },
+        {
+            "type": "flight",
+            "order": 14,
+            "from": "SRI",
+            "to": "BBI",
+            "flightCode": "AI-123",
+            "date": "Oct 7, 2022",
+            "status": true,
+            "startLat": 34.0837,
+            "startLng": 74.7973,
+            "endLat": 20.2444,
+            "endLng": 85.8178,
+            "arcAlt": 0.1
         }
     ]
 }

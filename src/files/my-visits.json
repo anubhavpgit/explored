@@ -59,7 +59,7 @@
         },
         {
             "text": "SML",
-            "size": 0.8,
+            "size": 0.9,
             "country": "India",
             "city": "Shimla",
             "lat": "31.1048",
@@ -75,7 +75,7 @@
         },
         {
             "text": "GOA",
-            "size": 0.8,
+            "size": 0.7,
             "country": "India",
             "city": "Goa",
             "lat": "15.2993",
@@ -83,7 +83,7 @@
         },
         {
             "text": "AMR",
-            "size": 0.8,
+            "size": 0.7,
             "country": "India",
             "city": "Amritsar",
             "lat": "31.6340",
@@ -91,7 +91,7 @@
         },
         {
             "text": "MNL",
-            "size": 0.8,
+            "size": 0.7,
             "country": "India",
             "city": "Manali",
             "lat": "32.2394",
@@ -99,7 +99,7 @@
         },
         {
             "text": "GTG",
-            "size": 0.8,
+            "size": 0.7,
             "country": "India",
             "city": "Gangtok",
             "lat": "27.3333",
@@ -107,7 +107,7 @@
         },
         {
             "text": "JMU",
-            "size": 0.8,
+            "size": 0.7,
             "country": "India",
             "city": "Jammu",
             "lat": "32.7333",
@@ -115,7 +115,7 @@
         },
         {
             "text": "PUD",
-            "size": 0.8,
+            "size": 0.7,
             "country": "India",
             "city": "Pudducherry",
             "lat": "11.9333",
@@ -123,7 +123,7 @@
         },
         {
             "text": "OOTY",
-            "size": 0.8,
+            "size": 0.7,
             "country": "India",
             "city": "Ooty",
             "lat": "11.4067",
@@ -131,11 +131,19 @@
         },
         {
             "text": "AGR",
-            "size": 0.8,
+            "size": 0.7,
             "country": "India",
             "city": "Agra",
             "lat": "27.1767",
             "lng": "78.0081"
+        },
+        {
+            "text": "SRI",
+            "size": 0.7,
+            "country": "India",
+            "city": "Srinagar",
+            "lat": "34.0833",
+            "lng": "74.8000"
         }
     ]
 }
