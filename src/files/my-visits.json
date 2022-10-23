@@ -11,7 +11,7 @@
         },
         {
             "text": "KOL",
-            "size": 1.0,
+            "size": 0.8,
             "country": "India",
             "city": "Kolkata",
             "lat": "22.5726",
@@ -19,7 +19,7 @@
         },
         {
             "text": "ASN",
-            "size": 1.0,
+            "size": 0.8,
             "country": "India",
             "city": "Asansol",
             "lat": "23.6833",
@@ -27,7 +27,7 @@
         },
         {
             "text": "JSR",
-            "size": 1.0,
+            "size": 0.8,
             "country": "India",
             "city": "Jamshedpur",
             "lat": "22.8000",
@@ -35,7 +35,7 @@
         },
         {
             "text": "HYD",
-            "size": 1.0,
+            "size": 0.8,
             "country": "India",
             "city": "Hyderabad",
             "lat": "17.3753",
@@ -43,7 +43,7 @@
         },
         {
             "text": "CHD",
-            "size": 1.0,
+            "size": 0.8,
             "country": "India",
             "city": "Chandigarh",
             "lat": "30.7333",
@@ -51,7 +51,7 @@
         },
         {
             "text": "BLR",
-            "size": 1.0,
+            "size": 0.8,
             "country": "India",
             "city": "Bangalore",
             "lat": "12.9716",
