@@ -29,7 +29,7 @@ jobs:
     - run: npm ci
     - run: npm install -g typescript
     - run: npm run build --if-present
-    - run: git config user.name codebotx
+    - run: git config user.name fuzzymfx
     - run: git config user.email anubhabr50@gmail.com
     - run: git add .
     - run: git commit -m "Commiting latest build"
