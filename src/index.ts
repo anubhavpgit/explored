@@ -128,40 +128,20 @@ function initGlobe() {
 
   }, 4000);
 
-
-  // NOTE Arc animations are followed after the globe enters the scene
-  setTimeout(() => {
-    Globe.arcsData(travelHistory.flights)
-      .arcColor((e) => {
-        return e.status ? "#9cff00" : "#FF4000";
-      })
-      .arcAltitude((e) => {
-        return e.arcAlt;
-      })
-      .arcStroke((e) => {
-        return e.status ? 0.5 : 0.3;
-      })
-      .arcDashLength(0.9)
-      .arcDashGap(4)
-      .arcDashAnimateTime(1000)
-      .arcsTransitionDuration(1000)
-      .arcDashInitialGap((e) => e.order * 1)
-      .labelsData(airportHistory.locations)
-      .labelColor(() => "#ffcb21")
-      .labelDotOrientation((e) => {
-        return e.text === "ALA" ? "top" : "right";
-      })
-      .labelDotRadius(0.3)
-      .labelSize((e) => e.size)
-      .labelText("city")
-      .labelResolution(6)
-      .labelAltitude(0.01)
-      .pointsData(airportHistory.locations)
-      .pointColor(() => "#ffffff")
-      .pointsMerge(true)
-      .pointAltitude(0.07)
-      .pointRadius(0.05);
-  }, 1000);
+  Globe
+    .labelsData(airportHistory.locations)
+    .labelColor(() => "#ffcb21")
+    .labelDotOrientation('right')
+    .labelDotRadius(0.3)
+    .labelSize((e) => e.size)
+    // .labelText("text")
+    .labelResolution(6)
+    .labelAltitude(0.01)
+    .pointsData(airportHistory.locations)
+    .pointColor(() => "#ffffff")
+    .pointsMerge(true)
+    .pointAltitude(0.07)
+    .pointRadius(0.05);
 
   Globe.rotateY(-Math.PI * (4.2 / 9));
   Globe.rotateZ(-Math.PI / 6);
@@ -170,15 +150,10 @@ function initGlobe() {
   globeMaterial.emissive = new Color(0x220038);
   globeMaterial.emissiveIntensity = 0.5;
   globeMaterial.shininess = 0.7;
-
-  // NOTE Cool stuff
   // globeMaterial.wireframe = true;
 
   scene.add(Globe);
 }
-// function write(){
-//   document.getElementById("text").innerHTML = "Hi, these are the places I have visited so far. Click on the locations to view clicks and read about it.";
-// }
 
 function onMouseMove(event) {
   mouseX = event.clientX - windowHalfX;

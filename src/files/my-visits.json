@@ -3,7 +3,7 @@
     "locations": [
         {
             "text": "BBI",
-            "size": 1.0,
+            "size": 0.5,
             "country": "India",
             "city": "Bhubaneswar",
             "lat": "20.2961",
@@ -11,23 +11,15 @@
         },
         {
             "text": "KOL",
-            "size": 0.8,
+            "size": 0.4,
             "country": "India",
             "city": "Kolkata",
             "lat": "22.5726",
             "lng": "88.3639"
         },
         {
-            "text": "ASN",
-            "size": 0.8,
-            "country": "India",
-            "city": "Asansol",
-            "lat": "23.6833",
-            "lng": "86.9833"
-        },
-        {
             "text": "JSR",
-            "size": 0.8,
+            "size": 0.4,
             "country": "India",
             "city": "Jamshedpur",
             "lat": "22.8000",
@@ -35,7 +27,7 @@
         },
         {
             "text": "HYD",
-            "size": 0.8,
+            "size": 0.4,
             "country": "India",
             "city": "Hyderabad",
             "lat": "17.3753",
@@ -43,7 +35,7 @@
         },
         {
             "text": "CHD",
-            "size": 0.8,
+            "size": 0.4,
             "country": "India",
             "city": "Chandigarh",
             "lat": "30.7333",
@@ -51,7 +43,7 @@
         },
         {
             "text": "BLR",
-            "size": 0.8,
+            "size": 0.4,
             "country": "India",
             "city": "Bangalore",
             "lat": "12.9716",
@@ -59,7 +51,7 @@
         },
         {
             "text": "SML",
-            "size": 0.9,
+            "size": 0.4,
             "country": "India",
             "city": "Shimla",
             "lat": "31.1048",
@@ -67,7 +59,7 @@
         },
         {
             "text": "DEL",
-            "size": 0.8,
+            "size": 0.4,
             "country": "India",
             "city": "New Delhi",
             "lat": "28.6139",
@@ -75,31 +67,15 @@
         },
         {
             "text": "GOA",
-            "size": 0.7,
+            "size": 0.4,
             "country": "India",
             "city": "Goa",
             "lat": "15.2993",
             "lng": "74.1240"
         },
         {
-            "text": "AMR",
-            "size": 0.7,
-            "country": "India",
-            "city": "Amritsar",
-            "lat": "31.6340",
-            "lng": "74.8723"
-        },
-        {
-            "text": "MNL",
-            "size": 0.7,
-            "country": "India",
-            "city": "Manali",
-            "lat": "32.2394",
-            "lng": "77.1881"
-        },
-        {
             "text": "GTG",
-            "size": 0.7,
+            "size": 0.4,
             "country": "India",
             "city": "Gangtok",
             "lat": "27.3333",
@@ -107,7 +83,7 @@
         },
         {
             "text": "JMU",
-            "size": 0.7,
+            "size": 0.4,
             "country": "India",
             "city": "Jammu",
             "lat": "32.7333",
@@ -115,7 +91,7 @@
         },
         {
             "text": "PUD",
-            "size": 0.7,
+            "size": 0.4,
             "country": "India",
             "city": "Pudducherry",
             "lat": "11.9333",
@@ -123,7 +99,7 @@
         },
         {
             "text": "OOTY",
-            "size": 0.7,
+            "size": 0.4,
             "country": "India",
             "city": "Ooty",
             "lat": "11.4067",
@@ -131,19 +107,51 @@
         },
         {
             "text": "AGR",
-            "size": 0.7,
+            "size": 0.4,
             "country": "India",
             "city": "Agra",
             "lat": "27.1767",
             "lng": "78.0081"
         },
         {
-            "text": "SRI",
-            "size": 0.7,
+            "text": "KSH",
+            "size": 0.4,
             "country": "India",
-            "city": "Srinagar",
-            "lat": "34.0833",
-            "lng": "74.8000"
+            "city": "Kashmir",
+            "lat": "34.0837",
+            "lng": "74.7973"
+        },
+        {
+            "text": "DXB",
+            "size": 0.4,
+            "country": "United Arab Emirates",
+            "city": "Dubai",
+            "lat": "25.276987",
+            "lng": "55.296249"
+        },
+        {
+            "text": "HRD",
+            "size": 0.4,
+            "country": "India",
+            "city": "Haridwar",
+            "lat": "29.9457",
+            "lng": "78.1642"
+        },
+        {
+            "text": "KED",
+            "size": 0.4,
+            "country": "India",
+            "city": "Kedarnath",
+            "lat": "30.7342",
+            "lng": "79.0661"
+        },
+        {
+            "text": "MUM",
+            "size": 0.4,
+            "country": "India",
+            "city": "Mumbai",
+            "lat": "19.0760",
+            "lng": "72.8777"
         }
     ]
 }
