@@ -126,7 +126,7 @@ function initGlobe() {
             transparent: true,
             opacity: 0,
         });
-        const sphere = new THREE.Mesh(new THREE.SphereGeometry(location.size, 32, 32), sphereMaterial);
+        const sphere = new THREE.Mesh(new THREE.SphereGeometry(1, 32, 32), sphereMaterial);
         const position = Globe.getCoords(location.lat, location.lng);
         sphere.position.set(position.x, position.y, position.z);
         sphere.userData = location;

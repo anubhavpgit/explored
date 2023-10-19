@@ -158,7 +158,7 @@ function initGlobe() {
       opacity: 0,
     });
     const sphere = new THREE.Mesh(
-      new THREE.SphereGeometry(location.size, 32, 32),
+      new THREE.SphereGeometry(1, 32, 32),
       sphereMaterial
     );
     const position = Globe.getCoords(location.lat, location.lng);
