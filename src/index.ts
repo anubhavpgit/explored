@@ -196,7 +196,7 @@ function checkIntersection(event) {
     const placeData = object.userData;
 
     if (placeData && placeData.text) {
-
+      console.log(placeData);
       renderer.domElement.style.cursor = 'pointer';
       displayPlaceInformation(event, placeData);
     }
