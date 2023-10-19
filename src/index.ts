@@ -192,7 +192,9 @@ function checkIntersection(event) {
       displayPlaceInformation(event, placeData);
     }
     else {
+
       renderer.domElement.style.cursor = 'default';
+      removePlaceInformation();
     }
   }
 }
@@ -223,24 +225,25 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-let tooltip = document.getElementById("tooltip");
-
 function displayPlaceInformation(event, placeData) {
-  // Update tooltip content
+  let tooltip = document.getElementById("tooltip");
   tooltip.innerHTML = `
     <h5 class="card-title" style="font-size: 1rem"c>${placeData.city}</h5>
     <p class="card-text" style="font-size: 0.8rem">${placeData.desc}</p>
   `;
 
-  // Position the tooltip next to the mouse pointer
   tooltip.style.left = `${event.clientX + 10}px`;
   tooltip.style.top = `${event.clientY + 10}px`;
 
-  // Display the tooltip
   tooltip.style.display = 'block';
 
   setTimeout(() => {
     tooltip.style.display = 'none';
   }
-    , 5000);
+    , 60 * 1000);
+}
+
+function removePlaceInformation() {
+  let tooltip = document.getElementById("tooltip");
+  tooltip.style.display = 'none';
 }

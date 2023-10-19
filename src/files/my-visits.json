@@ -17,7 +17,7 @@
             "city": "Kolkata",
             "lat": "22.5726",
             "lng": "88.3639",
-            "desc": "Lived here from 2004- 2006"
+            "desc": "Dad got transferred here in 2004. I was 4 years old. I don't remember much of it. I remember the house we lived in, the park, the school, and the friends I made. Kol was my first home away from home. It was the first flash of a metro life, a fast and busy life. I loved it here."
         },
         {
             "text": "JSR",
@@ -26,7 +26,7 @@
             "city": "Jamshedpur",
             "lat": "22.8000",
             "lng": "86.1833",
-            "desc": "Lived here from 2011- 2016"
+            "desc": "We came here from Jajpur in 2011. JSR has been the place of ultimate growth for me, both physically and emotionally. I stayed here for 5 years, during my high school and lived my whole schhol life here. I made some of the best friends here. I became what I am here. Love this place."
         },
         {
             "text": "HYD",
@@ -35,7 +35,7 @@
             "city": "Hyderabad",
             "lat": "17.3753",
             "lng": "78.4744",
-            "desc": "Lived here from 2016- 2018"
+            "desc": "Lived here from 2016- 2018. We came here since dad wanted me to preapre for JEE and he got us transffered from JSR. While the place is nice and lovley, I felt mostly lonely here. Made some best friends here. Started binge watching TV shows here. I was 16 when I came here."
         },
         {
             "text": "CHD",
@@ -44,7 +44,7 @@
             "city": "Chandigarh",
             "lat": "30.7333",
             "lng": "76.7794",
-            "desc": "Lived here in 2018. Came here to study at Allen Career Institute."
+            "desc": "After 2018, not being able to get into IIT, I initially came here alone to study at Allen Career Institute. Later on, my mom came with me. The city is structured, disciplined, and organized, unklike other Indian cities."
         },
         {
             "text": "BLR",
@@ -53,7 +53,7 @@
             "city": "Bangalore",
             "lat": "12.9716",
             "lng": "77.5946",
-            "desc": "Lived here from 2018- 2020. Currently working here."
+            "desc": "Lived here from 2018- 2020 since dad got transferred here. Came here in lockdown, both the years and spent time with my family. I am currently working and staying here."
         },
         {
             "text": "SML",
@@ -62,7 +62,7 @@
             "city": "Shimla",
             "lat": "31.1048",
             "lng": "77.1734",
-            "desc": "Visited here in 2019"
+            "desc": "Visited here in 2019 while living in Chandigarh. The city is beautiful. I love mountains and the city is surrounded by them. I remember the mall road, the church, and the toy train. I was 18."
         },
         {
             "text": "DEL",
@@ -71,7 +71,7 @@
             "city": "New Delhi",
             "lat": "28.6139",
             "lng": "77.2090",
-            "desc": "Visited mulitple times"
+            "desc": "The heart of the country. I have visited here a ton of times. I love the city. I love the history, the culture, the food, and the people. I love the old city, the narrow lanes, the old buildings, and the stories they tell. I love the new city, the fast life, the metro, and the malls. The pollution is a problem though. I wouldn't stay here, but I love to visit Delhi time to time and explore it."
         },
         {
             "text": "GOA",
@@ -80,7 +80,7 @@
             "city": "Goa",
             "lat": "15.2993",
             "lng": "74.1240",
-            "desc": "The ultimate boys trip with my boi. Awesome getout. Visited in lockdown and had a ton of fun for 3- 4 days"
+            "desc": "The ultimate boys trip with my boi Abinash. Awesome getout. Visited in lockdown and had a ton of fun for 3- 4 days"
         },
         {
             "text": "GTG",
@@ -88,7 +88,8 @@
             "country": "India",
             "city": "Gangtok",
             "lat": "27.3333",
-            "lng": "88.6167"
+            "lng": "88.6167",
+            "desc": "Visited here with my uncle, parents, and family friends. We visited Darjeeling, Gangtok, and Kalimpong. The trip was amazing. I love moutains and I remember a guide showing us Tiger Hill, the highest point in Darjeeling. I was 8-9 years old."
         },
         {
             "text": "JMU",
@@ -96,7 +97,8 @@
             "country": "India",
             "city": "Jammu",
             "lat": "32.7333",
-            "lng": "74.8500"
+            "lng": "74.8500",
+            "desc": "A classic childhood trip with parents, family and fanily friends. We visited Vaishno Devi temple, a sacred Hindu temple dedicated to the Hindu Goddess, located in Katra at the Trikuta Mountains within Jammu and Kashmir. The temple is at an altitude of 5200 ft and a distance of approximately 12 km from Katra. I saw and sat on hlicopters for the first time. I was 10."
         },
         {
             "text": "PUD",
@@ -104,7 +106,8 @@
             "country": "India",
             "city": "Pudducherry",
             "lat": "11.9333",
-            "lng": "79.8333"
+            "lng": "79.8333",
+            "desc": "Visited here when I was small. The French colony is beautiful. The beaches are amazing. Would definatiely visit agin since I don't remember much of it."
         },
         {
             "text": "OOTY",
@@ -112,7 +115,8 @@
             "country": "India",
             "city": "Ooty",
             "lat": "11.4067",
-            "lng": "76.6936"
+            "lng": "76.6936",
+            "desc": "Earliest memory of a trip with Mom and Dad. Sneha wasn't there to bother us :D and we chilled in peace. I was 4-5 years old. I don't remember most of it. All I remember is the cold and the fog."
         },
         {
             "text": "AGR",
@@ -120,7 +124,8 @@
             "country": "India",
             "city": "Agra",
             "lat": "27.1767",
-            "lng": "78.0081"
+            "lng": "78.0081",
+            "desc": " Part of the Jammu trip. A classic childhood trip with parents, family and fanily friends. I love old cities, the magic, the history and the charsima mesmerizes me. There are stories imprinted everywhere in old cities like Agra, and Delhi. Loved it here."
         },
         {
             "text": "KSH",
@@ -128,7 +133,8 @@
             "country": "India",
             "city": "Kashmir",
             "lat": "34.0837",
-            "lng": "74.7973"
+            "lng": "74.7973",
+            "desc": "A classic autumn break with my family. Jannat agar kahi hai toh yahi hai."
         },
         {
             "text": "DXB",
@@ -136,7 +142,8 @@
             "country": "United Arab Emirates",
             "city": "Dubai",
             "lat": "25.276987",
-            "lng": "55.296249"
+            "lng": "55.296249",
+            "desc": "My first international trip and Smruti brought me here. Dubai is so calm, clean and beautiful. I loved the city and would be visiting again."
         },
         {
             "text": "HRD",
@@ -144,7 +151,8 @@
             "country": "India",
             "city": "Haridwar",
             "lat": "29.9457",
-            "lng": "78.1642"
+            "lng": "78.1642",
+            "desc": "Part of the Kedarnath trip. Visited here for a day. The Ganga Aarti was amazing. It made me so calm and peaceful. If I had one wish, I would spend it living near the Ganga ghat."
         },
         {
             "text": "KED",
@@ -152,7 +160,8 @@
             "country": "India",
             "city": "Kedarnath",
             "lat": "30.7342",
-            "lng": "79.0661"
+            "lng": "79.0661",
+            "desc": "My ultimate ZNMD trip with my best mates from high school. Trekked, partied, chilled and had a ton of fun. The trek was amazing and the view from the top was breathtaking. It is an extremeley important and pious Hinud pilgrimage site. Booking tickets for my parent rn! :p"
         },
         {
             "text": "MUM",
@@ -160,7 +169,8 @@
             "country": "India",
             "city": "Mumbai",
             "lat": "19.0760",
-            "lng": "72.8777"
+            "lng": "72.8777",
+            "desc": "One of the best trips I had with Abinash and Smruti. We couldn't crack IIT, but got to visit Mood Indigo IIT Bombay xD, one of the best fests in India. We partied a ton! I got to know a lot about myself here."
         }
     ]
 }

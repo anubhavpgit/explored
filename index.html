@@ -24,6 +24,31 @@
       display: block;
     }
 
+    .card {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      width: 200px;
+      background: none;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .card-text {
+      font-size: 0.8rem;
+      color: #fff;
+    }
+
+    .links {
+      font-size: 0.7rem;
+      padding: 0;
+
+    }
+
     #tooltip {
       position: absolute;
       display: none;
@@ -37,6 +62,31 @@
 </head>
 
 <body>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Journaling</h5>
+      <span class="card-text">
+        Surfing the world one wave at a time 🌊 🌎
+        <div>
+          <a href="https://anubhavp.dev" class="btn btn-link text-white links"><u>
+              home
+            </u>
+          </a>
+          <a href="https://instagram.com/anubhavclicks" class="btn btn-link text-white links"><u>
+              instagram
+            </u>
+          </a>
+          <a href="https://anubhavp.dev/blog" class="btn btn-link text-white links"><u>
+              blogs
+            </u>
+          </a>
+      </span>
+    </div>
+  </div>
+  </div>
+
+
+
   <div id="tooltip">
   </div>
 
