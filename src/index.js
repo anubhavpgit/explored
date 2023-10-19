@@ -1,10 +1,7 @@
 import ThreeGlobe from "three-globe";
 import { WebGLRenderer, Scene } from "three";
-import { PerspectiveCamera, AmbientLight, DirectionalLight, Color, Fog, 
-// AxesHelper,
-// DirectionalLightHelper,
-// CameraHelper,
-PointLight, } from "three";
+import * as THREE from "three";
+import { PerspectiveCamera, AmbientLight, DirectionalLight, Color, Fog, PointLight, } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import countries from "./files/globe-data-min.json";
 import airportHistory from "./files/my-visits.json";
@@ -101,13 +98,13 @@ function initGlobe() {
     }, 4000);
     Globe
         .labelsData(airportHistory.locations)
-        .labelColor(() => "#ffcb21")
+        .labelColor(() => "#f8f8f8")
         .labelDotOrientation('right')
         .labelDotRadius(0.3)
         .labelSize((e) => e.size)
         // .labelText("text")
         .labelResolution(6)
-        .labelAltitude(0.01)
+        .labelAltitude(0)
         .pointsData(airportHistory.locations)
         .pointColor(() => "#ffffff")
         .pointsMerge(true)
@@ -120,12 +117,48 @@ function initGlobe() {
     globeMaterial.emissive = new Color(0x220038);
     globeMaterial.emissiveIntensity = 0.5;
     globeMaterial.shininess = 0.7;
+    // globeMaterial.wireframe = true;
+    airportHistory.locations.forEach(location => {
+        const sphereMaterial = new THREE.MeshBasicMaterial({
+            color: 0xffffff,
+            transparent: true,
+            opacity: 0,
+        });
+        const sphere = new THREE.Mesh(new THREE.SphereGeometry(location.size, 32, 32), sphereMaterial);
+        const position = Globe.getCoords(location.lat, location.lng);
+        sphere.position.set(position.x, position.y, position.z);
+        sphere.userData = location;
+        Globe.add(sphere);
+    });
     scene.add(Globe);
+}
+function checkIntersection(event) {
+    event.preventDefault();
+    const mouse = new THREE.Vector2();
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    const raycaster = new THREE.Raycaster();
+    raycaster.setFromCamera(mouse, camera);
+    // Assuming the ThreeGlobe instance is named 'Globe'
+    const globe = Globe;
+    // Raycast against the Globe instance
+    const intersects = raycaster.intersectObjects(globe.children, true);
+    if (intersects.length > 0) {
+        const object = intersects[0].object;
+        const placeData = object.userData;
+        if (placeData && placeData.text) {
+            renderer.domElement.style.cursor = 'pointer';
+            displayPlaceInformation(event, placeData);
+        }
+        else {
+            renderer.domElement.style.cursor = 'default';
+        }
+    }
 }
 function onMouseMove(event) {
     mouseX = event.clientX - windowHalfX;
     mouseY = event.clientY - windowHalfY;
-    // console.log("x: " + mouseX + " y: " + mouseY);
+    checkIntersection(event);
 }
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
@@ -144,4 +177,20 @@ function animate() {
     controls.update();
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
+}
+let tooltip = document.getElementById("tooltip");
+function displayPlaceInformation(event, placeData) {
+    // Update tooltip content
+    tooltip.innerHTML = `
+    <h5 class="card-title" style="font-size: 1rem"c>${placeData.city}</h5>
+    <p class="card-text" style="font-size: 0.8rem">${placeData.desc}</p>
+  `;
+    // Position the tooltip next to the mouse pointer
+    tooltip.style.left = `${event.clientX + 10}px`;
+    tooltip.style.top = `${event.clientY + 10}px`;
+    // Display the tooltip
+    tooltip.style.display = 'block';
+    setTimeout(() => {
+        tooltip.style.display = 'none';
+    }, 5000);
 }
