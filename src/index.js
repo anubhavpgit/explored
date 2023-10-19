@@ -67,6 +67,8 @@ function init() {
     controls.maxPolarAngle = Math.PI - Math.PI / 3;
     window.addEventListener("resize", onWindowResize, false);
     document.addEventListener("mousemove", onMouseMove);
+    renderer.domElement.addEventListener('touchmove', onTouchMove, false);
+    renderer.domElement.addEventListener('touchstart', onTouchStart, false);
 }
 // SECTION Initializing the globe
 // SECTION Globe
@@ -135,8 +137,14 @@ function initGlobe() {
 function checkIntersection(event) {
     event.preventDefault();
     const mouse = new THREE.Vector2();
-    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    if (event.touches && event.touches.length > 0) {
+        mouse.x = (event.touches[0].clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(event.touches[0].clientY / window.innerHeight) * 2 + 1;
+    }
+    else {
+        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    }
     const raycaster = new THREE.Raycaster();
     raycaster.setFromCamera(mouse, camera);
     // Assuming the ThreeGlobe instance is named 'Globe'
@@ -147,11 +155,13 @@ function checkIntersection(event) {
         const object = intersects[0].object;
         const placeData = object.userData;
         if (placeData && placeData.text) {
+            console.log(placeData);
             renderer.domElement.style.cursor = 'pointer';
             displayPlaceInformation(event, placeData);
         }
         else {
             renderer.domElement.style.cursor = 'default';
+            removePlaceInformation();
         }
     }
 }
@@ -178,19 +188,37 @@ function animate() {
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
 }
-let tooltip = document.getElementById("tooltip");
+function onTouchStart(event) {
+    if (event.touches.length == 1) {
+        checkIntersection(event);
+    }
+}
+function onTouchMove(event) {
+    event.preventDefault();
+    if (event.touches.length == 1) {
+        checkIntersection(event);
+    }
+}
 function displayPlaceInformation(event, placeData) {
-    // Update tooltip content
+    let tooltip = document.getElementById("tooltip");
     tooltip.innerHTML = `
     <h5 class="card-title" style="font-size: 1rem"c>${placeData.city}</h5>
     <p class="card-text" style="font-size: 0.8rem">${placeData.desc}</p>
   `;
-    // Position the tooltip next to the mouse pointer
-    tooltip.style.left = `${event.clientX + 10}px`;
-    tooltip.style.top = `${event.clientY + 10}px`;
-    // Display the tooltip
+    if (event.touches && event.touches.length > 0) {
+        tooltip.style.left = `${event.touches[0].clientX + 10}px`;
+        tooltip.style.top = `${event.touches[0].clientY + 10}px`;
+    }
+    else {
+        tooltip.style.left = `${event.clientX + 10}px`;
+        tooltip.style.top = `${event.clientY + 10}px`;
+    }
     tooltip.style.display = 'block';
     setTimeout(() => {
         tooltip.style.display = 'none';
-    }, 5000);
+    }, 60 * 1000);
+}
+function removePlaceInformation() {
+    let tooltip = document.getElementById("tooltip");
+    tooltip.style.display = 'none';
 }
