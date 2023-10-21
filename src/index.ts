@@ -12,6 +12,7 @@ import {
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import countries from "./files/globe-data-min.json";
 import airportHistory from "./files/my-visits.json";
+import travelHistory from "./files/my-flights.json";
 var renderer, camera, scene, controls;
 let mouseX = 0;
 let mouseY = 0;
@@ -126,20 +127,38 @@ function initGlobe() {
 
   }, 4000);
 
-  Globe
-    .labelsData(airportHistory.locations)
-    .labelColor(() => "#f8f8f8")
-    .labelDotOrientation('right')
-    .labelDotRadius(0.3)
-    .labelSize((e) => e.size)
-    // .labelText("text")
-    .labelResolution(6)
-    .labelAltitude(0)
-    .pointsData(airportHistory.locations)
-    .pointColor(() => "#ffffff")
-    .pointsMerge(true)
-    .pointAltitude(0.07)
-    .pointRadius(0.05);
+
+  setTimeout(() => {
+    Globe.arcsData(travelHistory.flights)
+      .arcColor((e) => {
+        return e.status ? "#9cff00" : "#FF4000";
+      })
+      .arcAltitude((e) => {
+        return e.arcAlt;
+      })
+      .arcStroke((e) => {
+        return e.status ? 0.5 : 0.3;
+      })
+      .arcDashLength(0.9)
+      .arcDashGap(4)
+      .arcDashAnimateTime(1000)
+      .arcsTransitionDuration(1000)
+      .arcDashInitialGap((e) => e.order * 1)
+      .labelsData(airportHistory.locations)
+      .labelColor(() => "#f8f8f8")
+      .labelDotOrientation('right')
+      .labelDotRadius(0.3)
+      .labelSize((e) => e.size)
+      // .labelText("text")
+      .labelResolution(6)
+      .labelAltitude(0)
+      .pointsData(airportHistory.locations)
+      .pointColor(() => "#ffffff")
+      .pointsMerge(true)
+      .pointAltitude(0.07)
+      .pointRadius(0.05);
+  }, 1000);
+
 
   Globe.rotateY(-Math.PI * (4.2 / 9));
   Globe.rotateZ(-Math.PI / 6);
