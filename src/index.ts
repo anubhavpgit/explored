@@ -137,7 +137,7 @@ function initGlobe() {
         return e.arcAlt;
       })
       .arcStroke((e) => {
-        return e.status ? 0.5 : 0.3;
+        return e.status ? 0.3 : 0.1;
       })
       .arcDashLength(0.9)
       .arcDashGap(4)
