@@ -11,6 +11,15 @@
             "desc": "Home ❤️"
         },
         {
+            "text": "PUR",
+            "size": 0.1,
+            "country": "India",
+            "city": "Puri",
+            "lat": "19.8134",
+            "lng": "85.8315",
+            "desc": "Go-to place for a weekend getaway. This city belongs to Lord Jagannath. *Kalia*, beaches, mountains, and forests keep me alive; and I get two of them here. Mu ultimate place of rest."
+        },
+        {
             "text": "KOL",
             "size": 0.4,
             "country": "India",
@@ -89,7 +98,16 @@
             "city": "Gangtok",
             "lat": "27.3333",
             "lng": "88.6167",
-            "desc": "Visited here with my uncle, parents, and family friends. We visited Darjeeling, Gangtok, and Kalimpong. The trip was amazing. I love mountains and I remember a guide showing us Tiger Hill, the highest point in Darjeeling. I was 8-9 years old."
+            "desc": "Visited here with my uncle, parents, and family friends.I was 8-9 years old."
+        },
+        {
+            "text": "DRL",
+            "size": 0.4,
+            "country": "India",
+            "city": "Darjeeling",
+            "lat": "27.0360",
+            "lng": "88.2627",
+            "desc": "Visited here with my uncle, parents, and family friends. We visited Darjeeling, Gangtok, and Kalimpong. The trip was amazing. I love mountains and I remember a guide showing us Tiger Hill, the highest point in Darjeeling."
         },
         {
             "text": "JMU",
@@ -107,7 +125,7 @@
             "city": "Pudducherry",
             "lat": "11.9333",
             "lng": "79.8333",
-            "desc": "Visited here when I was small. The French colony is beautiful. The beaches are amazing. Would visit again since I don't remember much of it."
+            "desc": "Visited here when I was small. The French colony is beautiful. The beaches are amazing. Recently, I visited here with Abinash. The city is calm and peaceful, albiet a little dirty."
         },
         {
             "text": "OOTY",
@@ -171,6 +189,42 @@
             "lat": "19.0760",
             "lng": "72.8777",
             "desc": "One of the best trips I had with Abinash and Smruti. We couldn't crack IIT, but got to visit Mood Indigo IIT Bombay xD, one of the best fests in India. We partied a lot! I got to know a lot about myself here."
+        },
+        {
+            "text": "GKR",
+            "size": 0.3,
+            "country": "India",
+            "city": "Gokarna",
+            "lat": "14.5479",
+            "lng": "74.3184",
+            "desc": "The ultimate StackIt trip. The trip was amazing. The beaches were absolutely  clean and beatuiful."
+        },
+        {
+            "text": "MLR",
+            "size": 0.3,
+            "country": "India",
+            "city": "Mangalore",
+            "lat": "12.9141",
+            "lng": "74.8560",
+            "desc": "An escape from reality. Visited here with Abinash, the true partner in trips. This trip was an interlude, a thought back to the past, a break from whatever was happening."
+        },
+        {
+            "text": "AHM",
+            "size": 0.4,
+            "country": "India",
+            "city": "Ahemdabad",
+            "lat": "23.0225",
+            "lng": "72.5714",
+            "desc": "Visited here with my family. The city is beautiful. I was here because Sneha had a test here. The city is clean and organized."
+        },
+        {
+            "text": "DWK",
+            "size": 0.4,
+            "country": "India",
+            "city": "Dwarka",
+            "lat": "22.2394",
+            "lng": "68.9678",
+            "desc": "The holy city. This was a part of the Gujarat trip. The coty, the people, and I, belong to the one and only Krishna, the creator of the universe."
         }
     ]
 }
