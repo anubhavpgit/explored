@@ -194,9 +194,9 @@ function onWindowResize() {
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
 function animate() {
-    camera.position.x +=
-        (mouseX / 2 - camera.position.x) * 0.005;
-    camera.position.y += (-mouseY / 2 - camera.position.y) * 0.005;
+    // camera.position.x +=
+    //   (mouseX / 2 - camera.position.x) * 0.005
+    // camera.position.y += (-mouseY / 2 - camera.position.y) * 0.005;
     camera.lookAt(scene.position);
     controls.update();
     renderer.render(scene, camera);
