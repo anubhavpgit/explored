@@ -4,15 +4,15 @@
         {
             "type": "flight",
             "order": 1,
-            "from": "BBI",
-            "to": "DXB",
+            "from": "BLR",
+            "to": "DHR",
             "flightCode": "6E 66",
-            "date": "Oct 15, 2023",
+            "date": "April 15, 2024",
             "status": true,
-            "startLat": 20.2961,
-            "startLng": 85.8178,
-            "endLat": 25.2528,
-            "endLng": 55.3644,
+            "startLat": 12.9611,
+            "startLng": 77.6472,
+            "endLat": 30.3165,
+            "endLng": 78.0322,
             "arcAlt": 0.2
         }
     ]
