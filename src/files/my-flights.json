@@ -5,14 +5,14 @@
             "type": "flight",
             "order": 1,
             "from": "BLR",
-            "to": "DHR",
+            "to": "MUM",
             "flightCode": "6E 66",
-            "date": "April 15, 2024",
+            "date": "July 23, 2024",
             "status": true,
             "startLat": 12.9611,
             "startLng": 77.6472,
-            "endLat": 30.3165,
-            "endLng": 78.0322,
+            "endLat": 19.076,
+            "endLng": 72.8777,
             "arcAlt": 0.2
         }
     ]
