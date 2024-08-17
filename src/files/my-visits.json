@@ -62,7 +62,7 @@
             "city": "Bangalore",
             "lat": "12.9716",
             "lng": "77.5946",
-            "desc": "Lived here from 2018- 2020 since dad got transferred here. Came here in lockdown, both the years and spent time with my family. I am currently working and staying here."
+            "desc": "Lived and wrokerd here from 2018- 2020, and 2023-2024.The weather is amazing."
         },
         {
             "text": "SML",
@@ -225,6 +225,60 @@
             "lat": "22.2394",
             "lng": "68.9678",
             "desc": "The holy city. This was a part of the Gujarat trip. The coty, the people, and I, belong to the one and only Krishna, the creator of the universe."
+        },
+        {
+            "text": "RMS",
+            "size": 0.4,
+            "country": "India",
+            "city": "Rameshwaram",
+            "lat": "9.2876",
+            "lng": "79.3129",
+            "desc": "The holy city. This was a part of the Tamil Nadu trip. The city is beautiful. The beaches are amazing. The city is calm and peaceful."
+        },
+        {
+            "text": "MAD",
+            "size": 0.4,
+            "country": "India",
+            "city": "Madurai",
+            "lat": "10.9273",
+            "lng": "78.2769",
+            "desc": "Visited here with my family. The old Meenakshi temple is beautiful. Part of the Tamil Nadu trip."
+        },
+        {
+            "text": "NYC",
+            "size": 0.5,
+            "country": "USA",
+            "city": "New York City",
+            "lat": "40.6446",
+            "lng": "-73.7797",
+            "desc": "New Home ❤️"
+        },
+        {
+            "text": "NP",
+            "size": 0.1,
+            "country": "",
+            "city": "North Pole",
+            "lat": "90.0000",
+            "lng": "135.0000",
+            "desc": "Santa's Home"
+        },
+        {
+            "text": "SP",
+            "size": 0.1,
+            "country": "",
+            "city": "South Pole",
+            "lat": "-90.0000",
+            "lng": "135.0000",
+            "desc": "Penguins' Home"
+        },
+        {
+            "text": "LHR",
+            "size": 0.1,
+            "country": "UK",
+            "city": "London",
+            "lat": "51.5074",
+            "lng": "-0.1278",
+            "desc": "Heathrow Airport"
         }
     ]
 }

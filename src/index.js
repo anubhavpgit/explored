@@ -63,8 +63,10 @@ function init() {
     controls.rotateSpeed = 0.8;
     controls.zoomSpeed = 1;
     controls.autoRotate = false;
-    controls.minPolarAngle = Math.PI / 3.5;
-    controls.maxPolarAngle = Math.PI - Math.PI / 3;
+    // controls.minPolarAngle = Math.PI / 3.5;
+    // controls.maxPolarAngle = Math.PI - Math.PI / 3;
+    controls.minPolarAngle = 0; // Allow looking straight up
+    controls.maxPolarAngle = Math.PI; // Allow looking straight down
     window.addEventListener("resize", onWindowResize, false);
     document.addEventListener("mousemove", onMouseMove);
     renderer.domElement.addEventListener('touchmove', onTouchMove, false);
@@ -129,7 +131,7 @@ function initGlobe() {
             .pointRadius(0.05);
     }, 1000);
     Globe.rotateY(-Math.PI * (4.2 / 9));
-    Globe.rotateZ(-Math.PI / 6);
+    // Globe.rotateZ(-Math.PI / 6);
     const globeMaterial = Globe.globeMaterial();
     globeMaterial.color = new Color(0x3a228a);
     globeMaterial.emissive = new Color(0x220038);
