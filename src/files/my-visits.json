@@ -254,24 +254,6 @@
             "desc": "New Home ❤️"
         },
         {
-            "text": "NP",
-            "size": 0.1,
-            "country": "",
-            "city": "North Pole",
-            "lat": "90.0000",
-            "lng": "135.0000",
-            "desc": "Santa's Home"
-        },
-        {
-            "text": "SP",
-            "size": 0.1,
-            "country": "",
-            "city": "South Pole",
-            "lat": "-90.0000",
-            "lng": "135.0000",
-            "desc": "Penguins' Home"
-        },
-        {
             "text": "LHR",
             "size": 0.1,
             "country": "UK",
