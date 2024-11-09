@@ -55,7 +55,7 @@ function init() {
   dLight2.position.set(-200, 500, 200);
   camera.add(dLight2);
 
-  camera.position.z = 400;
+  camera.position.z = 250;
   camera.position.x = 0;
   camera.position.y = 0;
 
@@ -77,8 +77,8 @@ function init() {
   controls.enableDamping = true;
   controls.dynamicDampingFactor = 0.01;
   controls.enablePan = false;
-  controls.minDistance = 200;
-  controls.maxDistance = 500;
+  controls.minDistance = 150;
+  controls.maxDistance = 300;
   controls.rotateSpeed = 0.8;
   controls.zoomSpeed = 1;
   controls.autoRotate = false;
