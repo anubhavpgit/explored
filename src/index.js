@@ -59,7 +59,12 @@ function init() {
     controls.dynamicDampingFactor = 0.01;
     controls.enablePan = false;
     controls.minDistance = 150;
-    controls.maxDistance = 300;
+    if (window.innerWidth < 768) {
+        controls.maxDistance = 500;
+    }
+    else {
+        controls.maxDistance = 300;
+    }
     controls.rotateSpeed = 0.8;
     controls.zoomSpeed = 1;
     controls.autoRotate = false;
