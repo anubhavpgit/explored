@@ -4,29 +4,15 @@
         {
             "type": "flight",
             "order": 1,
-            "from": "BLR",
-            "to": "LHR",
-            "flightCode": "BA 119",
-            "date": "August 16, 2024",
+            "from": "IGI",
+            "to": "JFK",
+            "flightCode": "AI",
+            "date": "January 27, 2025",
             "status": true,
-            "startLat": 12.9611,
-            "startLng": 77.6472,
-            "endLat": 51.4700,
-            "endLng": -0.4543,
-            "arcAlt": 0.3
-        },
-        {
-            "type": "flight",
-            "order": 2,
-            "from": "LHR",
-            "to": "NYC",
-            "flightCode": "BA 113",
-            "date": "August 16, 2024",
-            "status": true,
-            "startLat": 51.4700,
-            "startLng": -0.4543,
-            "endLat": 40.7128,
-            "endLng": -74.0060,
+            "startLat": 28.5562,
+            "startLng": 77.1000,
+            "endLat": 40.6413,
+            "endLng": -73.7781,
             "arcAlt": 0.3
         }
     ]
