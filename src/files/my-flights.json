@@ -3,16 +3,16 @@
     "flights": [
         {
             "type": "flight",
-            "order": 1,
-            "from": "IGI",
-            "to": "JFK",
-            "flightCode": "AI",
-            "date": "January 27, 2025",
+            "order": 2,
+            "from": "JFK",
+            "to": "SFO",
+            "flightCode": "UA",
+            "date": "January 28, 2025",
             "status": true,
-            "startLat": 28.5562,
-            "startLng": 77.1000,
-            "endLat": 40.6413,
-            "endLng": -73.7781,
+            "startLat": 40.6413,
+            "startLng": -73.7781,
+            "endLat": 37.6213,
+            "endLng": -122.3790,
             "arcAlt": 0.3
         }
     ]

@@ -245,6 +245,15 @@
             "desc": "Visited here with my family. The old Meenakshi temple is beautiful. Part of the Tamil Nadu trip."
         },
         {
+            "text": "LHR",
+            "size": 0.1,
+            "country": "UK",
+            "city": "London",
+            "lat": "51.5074",
+            "lng": "-0.1278",
+            "desc": "Heathrow Airport"
+        },
+        {
             "text": "NYC",
             "size": 0.5,
             "country": "USA",
@@ -254,13 +263,13 @@
             "desc": "New Home ❤️"
         },
         {
-            "text": "LHR",
-            "size": 0.1,
-            "country": "UK",
-            "city": "London",
-            "lat": "51.5074",
-            "lng": "-0.1278",
-            "desc": "Heathrow Airport"
+            "text": "SFO",
+            "size": 0.5,
+            "country": "USA",
+            "city": "San Francisco",
+            "lat": "37.7749",
+            "lng": "-122.4194",
+            "desc": "Summer Internship here for a month. The city is beautiful. SF has more country vibes than NY."
         }
     ]
 }
