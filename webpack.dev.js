@@ -5,10 +5,14 @@ module.exports = {
   entry: ["./src/index.js"],
   devtool: "inline-source-map",
   devServer: {
-    contentBase: "./dist",
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
     open: false,
     hot: true,
-    writeToDisk: true,
+    devMiddleware: {
+      writeToDisk: true,
+    },
   },
   plugins: [],
   module: {
