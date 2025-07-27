@@ -243,3 +243,15 @@ function removePlaceInformation() {
     let tooltip = document.getElementById("tooltip");
     tooltip.style.display = 'none';
 }
+
+// Hot Module Replacement
+if (module.hot) {
+    module.hot.accept();
+    module.hot.dispose(() => {
+        // Clean up the scene when hot reloading
+        if (renderer) {
+            renderer.dispose();
+            document.body.removeChild(renderer.domElement);
+        }
+    });
+}

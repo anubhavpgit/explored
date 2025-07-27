@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   mode: "development",
@@ -6,15 +7,21 @@ module.exports = {
   devtool: "inline-source-map",
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname),
     },
     open: false,
     hot: true,
-    devMiddleware: {
-      writeToDisk: true,
+    liveReload: true,
+    watchFiles: ['src/**/*', 'index.html'],
+    port: 8080,
+    client: {
+      overlay: true,
+      progress: true,
     },
   },
-  plugins: [],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+  ],
   module: {
     rules: [
       {
@@ -30,5 +37,6 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
   },
 };
