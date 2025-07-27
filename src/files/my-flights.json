@@ -3,16 +3,30 @@
     "flights": [
         {
             "type": "flight",
-            "order": 2,
-            "from": "JFK",
-            "to": "SFO",
-            "flightCode": "UA",
-            "date": "January 28, 2025",
+            "order": 1,
+            "from": "BLR",
+            "to": "ICN",
+            "flightCode": "KE",
+            "date": "July 24, 2025",
             "status": true,
-            "startLat": 40.6413,
-            "startLng": -73.7781,
-            "endLat": 37.6213,
-            "endLng": -122.3790,
+            "startLat": 12.9716,
+            "startLng": 77.5946,
+            "endLat": 37.4602,
+            "endLng": 126.4407,
+            "arcAlt": 0.3
+        },
+        {
+            "type": "flight",
+            "order": 2,
+            "from": "ICN",
+            "to": "JFK",
+            "flightCode": "KE",
+            "date": "August 14, 2025",
+            "status": true,
+            "startLat": 37.4602,
+            "startLng": 126.4407,
+            "endLat": 40.6413,
+            "endLng": -73.7781,
             "arcAlt": 0.3
         }
     ]
