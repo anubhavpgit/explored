@@ -80,7 +80,7 @@
             "city": "New Delhi",
             "lat": "28.6139",
             "lng": "77.2090",
-            "desc": "The heart of the country. I have visited here tons of times. I love the city. I love the history, the culture, the food, and the people. I love the old city, the narrow lanes, the old buildings, and the stories they tell. I love the new city, the fast life, the metro, and the malls. The pollution is a problem though. I wouldn't stay here, but I love to visit Delhi from time to time and explore it."
+            "desc": "The heart of the country. Been here tons of times. Love the city, the history, the culture, the food, and the people."
         },
         {
             "text": "GOA",
@@ -89,7 +89,7 @@
             "city": "Goa",
             "lat": "15.2993",
             "lng": "74.1240",
-            "desc": "The ultimate boys trip with my boi Abinash. Awesome get out. Visited in lockdown and had a ton of fun for 3- 4 days"
+            "desc": "The ultimate boys trip with my boi Abinash. Awesome get out. Visited in lockdown and had a ton of fun for 3- 4 days. Been here three times now. Twice with Mahak and Tushar! The ultimate getaway."
         },
         {
             "text": "GTG",
@@ -126,15 +126,6 @@
             "lat": "11.9333",
             "lng": "79.8333",
             "desc": "Visited here when I was small. The French colony is beautiful. The beaches are amazing. Recently, I visited here with Abinash. The city is calm and peaceful, albiet a little dirty."
-        },
-        {
-            "text": "OOTY",
-            "size": 0.4,
-            "country": "India",
-            "city": "Ooty",
-            "lat": "11.4067",
-            "lng": "76.6936",
-            "desc": "Earliest memory of a trip with Mom and Dad. Sneha wasn't there to bother us :D and we chilled in peace. I was 4-5 years old. I don't remember most of it. All I remember is the cold and the fog."
         },
         {
             "text": "AGR",
