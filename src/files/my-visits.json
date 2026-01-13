@@ -510,6 +510,31 @@
             ]
         },
         {
+            "id": "us-nj",
+            "country": "USA",
+            "countryCode": "US",
+            "region": "New Jersey",
+            "regionType": "state",
+            "lat": "40.0583",
+            "lng": "-74.4057",
+            "visits": [
+                {
+                    "city": "Atlantic City",
+                    "code": "ACY",
+                    "lat": "39.3643",
+                    "lng": "-74.4229",
+                    "desc": "The gambling capital of the East Coast. Boardwalks, casinos, and ocean views."
+                },
+                {
+                    "city": "Jersey City",
+                    "code": "JCY",
+                    "lat": "40.7178",
+                    "lng": "-74.0431",
+                    "desc": "Home <3"
+                }
+            ]
+        },
+        {
             "id": "us-ca",
             "country": "USA",
             "countryCode": "US",
