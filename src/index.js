@@ -4,14 +4,52 @@ import * as THREE from "three";
 import { PerspectiveCamera, AmbientLight, DirectionalLight, Color, Fog, PointLight, } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import countries from "./files/globe-data-min.json";
-import airportHistory from "./files/my-visits.json";
+import visitsData from "./files/my-visits.json";
 import travelHistory from "./files/my-flights.json";
+// Create region-level markers (state/region as the marker)
+const regionMarkers = visitsData.regions.map((region) => ({
+    text: region.region,
+    size: Math.min(0.5, 0.2 + region.visits.length * 0.1),
+    country: region.country,
+    countryCode: region.countryCode,
+    region: region.region,
+    regionType: region.regionType,
+    lat: region.lat,
+    lng: region.lng,
+    cities: region.visits.map(v => v.city),
+    visits: region.visits,
+    // For tooltip: show first city's desc or combine
+    desc: region.visits.length === 1
+        ? region.visits[0].desc
+        : `${region.visits.length} places visited`
+}));
+// Flatten all cities with parent region data for city-level rendering
+const cityMarkers = visitsData.regions.flatMap((region) => {
+    // Find the parent region marker to attach to city
+    const parentRegion = regionMarkers.find(r => r.region === region.region);
+    return region.visits.map((visit) => ({
+        text: visit.code,
+        city: visit.city,
+        country: region.country,
+        lat: visit.lat,
+        lng: visit.lng,
+        desc: visit.desc,
+        size: 0.2,
+        // Attach full parent region data for tooltip
+        parentRegion: parentRegion,
+    }));
+});
 var renderer, camera, scene, controls;
 let mouseX = 0;
 let mouseY = 0;
 let windowHalfX = window.innerWidth / 2;
 let windowHalfY = window.innerHeight / 2;
 var Globe;
+// Zoom-based city rendering
+const ZOOM_THRESHOLD = 180; // Distance at which city dots appear
+let cityDots = [];
+let citySpheres = []; // Collision spheres for cities
+let isZoomedIn = false;
 init();
 initGlobe();
 onWindowResize();
@@ -92,19 +130,8 @@ function initGlobe() {
         .atmosphereColor("#3a228a")
         .atmosphereAltitude(0.25)
         .hexPolygonColor(() => {
-        // if (
-        //   ["BBI", "BLR", "HYD", "CHD"].includes(
-        //     e.properties.ISO_A3
-        //   )
-        // ) {
         return "rgba(255,255,255, 1)";
-        // } else return "rgba(255,255,255, 0.7)";
     });
-    setTimeout(() => {
-        Globe.pointsData(airportHistory.locations)
-            .pointAltitude(0.02)
-            .pointColor('white');
-    }, 4000);
     setTimeout(() => {
         Globe.arcsData(travelHistory.flights)
             .arcColor((e) => {
@@ -121,64 +148,91 @@ function initGlobe() {
             .arcDashAnimateTime(1000)
             .arcsTransitionDuration(1000)
             .arcDashInitialGap((e) => e.order * 1)
-            .labelsData(airportHistory.locations)
+            .labelsData(regionMarkers)
             .labelColor(() => "#f8f8f8")
             .labelDotOrientation('right')
             .labelDotRadius(0.3)
             .labelSize((e) => e.size)
-            // .labelText("text")
             .labelResolution(6)
             .labelAltitude(0)
-            .pointsData(airportHistory.locations)
+            .pointsData(regionMarkers)
             .pointColor(() => "#ffffff")
             .pointsMerge(true)
-            .pointAltitude(0.07)
+            .pointAltitude(0.015)
             .pointRadius(0.05);
     }, 1000);
     Globe.rotateY(-Math.PI * (4.2 / 9));
-    // Globe.rotateZ(-Math.PI / 6);
     const globeMaterial = Globe.globeMaterial();
     globeMaterial.color = new Color(0x3a228a);
     globeMaterial.emissive = new Color(0x220038);
     globeMaterial.emissiveIntensity = 0.5;
     globeMaterial.shininess = 0.7;
-    // globeMaterial.wireframe = true;
-    airportHistory.locations.forEach(location => {
+    // Add invisible collision spheres for region markers (hover detection)
+    regionMarkers.forEach(marker => {
         const sphereMaterial = new THREE.MeshBasicMaterial({
             color: 0xffffff,
             transparent: true,
             opacity: 0,
         });
         const sphere = new THREE.Mesh(new THREE.SphereGeometry(1, 32, 32), sphereMaterial);
-        const position = Globe.getCoords(location.lat, location.lng);
+        const position = Globe.getCoords(marker.lat, marker.lng);
         sphere.position.set(position.x, position.y, position.z);
-        sphere.userData = location;
+        sphere.userData = marker;
         Globe.add(sphere);
+    });
+    // Create city dots and collision spheres (initially hidden, shown when zoomed in)
+    cityMarkers.forEach(city => {
+        // Visible city dot - flat circle on the globe surface
+        const dotMaterial = new THREE.MeshBasicMaterial({
+            color: 0xffffff,
+            side: THREE.DoubleSide,
+        });
+        const dot = new THREE.Mesh(new THREE.CircleGeometry(0.3, 32), dotMaterial);
+        const position = Globe.getCoords(city.lat, city.lng, 0.005); // Very slight altitude to avoid z-fighting
+        dot.position.set(position.x, position.y, position.z);
+        // Orient the circle to face outward from the globe center
+        dot.lookAt(0, 0, 0);
+        dot.rotateX(Math.PI); // Flip to face outward
+        dot.visible = false; // Hidden by default
+        dot.userData = { isCity: true, ...city };
+        Globe.add(dot);
+        cityDots.push(dot);
+        // Invisible collision sphere for city (larger for easier hover)
+        const sphereMaterial = new THREE.MeshBasicMaterial({
+            color: 0xffffff,
+            transparent: true,
+            opacity: 0,
+        });
+        const sphere = new THREE.Mesh(new THREE.SphereGeometry(0.8, 16, 16), sphereMaterial);
+        sphere.position.set(position.x, position.y, position.z);
+        sphere.visible = false; // Hidden by default
+        // Attach parent region data so hovering shows region tooltip
+        sphere.userData = city.parentRegion;
+        Globe.add(sphere);
+        citySpheres.push(sphere);
     });
     scene.add(Globe);
 }
 function checkIntersection(event) {
     event.preventDefault();
     const mouse = new THREE.Vector2();
-    if (event.touches && event.touches.length > 0) {
+    if ('touches' in event && event.touches.length > 0) {
         mouse.x = (event.touches[0].clientX / window.innerWidth) * 2 - 1;
         mouse.y = -(event.touches[0].clientY / window.innerHeight) * 2 + 1;
     }
-    else {
+    else if ('clientX' in event) {
         mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
         mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
     }
     const raycaster = new THREE.Raycaster();
     raycaster.setFromCamera(mouse, camera);
-    // Assuming the ThreeGlobe instance is named 'Globe'
     const globe = Globe;
-    // Raycast against the Globe instance
     const intersects = raycaster.intersectObjects(globe.children, true);
     if (intersects.length > 0) {
         const object = intersects[0].object;
         const placeData = object.userData;
-        if (placeData && placeData.text) {
-            console.log(placeData);
+        // Check for region data (has 'region' property) or legacy city data (has 'text')
+        if (placeData && (placeData.region || placeData.text)) {
             renderer.domElement.style.cursor = 'pointer';
             displayPlaceInformation(event, placeData);
         }
@@ -201,11 +255,17 @@ function onWindowResize() {
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
 function animate() {
-    // camera.position.x +=
-    //   (mouseX / 2 - camera.position.x) * 0.005
-    // camera.position.y += (-mouseY / 2 - camera.position.y) * 0.005;
     camera.lookAt(scene.position);
     controls.update();
+    // Check zoom level and toggle city dots visibility
+    const distance = camera.position.length();
+    const shouldShowCities = distance < ZOOM_THRESHOLD;
+    if (shouldShowCities !== isZoomedIn) {
+        isZoomedIn = shouldShowCities;
+        // Toggle visibility of city dots and collision spheres
+        cityDots.forEach(dot => { dot.visible = shouldShowCities; });
+        citySpheres.forEach(sphere => { sphere.visible = shouldShowCities; });
+    }
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
 }
@@ -221,16 +281,45 @@ function onTouchMove(event) {
     }
 }
 function displayPlaceInformation(event, placeData) {
-    let tooltip = document.getElementById("tooltip");
-    tooltip.innerHTML = `
-    <h5 class="card-title" style="font-size: 1rem"c>${placeData.city}</h5>
-    <p class="card-text" style="font-size: 0.8rem">${placeData.desc}</p>
-  `;
-    if (event.touches && event.touches.length > 0) {
+    const tooltip = document.getElementById("tooltip");
+    if (!tooltip)
+        return;
+    // Check if this is region data (new format) or legacy city data
+    if (placeData.cities && placeData.visits) {
+        // Region-based data - show state/region with cities list
+        const citiesList = placeData.cities.join(', ');
+        const visitCount = placeData.visits.length;
+        // Build visits detail HTML - show full descriptions
+        let visitsHtml = '';
+        if (visitCount > 1) {
+            visitsHtml = placeData.visits.map((v) => `<div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.2);">
+          <strong>${v.city}</strong>: <span style="font-size: 0.8rem;">${v.desc}</span>
+        </div>`).join('');
+        }
+        else {
+            visitsHtml = `<p class="card-text" style="font-size: 0.8rem; margin-top: 8px;">${placeData.visits[0].desc}</p>`;
+        }
+        tooltip.innerHTML = `
+      <div style="max-width: 350px; max-height: 400px; overflow-y: auto;">
+        <h5 class="card-title" style="font-size: 1.1rem; margin-bottom: 4px;">${placeData.region}</h5>
+        <p style="font-size: 0.75rem; color: #9cff00; margin-bottom: 8px;">${placeData.country} · ${visitCount} ${visitCount === 1 ? 'place' : 'places'}</p>
+        <p style="font-size: 0.85rem; color: #ccc; margin-bottom: 8px;">${citiesList}</p>
+        ${visitsHtml}
+      </div>
+    `;
+    }
+    else {
+        // Legacy city data format
+        tooltip.innerHTML = `
+      <h5 class="card-title" style="font-size: 1rem">${placeData.city || placeData.text}</h5>
+      <p class="card-text" style="font-size: 0.8rem">${placeData.desc}</p>
+    `;
+    }
+    if ('touches' in event && event.touches.length > 0) {
         tooltip.style.left = `${event.touches[0].clientX + 10}px`;
         tooltip.style.top = `${event.touches[0].clientY + 10}px`;
     }
-    else {
+    else if ('clientX' in event) {
         tooltip.style.left = `${event.clientX + 10}px`;
         tooltip.style.top = `${event.clientY + 10}px`;
     }
@@ -240,18 +329,8 @@ function displayPlaceInformation(event, placeData) {
     }, 60 * 1000);
 }
 function removePlaceInformation() {
-    let tooltip = document.getElementById("tooltip");
-    tooltip.style.display = 'none';
-}
-
-// Hot Module Replacement
-if (module.hot) {
-    module.hot.accept();
-    module.hot.dispose(() => {
-        // Clean up the scene when hot reloading
-        if (renderer) {
-            renderer.dispose();
-            document.body.removeChild(renderer.domElement);
-        }
-    });
+    const tooltip = document.getElementById("tooltip");
+    if (tooltip) {
+        tooltip.style.display = 'none';
+    }
 }
