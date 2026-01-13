@@ -1,266 +1,538 @@
 {
     "type": "PlacesVisited",
-    "locations": [
+    "regions": [
         {
-            "text": "BBI",
-            "size": 0.5,
+            "id": "in-od",
             "country": "India",
-            "city": "Bhubaneswar",
-            "lat": "20.2961",
-            "lng": "85.8245",
-            "desc": "Home ❤️"
+            "countryCode": "IN",
+            "region": "Odisha",
+            "regionType": "state",
+            "lat": "20.4625",
+            "lng": "85.8830",
+            "visits": [
+                {
+                    "city": "Bhubaneswar",
+                    "code": "BBI",
+                    "lat": "20.2961",
+                    "lng": "85.8245",
+                    "desc": "Home"
+                },
+                {
+                    "city": "Puri",
+                    "code": "PUR",
+                    "lat": "19.8134",
+                    "lng": "85.8315",
+                    "desc": "Go-to place for a weekend getaway. This city belongs to Lord Jagannath. *Kalia*, beaches, mountains, and forests keep me alive; and I get two of them here. Mu ultimate place of rest."
+                },
+                {
+                    "city": "Jajpur",
+                    "code": "JJP",
+                    "lat": "20.8500",
+                    "lng": "86.3300",
+                    "desc": "Lived here from 2009-2010. A quiet town in Odisha where Dad was posted."
+                },
+                {
+                    "city": "Cuttack",
+                    "code": "CTC",
+                    "lat": "20.4625",
+                    "lng": "85.8830",
+                    "desc": "Lived here from 2010-2011. The silver city of Odisha, known for its filigree work and the Barabati Fort."
+                }
+            ]
         },
         {
-            "text": "PUR",
-            "size": 0.1,
+            "id": "in-wb",
             "country": "India",
-            "city": "Puri",
-            "lat": "19.8134",
-            "lng": "85.8315",
-            "desc": "Go-to place for a weekend getaway. This city belongs to Lord Jagannath. *Kalia*, beaches, mountains, and forests keep me alive; and I get two of them here. Mu ultimate place of rest."
+            "countryCode": "IN",
+            "region": "West Bengal",
+            "regionType": "state",
+            "lat": "22.9868",
+            "lng": "87.8550",
+            "visits": [
+                {
+                    "city": "Kolkata",
+                    "code": "KOL",
+                    "lat": "22.5726",
+                    "lng": "88.3639",
+                    "desc": "Dad got transferred here in 2004. I was 4 years old. I don't remember much of it. I remember the house we lived in, the park, the school, and the friends I made. Kol was my first home away from home. It was the first flash of a metro life, a fast and busy life. I loved it here."
+                },
+                {
+                    "city": "Darjeeling",
+                    "code": "DRL",
+                    "lat": "27.0360",
+                    "lng": "88.2627",
+                    "desc": "Visited here with my uncle, parents, and family friends. We visited Darjeeling, Gangtok, and Kalimpong. The trip was amazing. I love mountains and I remember a guide showing us Tiger Hill, the highest point in Darjeeling."
+                },
+                {
+                    "city": "Asansol",
+                    "code": "ASN",
+                    "lat": "23.6833",
+                    "lng": "86.9833",
+                    "desc": "Lived here from 2007-2009. An industrial city in West Bengal where Dad was posted."
+                }
+            ]
         },
         {
-            "text": "KOL",
-            "size": 0.4,
+            "id": "in-jh",
             "country": "India",
-            "city": "Kolkata",
-            "lat": "22.5726",
-            "lng": "88.3639",
-            "desc": "Dad got transferred here in 2004. I was 4 years old. I don't remember much of it. I remember the house we lived in, the park, the school, and the friends I made. Kol was my first home away from home. It was the first flash of a metro life, a fast and busy life. I loved it here."
+            "countryCode": "IN",
+            "region": "Jharkhand",
+            "regionType": "state",
+            "lat": "23.6102",
+            "lng": "85.2799",
+            "visits": [
+                {
+                    "city": "Jamshedpur",
+                    "code": "JSR",
+                    "lat": "22.8000",
+                    "lng": "86.1833",
+                    "desc": "We came here from Jajpur in 2011. JSR has been the place of ultimate growth for me, both physically and emotionally. I stayed here for 5 years, during high school and lived my whole school life here. I made some of the best friends here. I became what I am here. Love this place."
+                }
+            ]
         },
         {
-            "text": "JSR",
-            "size": 0.4,
+            "id": "in-ts",
             "country": "India",
-            "city": "Jamshedpur",
-            "lat": "22.8000",
-            "lng": "86.1833",
-            "desc": "We came here from Jajpur in 2011. JSR has been the place of ultimate growth for me, both physically and emotionally. I stayed here for 5 years, during high school and lived my whole school life here. I made some of the best friends here. I became what I am here. Love this place."
+            "countryCode": "IN",
+            "region": "Telangana",
+            "regionType": "state",
+            "lat": "18.1124",
+            "lng": "79.0193",
+            "visits": [
+                {
+                    "city": "Hyderabad",
+                    "code": "HYD",
+                    "lat": "17.3753",
+                    "lng": "78.4744",
+                    "desc": "Lived here from 2016- 2018. We came here since Dad wanted me to prepare for JEE and he got us transferred from JSR. While the place is nice and lovely, I felt mostly lonely here. Made some best friends here. Started binge-watching TV shows here. I was 16 when I came here."
+                }
+            ]
         },
         {
-            "text": "HYD",
-            "size": 0.4,
+            "id": "in-ch",
             "country": "India",
-            "city": "Hyderabad",
-            "lat": "17.3753",
-            "lng": "78.4744",
-            "desc": "Lived here from 2016- 2018. We came here since Dad wanted me to prepare for JEE and he got us transferred from JSR. While the place is nice and lovely, I felt mostly lonely here. Made some best friends here. Started binge-watching TV shows here. I was 16 when I came here."
-        },
-        {
-            "text": "CHD",
-            "size": 0.4,
-            "country": "India",
-            "city": "Chandigarh",
+            "countryCode": "IN",
+            "region": "Chandigarh",
+            "regionType": "union_territory",
             "lat": "30.7333",
             "lng": "76.7794",
-            "desc": "After 2018, not being able to get into IIT, I initially came here alone to study at Allen Career Institute. Later on, my mom came with me. The city is structured, disciplined, and organized, unlike other Indian cities."
+            "visits": [
+                {
+                    "city": "Chandigarh",
+                    "code": "CHD",
+                    "lat": "30.7333",
+                    "lng": "76.7794",
+                    "desc": "After 2018, not being able to get into IIT, I initially came here alone to study at Allen Career Institute. Later on, my mom came with me. The city is structured, disciplined, and organized, unlike other Indian cities."
+                }
+            ]
         },
         {
-            "text": "BLR",
-            "size": 0.4,
+            "id": "in-ka",
             "country": "India",
-            "city": "Bangalore",
-            "lat": "12.9716",
-            "lng": "77.5946",
-            "desc": "Lived and wrokerd here from 2018- 2020, and 2023-2024.The weather is amazing."
+            "countryCode": "IN",
+            "region": "Karnataka",
+            "regionType": "state",
+            "lat": "15.3173",
+            "lng": "75.7139",
+            "visits": [
+                {
+                    "city": "Bangalore",
+                    "code": "BLR",
+                    "lat": "12.9716",
+                    "lng": "77.5946",
+                    "desc": "Lived and worked here from 2018- 2020, and 2023-2024. The weather is amazing."
+                },
+                {
+                    "city": "Gokarna",
+                    "code": "GKR",
+                    "lat": "14.5479",
+                    "lng": "74.3184",
+                    "desc": "The ultimate StackIt trip. The trip was amazing. The beaches were absolutely clean and beautiful."
+                },
+                {
+                    "city": "Mangalore",
+                    "code": "MLR",
+                    "lat": "12.9141",
+                    "lng": "74.8560",
+                    "desc": "An escape from reality. Visited here with Abinash, the true partner in trips. This trip was an interlude, a thought back to the past, a break from whatever was happening."
+                }
+            ]
         },
         {
-            "text": "SML",
-            "size": 0.4,
+            "id": "in-hp",
             "country": "India",
-            "city": "Shimla",
+            "countryCode": "IN",
+            "region": "Himachal Pradesh",
+            "regionType": "state",
             "lat": "31.1048",
             "lng": "77.1734",
-            "desc": "Visited here in 2019 while living in Chandigarh. The city is beautiful. I love mountains and the city is surrounded by them. I remember the mall road, the church, and the toy train. I was 18."
+            "visits": [
+                {
+                    "city": "Shimla",
+                    "code": "SML",
+                    "lat": "31.1048",
+                    "lng": "77.1734",
+                    "desc": "Visited here in 2019 while living in Chandigarh. The city is beautiful. I love mountains and the city is surrounded by them. I remember the mall road, the church, and the toy train. I was 18."
+                }
+            ]
         },
         {
-            "text": "DEL",
-            "size": 0.4,
+            "id": "in-dl",
             "country": "India",
-            "city": "New Delhi",
+            "countryCode": "IN",
+            "region": "Delhi",
+            "regionType": "union_territory",
             "lat": "28.6139",
             "lng": "77.2090",
-            "desc": "The heart of the country. Been here tons of times. Love the city, the history, the culture, the food, and the people."
+            "visits": [
+                {
+                    "city": "New Delhi",
+                    "code": "DEL",
+                    "lat": "28.6139",
+                    "lng": "77.2090",
+                    "desc": "The heart of the country. Been here tons of times. Love the city, the history, the culture, the food, and the people."
+                }
+            ]
         },
         {
-            "text": "GOA",
-            "size": 0.4,
+            "id": "in-ga",
             "country": "India",
-            "city": "Goa",
+            "countryCode": "IN",
+            "region": "Goa",
+            "regionType": "state",
             "lat": "15.2993",
             "lng": "74.1240",
-            "desc": "The ultimate boys trip with my boi Abinash. Awesome get out. Visited in lockdown and had a ton of fun for 3- 4 days. Been here three times now. Twice with Mahak and Tushar! The ultimate getaway."
+            "visits": [
+                {
+                    "city": "Goa",
+                    "code": "GOA",
+                    "lat": "15.2993",
+                    "lng": "74.1240",
+                    "desc": "The ultimate boys trip with my boi Abinash. Awesome get out. Visited in lockdown and had a ton of fun for 3- 4 days. Been here three times now. Twice with Mahak and Tushar! The ultimate getaway."
+                }
+            ]
         },
         {
-            "text": "GTG",
-            "size": 0.4,
+            "id": "in-sk",
             "country": "India",
-            "city": "Gangtok",
-            "lat": "27.3333",
-            "lng": "88.6167",
-            "desc": "Visited here with my uncle, parents, and family friends.I was 8-9 years old."
+            "countryCode": "IN",
+            "region": "Sikkim",
+            "regionType": "state",
+            "lat": "27.5330",
+            "lng": "88.5122",
+            "visits": [
+                {
+                    "city": "Gangtok",
+                    "code": "GTG",
+                    "lat": "27.3333",
+                    "lng": "88.6167",
+                    "desc": "Visited here with my uncle, parents, and family friends. I was 8-9 years old."
+                }
+            ]
         },
         {
-            "text": "DRL",
-            "size": 0.4,
+            "id": "in-jk",
             "country": "India",
-            "city": "Darjeeling",
-            "lat": "27.0360",
-            "lng": "88.2627",
-            "desc": "Visited here with my uncle, parents, and family friends. We visited Darjeeling, Gangtok, and Kalimpong. The trip was amazing. I love mountains and I remember a guide showing us Tiger Hill, the highest point in Darjeeling."
+            "countryCode": "IN",
+            "region": "Jammu & Kashmir",
+            "regionType": "union_territory",
+            "lat": "33.7782",
+            "lng": "76.5762",
+            "visits": [
+                {
+                    "city": "Jammu",
+                    "code": "JMU",
+                    "lat": "32.7333",
+                    "lng": "74.8500",
+                    "desc": "A classic childhood trip with parents, family and family friends. We visited Vaishno Devi temple, a sacred Hindu temple dedicated to the Hindu Goddess, located in Katra at the Trikuta Mountains within Jammu and Kashmir. The temple is at an altitude of 5200 ft and a distance of approximately 12 km from Katra. I saw and sat on helicopters for the first time. I was 10."
+                },
+                {
+                    "city": "Kashmir",
+                    "code": "KSH",
+                    "lat": "34.0837",
+                    "lng": "74.7973",
+                    "desc": "A classic autumn break with my family. Jannat agar kahi hai toh yahi hai."
+                }
+            ]
         },
         {
-            "text": "JMU",
-            "size": 0.4,
+            "id": "in-py",
             "country": "India",
-            "city": "Jammu",
-            "lat": "32.7333",
-            "lng": "74.8500",
-            "desc": "A classic childhood trip with parents, family and family friends. We visited Vaishno Devi temple, a sacred Hindu temple dedicated to the Hindu Goddess, located in Katra at the Trikuta Mountains within Jammu and Kashmir. The temple is at an altitude of 5200 ft and a distance of approximately 12 km from Katra. I saw and sat on helicopters for the first time. I was 10."
-        },
-        {
-            "text": "PUD",
-            "size": 0.4,
-            "country": "India",
-            "city": "Pudducherry",
+            "countryCode": "IN",
+            "region": "Puducherry",
+            "regionType": "union_territory",
             "lat": "11.9333",
             "lng": "79.8333",
-            "desc": "Visited here when I was small. The French colony is beautiful. The beaches are amazing. Recently, I visited here with Abinash. The city is calm and peaceful, albiet a little dirty."
+            "visits": [
+                {
+                    "city": "Puducherry",
+                    "code": "PUD",
+                    "lat": "11.9333",
+                    "lng": "79.8333",
+                    "desc": "Visited here when I was small. The French colony is beautiful. The beaches are amazing. Recently, I visited here with Abinash. The city is calm and peaceful, albeit a little dirty."
+                }
+            ]
         },
         {
-            "text": "AGR",
-            "size": 0.4,
+            "id": "in-up",
             "country": "India",
-            "city": "Agra",
-            "lat": "27.1767",
-            "lng": "78.0081",
-            "desc": " Part of the Jammu trip. A classic childhood trip with parents, family and family friends. I love old cities, the magic, the history and the charisma mesmerizes me. There are stories imprinted everywhere in old cities like Agra, and Delhi. Loved it here."
+            "countryCode": "IN",
+            "region": "Uttar Pradesh",
+            "regionType": "state",
+            "lat": "26.8467",
+            "lng": "80.9462",
+            "visits": [
+                {
+                    "city": "Agra",
+                    "code": "AGR",
+                    "lat": "27.1767",
+                    "lng": "78.0081",
+                    "desc": "Part of the Jammu trip. A classic childhood trip with parents, family and family friends. I love old cities, the magic, the history and the charisma mesmerizes me. There are stories imprinted everywhere in old cities like Agra, and Delhi. Loved it here."
+                },
+                {
+                    "city": "Mathura",
+                    "code": "MTH",
+                    "lat": "27.4924",
+                    "lng": "77.6737",
+                    "desc": "Part of the Agra trip. The birthplace of Lord Krishna. The city is steeped in mythology and devotion."
+                },
+                {
+                    "city": "Vrindavan",
+                    "code": "VRN",
+                    "lat": "27.5800",
+                    "lng": "77.7000",
+                    "desc": "Part of the Agra trip. The land where Krishna spent his childhood. Temples everywhere and an atmosphere of pure bhakti."
+                }
+            ]
         },
         {
-            "text": "KSH",
-            "size": 0.4,
+            "id": "in-uk",
             "country": "India",
-            "city": "Kashmir",
-            "lat": "34.0837",
-            "lng": "74.7973",
-            "desc": "A classic autumn break with my family. Jannat agar kahi hai toh yahi hai."
+            "countryCode": "IN",
+            "region": "Uttarakhand",
+            "regionType": "state",
+            "lat": "30.0668",
+            "lng": "79.0193",
+            "visits": [
+                {
+                    "city": "Haridwar",
+                    "code": "HRD",
+                    "lat": "29.9457",
+                    "lng": "78.1642",
+                    "desc": "Part of the Kedarnath trip. Visited here for a day. The Ganga Aarti was amazing. It made me so calm and peaceful. If I had one wish, I would spend it living near the Ganga ghat."
+                },
+                {
+                    "city": "Kedarnath",
+                    "code": "KED",
+                    "lat": "30.7342",
+                    "lng": "79.0661",
+                    "desc": "My ultimate ZNMD trip with my best mates from high school. Trekked, partied, chilled and had a ton of fun. The trek was amazing and the view from the top was breathtaking. It is an extremely important and pious Hindu pilgrimage site. Booking tickets for my parents right now! :p"
+                },
+                {
+                    "city": "Rishikesh",
+                    "code": "RSH",
+                    "lat": "30.0869",
+                    "lng": "78.2676",
+                    "desc": "The yoga capital of the world. A spiritual town on the banks of the Ganga, surrounded by the Himalayas."
+                }
+            ]
         },
         {
-            "text": "DXB",
-            "size": 0.4,
+            "id": "in-mh",
+            "country": "India",
+            "countryCode": "IN",
+            "region": "Maharashtra",
+            "regionType": "state",
+            "lat": "19.7515",
+            "lng": "75.7139",
+            "visits": [
+                {
+                    "city": "Mumbai",
+                    "code": "MUM",
+                    "lat": "19.0760",
+                    "lng": "72.8777",
+                    "desc": "One of the best trips I had with Abinash and Smruti. We couldn't crack IIT, but got to visit Mood Indigo IIT Bombay xD, one of the best fests in India. We partied a lot! I got to know a lot about myself here."
+                }
+            ]
+        },
+        {
+            "id": "in-gj",
+            "country": "India",
+            "countryCode": "IN",
+            "region": "Gujarat",
+            "regionType": "state",
+            "lat": "22.2587",
+            "lng": "71.1924",
+            "visits": [
+                {
+                    "city": "Ahmedabad",
+                    "code": "AHM",
+                    "lat": "23.0225",
+                    "lng": "72.5714",
+                    "desc": "Visited here with my family. The city is beautiful. I was here because Sneha had a test here. The city is clean and organized."
+                },
+                {
+                    "city": "Dwarka",
+                    "code": "DWK",
+                    "lat": "22.2394",
+                    "lng": "68.9678",
+                    "desc": "The holy city. This was a part of the Gujarat trip. The city, the people, and I, belong to the one and only Krishna, the creator of the universe."
+                }
+            ]
+        },
+        {
+            "id": "in-ap",
+            "country": "India",
+            "countryCode": "IN",
+            "region": "Andhra Pradesh",
+            "regionType": "state",
+            "lat": "15.9129",
+            "lng": "79.7400",
+            "visits": [
+                {
+                    "city": "Vishakhapatnam",
+                    "code": "VTZ",
+                    "lat": "17.6868",
+                    "lng": "83.2185",
+                    "desc": "A weekend getaway with a friend. The city of destiny with beautiful beaches and a vibrant port."
+                }
+            ]
+        },
+        {
+            "id": "in-tn",
+            "country": "India",
+            "countryCode": "IN",
+            "region": "Tamil Nadu",
+            "regionType": "state",
+            "lat": "11.1271",
+            "lng": "78.6569",
+            "visits": [
+                {
+                    "city": "Rameshwaram",
+                    "code": "RMS",
+                    "lat": "9.2876",
+                    "lng": "79.3129",
+                    "desc": "The holy city. This was a part of the Tamil Nadu trip. The city is beautiful. The beaches are amazing. The city is calm and peaceful."
+                },
+                {
+                    "city": "Madurai",
+                    "code": "MAD",
+                    "lat": "10.9273",
+                    "lng": "78.2769",
+                    "desc": "Visited here with my family. The old Meenakshi temple is beautiful. Part of the Tamil Nadu trip."
+                }
+            ]
+        },
+        {
+            "id": "ae-du",
             "country": "United Arab Emirates",
-            "city": "Dubai",
-            "lat": "25.276987",
-            "lng": "55.296249",
-            "desc": "My first international trip and Smruti brought me here. Dubai is so calm, clean and beautiful. I loved the city and would be visiting again."
+            "countryCode": "AE",
+            "region": "Dubai",
+            "regionType": "emirate",
+            "lat": "25.2048",
+            "lng": "55.2708",
+            "visits": [
+                {
+                    "city": "Dubai",
+                    "code": "DXB",
+                    "lat": "25.276987",
+                    "lng": "55.296249",
+                    "desc": "My first international trip and Smruti brought me here. Dubai is so calm, clean and beautiful. I loved the city and would be visiting again."
+                }
+            ]
         },
         {
-            "text": "HRD",
-            "size": 0.4,
-            "country": "India",
-            "city": "Haridwar",
-            "lat": "29.9457",
-            "lng": "78.1642",
-            "desc": "Part of the Kedarnath trip. Visited here for a day. The Ganga Aarti was amazing. It made me so calm and peaceful. If I had one wish, I would spend it living near the Ganga ghat."
-        },
-        {
-            "text": "KED",
-            "size": 0.4,
-            "country": "India",
-            "city": "Kedarnath",
-            "lat": "30.7342",
-            "lng": "79.0661",
-            "desc": "My ultimate ZNMD trip with my best mates from high school. Trekked, partied, chilled and had a ton of fun. The trek was amazing and the view from the top was breathtaking. It is an extremely important and pious Hindu pilgrimage site. Booking tickets for my parents right now! :p"
-        },
-        {
-            "text": "MUM",
-            "size": 0.4,
-            "country": "India",
-            "city": "Mumbai",
-            "lat": "19.0760",
-            "lng": "72.8777",
-            "desc": "One of the best trips I had with Abinash and Smruti. We couldn't crack IIT, but got to visit Mood Indigo IIT Bombay xD, one of the best fests in India. We partied a lot! I got to know a lot about myself here."
-        },
-        {
-            "text": "GKR",
-            "size": 0.3,
-            "country": "India",
-            "city": "Gokarna",
-            "lat": "14.5479",
-            "lng": "74.3184",
-            "desc": "The ultimate StackIt trip. The trip was amazing. The beaches were absolutely  clean and beatuiful."
-        },
-        {
-            "text": "MLR",
-            "size": 0.3,
-            "country": "India",
-            "city": "Mangalore",
-            "lat": "12.9141",
-            "lng": "74.8560",
-            "desc": "An escape from reality. Visited here with Abinash, the true partner in trips. This trip was an interlude, a thought back to the past, a break from whatever was happening."
-        },
-        {
-            "text": "AHM",
-            "size": 0.4,
-            "country": "India",
-            "city": "Ahemdabad",
-            "lat": "23.0225",
-            "lng": "72.5714",
-            "desc": "Visited here with my family. The city is beautiful. I was here because Sneha had a test here. The city is clean and organized."
-        },
-        {
-            "text": "DWK",
-            "size": 0.4,
-            "country": "India",
-            "city": "Dwarka",
-            "lat": "22.2394",
-            "lng": "68.9678",
-            "desc": "The holy city. This was a part of the Gujarat trip. The coty, the people, and I, belong to the one and only Krishna, the creator of the universe."
-        },
-        {
-            "text": "RMS",
-            "size": 0.4,
-            "country": "India",
-            "city": "Rameshwaram",
-            "lat": "9.2876",
-            "lng": "79.3129",
-            "desc": "The holy city. This was a part of the Tamil Nadu trip. The city is beautiful. The beaches are amazing. The city is calm and peaceful."
-        },
-        {
-            "text": "MAD",
-            "size": 0.4,
-            "country": "India",
-            "city": "Madurai",
-            "lat": "10.9273",
-            "lng": "78.2769",
-            "desc": "Visited here with my family. The old Meenakshi temple is beautiful. Part of the Tamil Nadu trip."
-        },
-        {
-            "text": "ICN",
-            "size": 0.4,
+            "id": "kr-se",
             "country": "South Korea",
-            "city": "Seoul",
+            "countryCode": "KR",
+            "region": "Seoul",
+            "regionType": "city",
             "lat": "37.5665",
             "lng": "126.9780",
-            "desc": "Internship at Authentic: 1 month at Seoul- a workation. Amazing experience- explored the city, the culture and loved working with an amazing team of engineers and designers. The culture is vibrant, the food is delicious, and the people are friendly. Also attended Kanye's concert here"
+            "visits": [
+                {
+                    "city": "Seoul",
+                    "code": "ICN",
+                    "lat": "37.5665",
+                    "lng": "126.9780",
+                    "desc": "Internship at Authentic: 1 month at Seoul- a workation. Amazing experience- explored the city, the culture and loved working with an amazing team of engineers and designers. The culture is vibrant, the food is delicious, and the people are friendly. Also attended Kanye's concert here"
+                }
+            ]
         },
         {
-            "text": "NYC",
-            "size": 0.5,
+            "id": "us-ny",
             "country": "USA",
-            "city": "New York City",
-            "lat": "40.6446",
-            "lng": "-73.7797",
-            "desc": "New Home ❤️"
+            "countryCode": "US",
+            "region": "New York",
+            "regionType": "state",
+            "lat": "40.7128",
+            "lng": "-74.0060",
+            "visits": [
+                {
+                    "city": "New York City",
+                    "code": "NYC",
+                    "lat": "40.6446",
+                    "lng": "-73.7797",
+                    "desc": "New Home"
+                },
+                {
+                    "city": "Finger Lakes",
+                    "code": "FLX",
+                    "lat": "42.7000",
+                    "lng": "-76.8000",
+                    "desc": "A trip with friends in early December to experience fresh snowfall and hike in a snow-covered mountain in upstate NY. The winter landscape was breathtaking."
+                }
+            ]
         },
         {
-            "text": "SFO",
-            "size": 0.5,
+            "id": "us-pa",
             "country": "USA",
-            "city": "San Francisco",
-            "lat": "37.7749",
-            "lng": "-122.4194",
-            "desc": "Summer Internship here for a month. The city is beautiful. SF has more country vibes than NY."
+            "countryCode": "US",
+            "region": "Pennsylvania",
+            "regionType": "state",
+            "lat": "41.2033",
+            "lng": "-77.1945",
+            "visits": [
+                {
+                    "city": "Philadelphia",
+                    "code": "PHL",
+                    "lat": "39.9526",
+                    "lng": "-75.1652",
+                    "desc": "A classic field trip by school. The city of brotherly love with rich American history."
+                },
+                {
+                    "city": "Poconos",
+                    "code": "POC",
+                    "lat": "41.0534",
+                    "lng": "-75.2479",
+                    "desc": "A trip to a ski resort where I learned snowboarding. My first time on the slopes and an unforgettable experience in the mountains."
+                }
+            ]
+        },
+        {
+            "id": "us-ca",
+            "country": "USA",
+            "countryCode": "US",
+            "region": "California",
+            "regionType": "state",
+            "lat": "36.7783",
+            "lng": "-119.4179",
+            "visits": [
+                {
+                    "city": "San Francisco",
+                    "code": "SFO",
+                    "lat": "37.7749",
+                    "lng": "-122.4194",
+                    "desc": "Summer Internship here for a month. The city is beautiful. SF has more country vibes than NY."
+                },
+                {
+                    "city": "Healdsburg",
+                    "code": "HLB",
+                    "lat": "38.6105",
+                    "lng": "-122.8697",
+                    "desc": "Part of World Builder residency in Edge City Esmeralda. A month-long expedition exploring creativity and community in the heart of Sonoma wine country."
+                }
+            ]
         }
     ]
 }
