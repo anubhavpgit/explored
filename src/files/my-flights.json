@@ -4,34 +4,6 @@
         {
             "type": "flight",
             "order": 1,
-            "from": "BLR",
-            "to": "ICN",
-            "flightCode": "KE",
-            "date": "July 24, 2025",
-            "status": true,
-            "startLat": 12.9716,
-            "startLng": 77.5946,
-            "endLat": 37.4602,
-            "endLng": 126.4407,
-            "arcAlt": 0.3
-        },
-        {
-            "type": "flight",
-            "order": 2,
-            "from": "ICN",
-            "to": "JFK",
-            "flightCode": "KE",
-            "date": "August 14, 2025",
-            "status": true,
-            "startLat": 37.4602,
-            "startLng": 126.4407,
-            "endLat": 40.6413,
-            "endLng": -73.7781,
-            "arcAlt": 0.3
-        },
-        {
-            "type": "flight",
-            "order": 3,
             "from": "JFK",
             "to": "SFO",
             "flightCode": "",
@@ -41,20 +13,6 @@
             "startLng": -73.7781,
             "endLat": 37.7749,
             "endLng": -122.4194,
-            "arcAlt": 0.3
-        },
-        {
-            "type": "flight",
-            "order": 4,
-            "from": "SFO",
-            "to": "JFK",
-            "flightCode": "",
-            "date": "",
-            "status": true,
-            "startLat": 37.7749,
-            "startLng": -122.4194,
-            "endLat": 40.6413,
-            "endLng": -73.7781,
             "arcAlt": 0.3
         }
     ]
