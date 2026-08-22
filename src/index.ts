@@ -94,6 +94,15 @@ let isZoomedIn = false;
 /** three-globe draws the sphere at radius 100. */
 const GLOBE_RADIUS = 100;
 
+/**
+ * Where the globe opens. Taken from places.json rather than hardcoded, so it
+ * follows the record if home ever moves again.
+ */
+const HOME_VIEW = (() => {
+  const home = placeMarkers.find((p) => p.city === "San Francisco");
+  return home ? { lat: home.lat, lng: home.lng } : { lat: 37.7749, lng: -122.4194 };
+})();
+
 let sunLight: DirectionalLight;
 
 /**
@@ -233,6 +242,65 @@ function fitDistance(): number {
   return fittedDistance;
 }
 
+/**
+ * Starfield.
+ *
+ * Points on a sphere well outside the camera's reach, distributed by sampling
+ * cos(phi) uniformly rather than phi — sampling the angle directly clumps
+ * stars at the poles, which reads as a seam once the globe is rotated.
+ *
+ * Sizes and brightnesses are drawn from a skewed distribution so most stars
+ * are faint and a handful carry, which is what stops it looking like evenly
+ * scattered noise. Fog is disabled or the far ones would be washed out by it.
+ */
+function createStarfield(count = 550, radius = 900): THREE.Points {
+  const positions = new Float32Array(count * 3);
+  const colors = new Float32Array(count * 3);
+
+  for (let i = 0; i < count; i++) {
+    const cosPhi = Math.random() * 2 - 1;
+    const sinPhi = Math.sqrt(1 - cosPhi * cosPhi);
+    const theta = Math.random() * Math.PI * 2;
+    // Jitter the shell so they do not read as a hollow ball edge-on.
+    const r = radius * (0.8 + Math.random() * 0.3);
+
+    positions[i * 3] = r * sinPhi * Math.cos(theta);
+    positions[i * 3 + 1] = r * cosPhi;
+    positions[i * 3 + 2] = r * sinPhi * Math.sin(theta);
+
+    // Mostly dim, a few bright. Slight cool/warm spread keeps it from reading
+    // as flat grey without introducing a second accent.
+    // Heavier skew than before: almost every star sits near the floor and
+    // only a few carry, so the field reads as depth rather than as content.
+    const mag = Math.pow(Math.random(), 3.6);
+    const level = 0.14 + mag * 0.5;
+    const warm = Math.random() < 0.18 ? 1.06 : 1.0;
+    colors[i * 3] = Math.min(1, level * warm);
+    colors[i * 3 + 1] = level * (warm > 1 ? 0.99 : 1.0);
+    colors[i * 3 + 2] = Math.min(1, level * (warm > 1 ? 0.92 : 1.04));
+  }
+
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+  geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+
+  const material = new THREE.PointsMaterial({
+    size: 1.5,
+    sizeAttenuation: false, // constant on screen, so zoom does not swell them
+    vertexColors: true,
+    transparent: true,
+    opacity: 0.42,
+    depthWrite: false,
+    fog: false,
+  });
+
+  const stars = new THREE.Points(geometry, material);
+  stars.name = "starfield";
+  // Never a hover target, and never culled when the globe fills the frame.
+  stars.frustumCulled = false;
+  return stars;
+}
+
 // SECTION Initializing core ThreeJS elements
 function init() {
   // Initialize renderer
@@ -245,8 +313,8 @@ function init() {
 
   // Initialize scene, light
   scene = new Scene();
-  scene.add(new AmbientLight(0xF0DCC4, 0.22));
-  scene.background = new Color(0x14100D);
+  scene.add(new AmbientLight(0xBFCAD6, 0.44));
+  scene.background = new Color(0x08090B);
 
   // Initialize camera, light
   camera = new PerspectiveCamera();
@@ -256,14 +324,15 @@ function init() {
   // the country polygons against the sphere. The camera orbits between 150
   // and ~315 from a radius-100 globe, so it never gets nearer than ~50.
   camera.near = 20;
-  camera.far = 1200;
+  // Far has to clear the starfield shell (~720-990 units) with headroom.
+  camera.far = 2400;
   camera.updateProjectionMatrix();
 
   // Lights live in WORLD space, not on the camera. Parenting them to the
   // camera meant the globe was lit identically from every angle, so rotating
   // it produced no change in shading at all — the single biggest reason it
   // read as a flat sphere rather than a lit body.
-  const keyLight = new DirectionalLight(0xFFD9A0, 1.15); // the sun
+  const keyLight = new DirectionalLight(0xFFF3DC, 1.2); // the sun
   keyLight.position.copy(subsolarPosition());
   scene.add(keyLight);
   sunLight = keyLight;
@@ -271,20 +340,25 @@ function init() {
   // Cool bounce, but only just. A saturated blue fill pushed the unlit
   // hemisphere to B > R — measurably violet — which fights a palette whose
   // whole premise is a warm film base.
-  const fillLight = new DirectionalLight(0x53616B, 0.3);
+  const fillLight = new DirectionalLight(0x46545F, 0.34);
   fillLight.position.set(560, -220, -360);
   scene.add(fillLight);
 
-  const rimLight = new PointLight(0xE0913A, 0.85, 1800);
+  const rimLight = new PointLight(0xFFB000, 0.5, 1800);
   rimLight.position.set(240, 420, -560);
   scene.add(rimLight);
 
-  camera.position.set(0, 0, fitDistance());
+  // Raised so the home latitude sits centred rather than the equator.
+  const homeLat = THREE.MathUtils.degToRad(HOME_VIEW.lat);
+  const d = fitDistance();
+  camera.position.set(0, d * Math.sin(homeLat), d * Math.cos(homeLat));
 
   scene.add(camera);
 
   // Additional effects
-  scene.fog = new Fog(0x1C1611, 420, 1900);
+  scene.fog = new Fog(0x0C0F13, 420, 1900);
+
+  scene.add(createStarfield());
 
   // Helpers
   // const axesHelper = new AxesHelper(800);
@@ -349,10 +423,10 @@ function initGlobe() {
     .hexPolygonResolution(4)
     .hexPolygonMargin(0.7)
     .showAtmosphere(true)
-    .atmosphereColor("#E0913A")
-    .atmosphereAltitude(0.3)
+    .atmosphereColor("#4A6B85")
+    .atmosphereAltitude(0.26)
     // Warm paper land on a dark base — the whole read of the direction.
-    .hexPolygonColor(() => "rgba(232,220,203,0.85)")
+    .hexPolygonColor(() => "rgba(214,222,230,0.78)")
 
     .arcColor((e: any) => e.color)
     .arcAltitude((e: any) => e.arcAlt)
@@ -377,7 +451,7 @@ function initGlobe() {
     .pathDashAnimateTime(0)
     .pathTransitionDuration(0)
 
-    .labelColor(() => "#F0E7D4")
+    .labelColor(() => "#EDF1F5")
     .labelDotOrientation("right")
     // Text only. The mark is drawn separately and carries the encoding;
     // a fixed-radius label dot sat on top of it and erased the difference
@@ -388,7 +462,7 @@ function initGlobe() {
     .labelAltitude(0)
     .labelsTransitionDuration(0)
 
-    .pointColor((e: any) => e.color ?? "#F5A65B")
+    .pointColor((e: any) => e.color ?? "#FFB000")
     // Not merged: the zoom swap replaces this layer's data, and a merged
     // layer disposes the single combined mesh out from under three-globe's
     // digest. A few dozen points cost nothing unmerged.
@@ -404,11 +478,14 @@ function initGlobe() {
     routeMaterialsStale = true;
   }, 1000);
 
-  Globe.rotateY(-Math.PI * (4.2 / 9));
+  // three-globe puts a point at longitude L at angle L from +Z, and the camera
+  // sits on +Z — so rotating by -L brings that longitude to face the viewer.
+  // The old -84 deg was centring longitude 84E, i.e. central India.
+  Globe.rotateY(THREE.MathUtils.degToRad(-HOME_VIEW.lng));
   const globeMaterial = Globe.globeMaterial();
-  globeMaterial.color = new Color(0x2A2320);
-  globeMaterial.emissive = new Color(0x3A2113);
-  globeMaterial.emissiveIntensity = 0.26;
+  globeMaterial.color = new Color(0x12161A);
+  globeMaterial.emissive = new Color(0x121C24);
+  globeMaterial.emissiveIntensity = 0.3;
   globeMaterial.shininess = 0.15;
 
   // Invisible collision spheres for region markers (hover detection)
@@ -457,7 +534,7 @@ function initGlobe() {
     const dot = new THREE.Mesh(
       new THREE.CircleGeometry(0.22, 16),
       new THREE.MeshBasicMaterial({
-        color: 0xF2EAE0,
+        color: 0xD6DEE6,
         side: THREE.DoubleSide,
         transparent: true,
         opacity: 0.5,

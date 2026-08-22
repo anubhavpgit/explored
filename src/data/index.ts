@@ -82,15 +82,15 @@ const hexToRgb = (hex: string): [number, number, number] => [
   parseInt(hex.slice(3, 5), 16),
   parseInt(hex.slice(5, 7), 16),
 ];
-const RECENT = hexToRgb("#F5A65B");
-const AGED = hexToRgb("#8A7A6E");
+const RECENT = hexToRgb("#FFB000");
+const AGED = hexToRgb("#5B646E");
 
 /**
  * Recency as colour temperature — a visible timeline with no slider. Warm
  * where life currently is, cooling as a place recedes into the past.
  */
 export function temperatureFor(stats: PlaceStats | null, latestSeen: string): string {
-  if (!stats) return "#7A6E64";
+  if (!stats) return "#49515A";
   const span = Date.parse(latestSeen) - Date.parse(timeline.source.coverage.from);
   const age = Date.parse(latestSeen) - Date.parse(stats.lastSeen);
   const t = span > 0 ? Math.min(1, Math.max(0, age / span)) : 0;
@@ -182,14 +182,18 @@ const MODE_STYLE: Record<string, { color: string; stroke: number }> = {
   // a fat-line width in PIXELS — the shader does `offset *= linewidth;
   // offset /= resolution.y`. The two numbers below are therefore on totally
   // different scales, and a path stroke under ~1 is a sub-pixel hairline.
-  flying: { color: "#F5A65B", stroke: 0.34 }, // world units (arc tube)
-  "in train": { color: "#4E9E8C", stroke: 3.2 }, // pixels (fat line)
-  "in passenger vehicle": { color: "#D2662E", stroke: 3.0 },
-  motorcycling: { color: "#E0913A", stroke: 2.6 },
-  "in bus": { color: "#B5502A", stroke: 2.6 },
-  cycling: { color: "#6E9E5A", stroke: 2.2 },
+  //
+  // Amber is the only accent in the system, so it is spent on flights alone.
+  // Ground modes separate by lightness within one cool neutral family rather
+  // than by introducing competing hues.
+  flying: { color: "#FFB000", stroke: 0.34 }, // world units (arc tube)
+  "in train": { color: "#C6D2DE", stroke: 3.2 }, // pixels (fat line)
+  "in passenger vehicle": { color: "#8C9AA8", stroke: 3.0 },
+  motorcycling: { color: "#A3B0BD", stroke: 2.6 },
+  "in bus": { color: "#75828F", stroke: 2.6 },
+  cycling: { color: "#94A4B2", stroke: 2.2 },
 };
-const GROUND_DEFAULT = { color: "#D2662E", stroke: 3.0 };
+const GROUND_DEFAULT = { color: "#8C9AA8", stroke: 3.0 };
 
 export interface FlightArc extends Leg {
   startLat: number;
