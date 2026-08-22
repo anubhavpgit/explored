@@ -11,103 +11,421 @@
   <link rel="apple-touch-icon" href="https://anubhavp.dev/apple-touch-icon.png" />
 
   <link rel="manifest" href="https://anubhavp.dev/manifest.json" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <meta charset="utf-8" />
   <title>Trips</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Archivo:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <style>
+    /* ------------------------------------------------------------------
+       LATITUDE
+       Palette taken from colour negative film: the orange mask, the deep
+       base, oxidised greens. Warm near-black everywhere, one warm accent,
+       and prose set in a reading face rather than a UI face.
+       ------------------------------------------------------------------ */
+    :root {
+      --base: #14100D;
+      --base-lift: #1C1611;
+      --rule: #2E251F;
+      --rule-soft: rgba(242, 234, 224, 0.14);
+      --ink: #F2EAE0;
+      --ink-dim: #A6968A;
+      --ink-faint: #6F6258;
+      --accent: #F5A65B;
+      --accent-deep: #E0913A;
+
+      --font-display: 'Instrument Serif', 'Times New Roman', serif;
+      --font-prose: 'Source Serif 4', Georgia, serif;
+      --font-ui: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: avenir next, avenir, 'Open Sans', sans-serif;
+      background: var(--base);
+      color: var(--ink);
+      font-family: var(--font-ui);
+      -webkit-font-smoothing: antialiased;
     }
 
     canvas {
       display: block;
     }
 
+    /* A single tiling grain plate over everything. 4% is enough to break up
+       the gradient banding on the globe without reading as an effect. */
+    .grain {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      pointer-events: none;
+      opacity: 0.05;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+    }
+
+    /* ---- masthead ---- */
     .card {
       position: absolute;
-      top: 10px;
-      left: 10px;
+      top: 26px;
+      left: 30px;
       z-index: 100;
-      width: 200px;
+      width: 232px;
       background: none;
     }
 
-    .card-title {
-      font-weight: 600;
-      font-size: 1.5rem;
-      color: #f3f3f3;
-    }
-
-    .card-text {
-      font-size: 0.8rem;
-      color: #f3f3f3;
-    }
-
-    .top-title {
-      font-size: 1.5rem;
-      color: #f8f8ff;
-    }
-
-    .top-text {
-      font-size: 0.8rem;
-      color: #f8f8ff;
-    }
-
-    .links {
-      font-size: 0.7rem;
+    .card-body {
       padding: 0;
     }
 
+    .top-title {
+      margin: 0 0 10px;
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 0.95;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    .top-text {
+      display: block;
+      font-family: var(--font-prose);
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: var(--ink-dim);
+    }
+
+    .links-row {
+      margin-top: 14px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .links {
+      font-family: var(--font-ui);
+      font-size: 0.66rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--ink-dim);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2px;
+      transition: color 0.18s, border-color 0.18s;
+    }
+
+    .links:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ---- layer switches ---- */
+    .layer-toggles {
+      position: absolute;
+      top: 26px;
+      right: 30px;
+      z-index: 100;
+      display: flex;
+      gap: 22px;
+    }
+
+    /* Deliberately not pills. Latitude has no chrome in it; a switch is a
+       label with a rule under it that lights when it is on. */
+    .layer-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 0 6px;
+      border: 0;
+      border-bottom: 1px solid var(--rule);
+      background: none;
+      color: var(--ink-faint);
+      font-family: var(--font-ui);
+      font-size: 0.66rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      line-height: 1;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .layer-toggle[aria-pressed="true"] {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .layer-toggle:hover {
+      color: var(--ink);
+    }
+
+    .layer-toggle .swatch {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      flex: 0 0 auto;
+      opacity: 0.25;
+      transition: opacity 0.2s;
+    }
+
+    .layer-toggle[aria-pressed="true"] .swatch {
+      opacity: 1;
+      background: var(--swatch, currentColor);
+    }
+
+    /* ---- the sheet ---- */
     #tooltip {
       position: absolute;
       display: none;
-      background: #040d21;
-      color: #f8f8ff;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-      margin-right: 10px;
+      left: 30px;
+      bottom: 0;
+      width: 460px;
+      max-height: 68vh;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      z-index: 100;
+      padding: 30px 34px 34px;
+      background: linear-gradient(180deg, rgba(20, 16, 13, 0.90) 0%, rgba(20, 16, 13, 0.97) 22%);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--rule);
+      border-bottom: 0;
+      border-radius: 3px 3px 0 0;
+      box-shadow: 0 -18px 60px rgba(0, 0, 0, 0.5);
+      scrollbar-width: thin;
+      scrollbar-color: var(--rule) transparent;
+    }
+
+    #tooltip::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    #tooltip::-webkit-scrollbar-thumb {
+      background: var(--rule);
+      border-radius: 4px;
+    }
+
+    #tooltip-close {
+      position: absolute;
+      top: 20px;
+      right: 22px;
+      width: 26px;
+      height: 26px;
+      padding: 0;
+      border: 0;
+      background: none;
+      color: var(--ink-faint);
+      font-family: var(--font-ui);
+      font-size: 1.15rem;
+      line-height: 1;
+      cursor: pointer;
+      transition: color 0.18s;
+    }
+
+    #tooltip-close:hover {
+      color: var(--accent);
+    }
+
+    /* ---- sheet contents ---- */
+    .sheet-era {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      /* Clear the close button, which is absolutely positioned in this corner
+         and was landing on top of the right-aligned date. */
+      padding-right: 34px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.62rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--ink-faint);
+    }
+
+    .sheet-name {
+      margin: 18px 0 2px;
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 2.6rem;
+      line-height: 1.02;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+    }
+
+    .sheet-region {
+      font-size: 0.64rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.17em;
+      color: var(--accent);
+    }
+
+    .sheet-prose {
+      margin: 20px 0 0;
+      font-family: var(--font-prose);
+      font-size: 1.02rem;
+      line-height: 1.68;
+      color: #DCD0C4;
+    }
+
+    .sheet-prose em {
+      font-style: italic;
+      color: var(--ink-dim);
+    }
+
+    /* The numbers are a footnote here, not a headline — Latitude leads with
+       the writing and lets the phone's record sit quietly beneath it. */
+    .sheet-record {
+      margin-top: 22px;
+      padding-top: 12px;
+      border-top: 1px solid var(--rule);
+      font-size: 0.7rem;
+      letter-spacing: 0.04em;
+      color: var(--ink-dim);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sheet-entry {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .sheet-entry:first-of-type {
+      border-top: 0;
+    }
+
+    .sheet-entry-name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    .sheet-entry-meta {
+      margin-left: 9px;
+      font-family: var(--font-ui);
+      font-size: 0.62rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--ink-faint);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .badge-unmarked {
+      display: inline-block;
+      margin-left: 10px;
+      padding: 2px 7px;
+      border: 1px solid rgba(245, 166, 91, 0.45);
+      border-radius: 2px;
+      font-family: var(--font-ui);
+      font-size: 0.55rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      color: var(--accent);
+      vertical-align: middle;
+    }
+
+    @media (max-width: 780px) {
+      .card {
+        top: 18px;
+        left: 20px;
+        width: 200px;
+      }
+
+      .top-title {
+        font-size: 2rem;
+      }
+
+      .layer-toggles {
+        top: 20px;
+        right: 20px;
+        gap: 14px;
+      }
+
+      .layer-toggle {
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+      }
+
+      #tooltip {
+        left: 0;
+        right: 0;
+        width: auto;
+        max-height: 58vh;
+        padding: 24px 22px 28px;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+      }
+
+      .sheet-name {
+        font-size: 2.1rem;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="grain" aria-hidden="true"></div>
+
   <div class="card">
     <div class="card-body">
       <h5 class="top-title">Journaling</h5>
       <span class="top-text">
-        Surfing the world one wave at a time 🌊 🌎
-        Interact with the pins to know more :)
-        <div>
-          <a href="https://anubhavp.dev" class="btn btn-link text-white links"><u>
-              home
-            </u>
-          </a>
-          <a href="https://instagram.com/anubhavclicks" class="btn btn-link text-white links"><u>
-              instagram
-            </u>
-          </a>
-          <a href="https://anubhavp.dev/blog" class="btn btn-link text-white links"><u>
-              blogs
-            </u>
-          </a>
+        Surfing the world one wave at a time. Every place here is one I stood in.
       </span>
+      <div class="links-row">
+        <a href="https://anubhavp.dev" class="btn links">home</a>
+        <a href="https://instagram.com/anubhavclicks" class="btn links">clicks</a>
+        <a href="https://anubhavp.dev/blog" class="btn links">blog</a>
+      </div>
     </div>
   </div>
+
+  <div class="layer-toggles">
+    <button type="button" id="toggle-flights" class="layer-toggle" aria-pressed="true"
+      style="--swatch:#F5A65B">
+      <span class="swatch"></span>Flights
+    </button>
+    <button type="button" id="toggle-roads" class="layer-toggle" aria-pressed="true"
+      style="--swatch:#B98A73">
+      <span class="swatch"></span>Roads
+    </button>
+    <button type="button" id="toggle-verbose" class="layer-toggle" aria-pressed="false"
+      style="--swatch:#F2EAE0"
+      title="The minor stops a journey was assembled from. Not places — they say nothing on hover.">
+      <span class="swatch"></span>Verbose
+    </button>
   </div>
 
-
-
-  <div id="tooltip">
-  </div>
+  <aside id="tooltip" aria-live="polite">
+    <button type="button" id="tooltip-close" aria-label="Close">&times;</button>
+    <div id="tooltip-body"></div>
+  </aside>
 
   <script src="./main.js"></script>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

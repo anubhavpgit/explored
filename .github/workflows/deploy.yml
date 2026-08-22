@@ -1,0 +1,56 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# GITHUB_TOKEN needs these to publish a Pages artifact and claim the deployment.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race. Queue instead of cancelling so an in-flight
+# deploy is allowed to finish and leave the site in a consistent state.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # `prebuild` runs `tsc -b` (src/*.ts -> src/*.js), then webpack bundles
+      # src/index.js into dist/, and `postbuild` copies index.html alongside it.
+      - name: Build
+        run: npm run build
+
+      # Set `enablement: true` here only if you want the workflow to flip the
+      # repo's Pages source to "GitHub Actions" on its own. Left off on purpose:
+      # the source is changed once, by hand, in Settings > Pages.
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

@@ -4,10 +4,6 @@ module.exports = {
   mode: "production",
   entry: ["./src/index.js"],
   devtool: "source-map",
-  devServer: {
-    contentBase: "./",
-    writeToDisk: true,
-  },
   plugins: [],
   module: {
     rules: [
@@ -23,6 +19,10 @@ module.exports = {
   },
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, ""),
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
+    // publicPath is left at the default "auto", which resolves runtime asset
+    // URLs relative to the loaded script. That keeps the bundle working when
+    // the site is served from the /explored/ subpath on GitHub Pages.
   },
 };
