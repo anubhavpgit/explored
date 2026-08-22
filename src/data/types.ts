@@ -161,6 +161,9 @@ export interface RegionView {
   /** Place the region marker is drawn on — its most-visited place. */
   anchorId: string;
   cities: string[];
+  /** Same marker encodings as a place, so both render through one path. */
+  exposure: number;
+  color: string;
   places: PlaceView[];
   stats: PlaceStats | null;
   desc: string;

@@ -73,8 +73,10 @@ const isVisible = (p: { status?: string }) => p.status !== "ARCHIVE";
  */
 const MAX_VISITS = 361;
 export function exposureFor(stats: PlaceStats | null): number {
-  if (!stats) return 0.3;
-  return 0.4 + 0.6 * (Math.log1p(stats.visits) / Math.log1p(MAX_VISITS));
+  // Narrow band on purpose. Visit count is worth a hint of emphasis, but a
+  // place must never be so faint that it disappears into the globe.
+  if (!stats) return 0.82;
+  return 0.86 + 0.14 * (Math.log1p(stats.visits) / Math.log1p(MAX_VISITS));
 }
 
 const hexToRgb = (hex: string): [number, number, number] => [
@@ -82,15 +84,19 @@ const hexToRgb = (hex: string): [number, number, number] => [
   parseInt(hex.slice(3, 5), 16),
   parseInt(hex.slice(5, 7), 16),
 ];
+// Both ends of the ramp are BOLD. Age shifts hue, never visibility — a marker
+// that fades into the globe has stopped doing its job, and the encoding is
+// worth nothing if the thing it encodes cannot be seen.
 const RECENT = hexToRgb("#FFB000");
-const AGED = hexToRgb("#5B646E");
+const AGED = hexToRgb("#F4F8FC");
 
 /**
  * Recency as colour temperature — a visible timeline with no slider. Warm
  * where life currently is, cooling as a place recedes into the past.
  */
 export function temperatureFor(stats: PlaceStats | null, latestSeen: string): string {
-  if (!stats) return "#49515A";
+  // Never recorded is not the same as unimportant — still bold, just cool.
+  if (!stats) return "#DCE4EC";
   const span = Date.parse(latestSeen) - Date.parse(timeline.source.coverage.from);
   const age = Date.parse(latestSeen) - Date.parse(stats.lastSeen);
   const t = span > 0 ? Math.min(1, Math.max(0, age / span)) : 0;
@@ -143,6 +149,8 @@ export const regionViews: RegionView[] = places.regions
     // Straight from the importer — never summed from placeViews, which would
     // double-count a day spent in two places in the same region.
     stats: timeline.regions[region.id] ?? null,
+    exposure: exposureFor(timeline.regions[region.id] ?? null),
+    color: temperatureFor(timeline.regions[region.id] ?? null, timeline.source.coverage.to),
     desc: placeViews.length === 1 ? placeViews[0].desc : `${placeViews.length} places visited`,
   };
 })

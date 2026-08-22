@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Latitude</name>
+  <description><![CDATA[<p>44 places across 4 countries.<br/>
+9 flights · 71,202 km · 305 recorded days.</p>
+<p>Sep 30, 2024 — Aug 22, 2026</p>
+<p style="color:#8C9AA8">Marker warmth is recency, marker size is how often. Amber arcs are flights, drawn at true altitude proportion; grey lines are recorded ground traces.</p>]]></description>
+  <open>1</open>
+  <LookAt>
+    <longitude>44.68891537</longitude>
+    <latitude>-2.24790032</latitude>
+    <altitude>0</altitude>
+    <heading>359.40434519</heading>
+    <tilt>0</tilt>
+    <range>32649636.9</range>
+    <altitudeMode>absolute</altitudeMode>
+  </LookAt>
+  <Style id="pl-in-od-bbi">
+    <IconStyle>
+      <color>ff41839e</color>
+      <scale>1.52</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-od-pur">
+    <IconStyle>
+      <color>ff43829c</color>
+      <scale>1.22</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-od-jjp">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-od-ctc">
+    <IconStyle>
+      <color>ff5b7177</color>
+      <scale>1.28</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-wb-kol">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-wb-drl">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-wb-asn">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-jh-jsr">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-ts-hyd">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-ch-chd">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-ka-blr">
+    <IconStyle>
+      <color>ff3f84a1</color>
+      <scale>1.38</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-ka-gkr">
+    <IconStyle>
+      <color>ff3f84a1</color>
+      <scale>1.21</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-ka-mlr">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-hp-sml">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-dl-del">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-ga-goa">
+    <IconStyle>
+      <color>ff3f84a1</color>
+      <scale>1.29</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-sk-gtg">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-jk-jmu">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-jk-ksh">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-py-pud">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-up-agr">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-up-mth">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-up-vrn">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-uk-hrd">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-uk-ked">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-uk-rsh">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-mh-mum">
+    <IconStyle>
+      <color>ff606e70</color>
+      <scale>1.16</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-gj-ahm">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-gj-dwk">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-ap-vtz">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-tn-rms">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-in-tn-mad">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-ae-du-dxb">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-kr-se-icn">
+    <IconStyle>
+      <color>ff3b87a6</color>
+      <scale>1.39</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-ny-nyc">
+    <IconStyle>
+      <color>ff2597c8</color>
+      <scale>1.22</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-ny-flx">
+    <IconStyle>
+      <color>ff5a5149</color>
+      <scale>0.97</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-ny-nfl">
+    <IconStyle>
+      <color>ff0ea7eb</color>
+      <scale>1.19</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-ny-buf">
+    <IconStyle>
+      <color>ff0ea7eb</color>
+      <scale>1.12</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-pa-phl">
+    <IconStyle>
+      <color>ff378aae</color>
+      <scale>1.12</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-pa-poc">
+    <IconStyle>
+      <color>ff0ea7eb</color>
+      <scale>1.21</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-nj-acy">
+    <IconStyle>
+      <color>ff2f90b9</color>
+      <scale>1.12</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-nj-jcy">
+    <IconStyle>
+      <color>ff0da7eb</color>
+      <scale>1.60</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-ca-sfo">
+    <IconStyle>
+      <color>ff00b0ff</color>
+      <scale>1.44</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="pl-us-ca-hlb">
+    <IconStyle>
+      <color>ff448199</color>
+      <scale>1.36</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.85</scale></LabelStyle>
+  </Style>
+  <Style id="archived">
+    <IconStyle>
+      <color>ff5A5149</color><scale>0.5</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><scale>0</scale></LabelStyle>
+  </Style>
+  <Style id="region">
+    <IconStyle>
+      <color>ffB0A08C</color><scale>1.1</scale>
+      <Icon><href>https://maps.google.com/mapfiles/kml/shapes/donut.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><color>ffF5F1ED</color><scale>0.9</scale></LabelStyle>
+  </Style>
+  <Style id="line-flying">
+    <LineStyle><color>ff00b0ff</color><width>2.6</width></LineStyle>
+    <IconStyle><scale>0</scale></IconStyle>
+    <LabelStyle><scale>0</scale></LabelStyle>
+  </Style>
+  <Style id="line-in-train">
+    <LineStyle><color>dcded2c6</color><width>2.4</width></LineStyle>
+    <IconStyle><scale>0</scale></IconStyle>
+    <LabelStyle><scale>0</scale></LabelStyle>
+  </Style>
+  <Style id="line-in-passenger-vehicle">
+    <LineStyle><color>dca89a8c</color><width>2.2</width></LineStyle>
+    <IconStyle><scale>0</scale></IconStyle>
+    <LabelStyle><scale>0</scale></LabelStyle>
+  </Style>
+  <Style id="line-motorcycling">
+    <LineStyle><color>dcbdb0a3</color><width>2</width></LineStyle>
+    <IconStyle><scale>0</scale></IconStyle>
+    <LabelStyle><scale>0</scale></LabelStyle>
+  </Style>
+  <Style id="line-in-bus">
+    <LineStyle><color>dc8f8275</color><width>2</width></LineStyle>
+    <IconStyle><scale>0</scale></IconStyle>
+    <LabelStyle><scale>0</scale></LabelStyle>
+  </Style>
+  <Style id="line-cycling">
+    <LineStyle><color>dcb2a494</color><width>1.8</width></LineStyle>
+    <IconStyle><scale>0</scale></IconStyle>
+    <LabelStyle><scale>0</scale></LabelStyle>
+  </Style>
+  <Style id="line-default">
+    <LineStyle><color>dca89a8c</color><width>2.2</width></LineStyle>
+    <IconStyle><scale>0</scale></IconStyle>
+    <LabelStyle><scale>0</scale></LabelStyle>
+  </Style>
+  <Folder>
+    <name>Flights</name>
+    <open>0</open>
+    <visibility>1</visibility>
+    <Placemark>
+      <name>Jersey City → Mumbai</name>
+      <description><![CDATA[<p><b>Dec 27, 2024</b><br/>
+12,544 km</p>]]></description>
+      <styleUrl>#line-flying</styleUrl>
+      <LineString>
+        <tessellate>0</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>-74.043100,40.717800,0 -73.163165,41.688156,97556 -72.256375,42.651596,195008 -71.321160,43.607660,292251 -70.355859,44.555854,389181 -69.358723,45.495649,485694 -68.327902,46.426476,581687 -67.261452,47.347720,677057 -66.157327,48.258722,771702 -65.013382,49.158773,865521 -63.827371,50.047108,958413 -62.596952,50.922903,1050279 -61.319690,51.785275,1141020 -59.993065,52.633271,1230539 -58.614487,53.465869,1318740 -57.181308,54.281970,1405530 -55.690844,55.080397,1490814 -54.140404,55.859890,1574502 -52.527321,56.619103,1656504 -50.848998,57.356603,1736732 -49.102958,58.070867,1815100 -47.286905,58.760283,1891525 -45.398795,59.423154,1965924 -43.436922,60.057702,2038218 -41.400005,60.662073,2108329 -39.287290,61.234351,2176183 -37.098660,61.772571,2241707 -34.834740,62.274736,2304830 -32.497011,62.738843,2365485 -30.087899,63.162905,2423606 -27.610868,63.544988,2479133 -25.070471,63.883240,2532005 -22.472384,64.175931,2582166 -19.823386,64.421491,2629561 -17.131303,64.618546,2674141 -14.404902,64.765955,2715857 -11.653732,64.862842,2754665 -8.887930,64.908619,2790523 -6.117986,64.903005,2823393 -3.354492,64.846035,2853240 -0.607882,64.738058,2880031 2.111818,64.579726,2903739 4.795212,64.371976,2924337 7.433729,64.116002,2941803 10.019762,63.813224,2956120 12.546769,63.465250,2967271 15.009323,63.073841,2975244 17.403109,62.640869,2980032 19.724898,62.168283,2981628 21.972475,61.658076,2980032 24.144558,61.112251,2975244 26.240691,60.532800,2967271 28.261141,59.921679,2956120 30.206784,59.280792,2941803 32.079004,58.611976,2924337 33.879588,57.916994,2903739 35.610641,57.197523,2880031 37.274504,56.455156,2853240 38.873687,55.691396,2823393 40.410804,54.907657,2790523 41.888532,54.105267,2754665 43.309563,53.285467,2715857 44.676574,52.449417,2674141 45.992203,51.598197,2629561 47.259027,50.732816,2582166 48.479546,49.854209,2532005 49.656177,48.963249,2479133 50.791240,48.060744,2423606 51.886960,47.147447,2365485 52.945461,46.224056,2304830 53.968765,45.291221,2241707 54.958797,44.349545,2176183 55.917383,43.399588,2108329 56.846254,42.441874,2038218 57.747050,41.476886,1965924 58.621323,40.505077,1891525 59.470541,39.526869,1815100 60.296091,38.542654,1736732 61.099288,37.552799,1656504 61.881371,36.557646,1574502 62.643515,35.557515,1490814 63.386829,34.552707,1405530 64.112364,33.543502,1318740 64.821114,32.530164,1230539 65.514022,31.512939,1141020 66.191979,30.492061,1050279 66.855834,29.467748,958413 67.506388,28.440207,865521 68.144408,27.409633,771702 68.770617,26.376208,677057 69.385710,25.340108,581687 69.990343,24.301498,485694 70.585147,23.260533,389181 71.170721,22.217362,292251 71.747642,21.172127,195008 72.316459,20.124964,97556 72.877700,19.076000,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Bhubaneswar → Jersey City</name>
+      <description><![CDATA[<p><b>Jan 26, 2025</b><br/>
+13,051 km</p>]]></description>
+      <styleUrl>#line-flying</styleUrl>
+      <LineString>
+        <tessellate>0</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>85.824500,20.296100,0 85.446547,21.453620,101100 85.062546,22.610277,202091 84.672036,23.766005,302867 84.274528,24.920734,403317 83.869508,26.074390,503336 83.456430,27.226892,602816 83.034716,28.378158,701651 82.603751,29.528097,799734 82.162879,30.676614,896961 81.711402,31.823607,993227 81.248573,32.968965,1088430 80.773592,34.112572,1182467 80.285600,35.254301,1275238 79.783676,36.394015,1366643 79.266826,37.531566,1456585 78.733981,38.666795,1544967 78.183985,39.799528,1631695 77.615587,40.929579,1716676 77.027433,42.056741,1799818 76.418050,43.180792,1881033 75.785841,44.301488,1960234 75.129064,45.418562,2037336 74.445820,46.531719,2112256 73.734036,47.640639,2184914 72.991442,48.744965,2255233 72.215553,49.844307,2323136 71.403642,50.938229,2388552 70.552715,52.026251,2451410 69.659476,53.107837,2511643 68.720300,54.182394,2569187 67.731190,55.249257,2623980 66.687737,56.307683,2675962 65.585079,57.356839,2725079 64.417849,58.395791,2771278 63.180126,59.423488,2814510 61.865383,60.438744,2854728 60.466435,61.440222,2891888 58.975392,62.426411,2925953 57.383614,63.395599,2956883 55.681689,64.345850,2984648 53.859429,65.274970,3009217 51.905903,66.180477,3030563 49.809525,67.059565,3048664 47.558218,67.909071,3063500 45.139682,68.725443,3075056 42.541797,69.504712,3083319 39.753195,70.242481,3088281 36.764043,70.933924,3089935 33.567032,71.573817,3088281 30.158583,72.156608,3083319 26.540196,72.676528,3075056 22.719833,73.127758,3063500 18.713110,73.504655,3048664 14.544067,73.802028,3030563 10.245207,74.015433,3009217 5.856595,74.141478,2984648 1.423952,74.178075,2956883 -3.004092,74.124605,2925953 -7.379214,73.981970,2891888 -11.656566,73.752519,2854728 -15.797386,73.439863,2814510 -19.770721,73.048608,2771278 -23.554140,72.584053,2725079 -27.133536,72.051894,2675962 -30.502263,71.457956,2623980 -33.659877,70.807978,2569187 -36.610758,70.107458,2511643 -39.362775,69.361549,2451410 -41.926117,68.574997,2388552 -44.312346,67.752119,2323136 -46.533653,66.896805,2255233 -48.602324,66.012531,2184914 -50.530360,65.102391,2112256 -52.329235,64.169127,2037336 -54.009743,63.215165,1960234 -55.581931,62.242647,1881033 -57.055062,61.253466,1799818 -58.437634,60.249294,1716676 -59.737401,59.231607,1631695 -60.961422,58.201713,1544967 -62.116105,57.160770,1456585 -63.207263,56.109807,1366643 -64.240165,55.049738,1275238 -65.219585,53.981378,1182467 -66.149851,52.905453,1088430 -67.034886,51.822616,993227 -67.878252,50.733448,896961 -68.683186,49.638474,799734 -69.452629,48.538166,701651 -70.189260,47.432949,602816 -70.895524,46.323209,503336 -71.573650,45.209293,403317 -72.225679,44.091518,302867 -72.853477,42.970173,202091 -73.458760,41.845521,101100 -74.043100,40.717800,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jersey City → Healdsburg</name>
+      <description><![CDATA[<p><b>May 24, 2025</b><br/>
+4,133 km · mode inferred from distance</p>]]></description>
+      <styleUrl>#line-flying</styleUrl>
+      <LineString>
+        <tessellate>0</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>-74.043100,40.717800,0 -74.541048,40.804770,39189 -75.040287,40.889594,78336 -75.540791,40.972259,117400 -76.042534,41.052755,156337 -76.545490,41.131069,195108 -77.049631,41.207191,233669 -77.554929,41.281109,271980 -78.061356,41.352813,310000 -78.568883,41.422292,347688 -79.077480,41.489536,385003 -79.587115,41.554535,421907 -80.097759,41.617279,458358 -80.609379,41.677759,494319 -81.121944,41.735967,529750 -81.635420,41.791892,564614 -82.149775,41.845527,598874 -82.664975,41.896863,632492 -83.180984,41.945893,665433 -83.697769,41.992609,697661 -84.215295,42.037004,729143 -84.733525,42.079070,759843 -85.252423,42.118803,789730 -85.771954,42.156194,818771 -86.292079,42.191240,846936 -86.812762,42.223933,874193 -87.333965,42.254269,900515 -87.855650,42.282243,925872 -88.377779,42.307850,950237 -88.900314,42.331087,973585 -89.423214,42.351951,995891 -89.946443,42.370436,1017130 -90.469959,42.386542,1037280 -90.993725,42.400264,1056319 -91.517699,42.411601,1074228 -92.041843,42.420552,1090985 -92.566117,42.427114,1106575 -93.090480,42.431286,1120979 -93.614894,42.433069,1134184 -94.139317,42.432461,1146173 -94.663710,42.429463,1156936 -95.188032,42.424075,1166459 -95.712245,42.416298,1174734 -96.236308,42.406134,1181750 -96.760181,42.393583,1187501 -97.283825,42.378649,1191981 -97.807200,42.361333,1195184 -98.330266,42.341638,1197107 -98.852985,42.319567,1197748 -99.375318,42.295123,1197107 -99.897227,42.268312,1195184 -100.418671,42.239136,1191981 -100.939615,42.207601,1187501 -101.460019,42.173711,1181750 -101.979846,42.137472,1174734 -102.499060,42.098889,1166459 -103.017623,42.057969,1156936 -103.535499,42.014717,1146173 -104.052652,41.969141,1134184 -104.569048,41.921247,1120979 -105.084649,41.871044,1106575 -105.599424,41.818537,1090985 -106.113336,41.763737,1074228 -106.626353,41.706650,1056319 -107.138441,41.647286,1037280 -107.649569,41.585653,1017130 -108.159704,41.521761,995891 -108.668815,41.455619,973585 -109.176871,41.387237,950237 -109.683843,41.316626,925872 -110.189699,41.243794,900515 -110.694413,41.168754,874193 -111.197955,41.091516,846936 -111.700297,41.012091,818771 -112.201413,40.930490,789730 -112.701277,40.846726,759843 -113.199862,40.760809,729143 -113.697145,40.672752,697661 -114.193099,40.582568,665433 -114.687703,40.490268,632492 -115.180932,40.395865,598874 -115.672765,40.299373,564614 -116.163180,40.200805,529750 -116.652156,40.100173,494319 -117.139673,39.997491,458358 -117.625712,39.892772,421907 -118.110254,39.786031,385003 -118.593281,39.677281,347688 -119.074775,39.566537,310000 -119.554719,39.453812,271980 -120.033099,39.339121,233669 -120.509898,39.222478,195108 -120.985102,39.103898,156337 -121.458697,38.983395,117400 -121.930670,38.860985,78336 -122.401008,38.736681,39189 -122.869700,38.610500,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>San Francisco → Jersey City</name>
+      <description><![CDATA[<p><b>Jun 21, 2025</b><br/>
+4,130 km · mode inferred from distance</p>]]></description>
+      <styleUrl>#line-flying</styleUrl>
+      <LineString>
+        <tessellate>0</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>-122.419400,37.774900,0 -121.959337,37.906775,39189 -121.497633,38.036853,78336 -121.034298,38.165119,117400 -120.569341,38.291558,156337 -120.102773,38.416156,195108 -119.634605,38.538897,233669 -119.164849,38.659768,271980 -118.693517,38.778754,310000 -118.220622,38.895841,347688 -117.746178,39.011013,385003 -117.270199,39.124259,421907 -116.792700,39.235562,458358 -116.313698,39.344909,494319 -115.833208,39.452287,529750 -115.351247,39.557682,564614 -114.867833,39.661080,598874 -114.382985,39.762468,632492 -113.896721,39.861834,665433 -113.409061,39.959162,697661 -112.920026,40.054442,729143 -112.429636,40.147660,759843 -111.937914,40.238804,789730 -111.444881,40.327862,818771 -110.950561,40.414821,846936 -110.454977,40.499669,874193 -109.958153,40.582395,900515 -109.460115,40.662987,925872 -108.960888,40.741435,950237 -108.460498,40.817726,973585 -107.958972,40.891851,995891 -107.456338,40.963798,1017130 -106.952624,41.033558,1037280 -106.447857,41.101120,1056319 -105.942068,41.166475,1074228 -105.435287,41.229613,1090985 -104.927543,41.290525,1106575 -104.418867,41.349202,1120979 -103.909291,41.405635,1134184 -103.398847,41.459816,1146173 -102.887567,41.511737,1156936 -102.375485,41.561390,1166459 -101.862632,41.608767,1174734 -101.349045,41.653863,1181750 -100.834755,41.696668,1187501 -100.319800,41.737178,1191981 -99.804212,41.775387,1195184 -99.288029,41.811287,1197107 -98.771285,41.844874,1197748 -98.254017,41.876142,1197107 -97.736262,41.905087,1195184 -97.218056,41.931705,1191981 -96.699436,41.955990,1187501 -96.180440,41.977940,1181750 -95.661105,41.997551,1174734 -95.141469,42.014819,1166459 -94.621570,42.029743,1156936 -94.101446,42.042320,1146173 -93.581135,42.052547,1134184 -93.060676,42.060424,1120979 -92.540107,42.065949,1106575 -92.019467,42.069121,1090985 -91.498794,42.069940,1074228 -90.978127,42.068405,1056319 -90.457504,42.064517,1037280 -89.936964,42.058277,1017130 -89.416546,42.049685,995891 -88.896288,42.038743,973585 -88.376229,42.025452,950237 -87.856405,42.009814,925872 -87.336857,41.991833,900515 -86.817621,41.971511,874193 -86.298735,41.948850,846936 -85.780238,41.923855,818771 -85.262165,41.896529,789730 -84.744554,41.866876,759843 -84.227442,41.834902,729143 -83.710865,41.800611,697661 -83.194859,41.764008,665433 -82.679460,41.725099,632492 -82.164703,41.683890,598874 -81.650623,41.640387,564614 -81.137256,41.594597,529750 -80.624634,41.546527,494319 -80.112792,41.496183,458358 -79.601763,41.443574,421907 -79.091580,41.388707,385003 -78.582274,41.331590,347688 -78.073879,41.272233,310000 -77.566424,41.210643,271980 -77.059941,41.146829,233669 -76.554460,41.080802,195108 -76.050011,41.012570,156337 -75.546622,40.942144,117400 -75.044322,40.869533,78336 -74.543139,40.794748,39189 -74.043100,40.717800,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jersey City → Bhubaneswar</name>
+      <description><![CDATA[<p><b>Jun 25, 2025</b><br/>
+13,910 km</p>]]></description>
+      <styleUrl>#line-flying</styleUrl>
+      <LineString>
+        <tessellate>0</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>-74.043100,40.717800,0 -73.458760,41.845521,104227 -72.853477,42.970173,208342 -72.225679,44.091518,312234 -71.573650,45.209293,415791 -70.895524,46.323209,518904 -70.189260,47.432949,621460 -69.452629,48.538166,723351 -68.683186,49.638474,824468 -67.878252,50.733448,924702 -67.034886,51.822616,1023945 -66.149851,52.905453,1122093 -65.219585,53.981378,1219038 -64.240165,55.049738,1314678 -63.207263,56.109807,1408911 -62.116105,57.160770,1501634 -60.961422,58.201713,1592750 -59.737401,59.231607,1682160 -58.437634,60.249294,1769769 -57.055062,61.253466,1855483 -55.581931,62.242647,1939210 -54.009743,63.215165,2020860 -52.329235,64.169127,2100346 -50.530360,65.102391,2177583 -48.602324,66.012531,2252489 -46.533653,66.896805,2324982 -44.312346,67.752119,2394986 -41.926117,68.574997,2462425 -39.362775,69.361549,2527227 -36.610758,70.107458,2589323 -33.659877,70.807978,2648646 -30.502263,71.457956,2705134 -27.133536,72.051894,2758724 -23.554140,72.584053,2809360 -19.770721,73.048608,2856988 -15.797386,73.439863,2901557 -11.656566,73.752519,2943018 -7.379214,73.981970,2981328 -3.004092,74.124605,3016446 1.423952,74.178075,3048333 5.856595,74.141478,3076957 10.245207,74.015433,3102285 14.544067,73.802028,3124292 18.713110,73.504655,3142952 22.719833,73.127758,3158248 26.540196,72.676528,3170161 30.158583,72.156608,3178680 33.567032,71.573817,3183794 36.764043,70.933924,3185500 39.753195,70.242481,3183794 42.541797,69.504712,3178680 45.139682,68.725443,3170161 47.558218,67.909071,3158248 49.809525,67.059565,3142952 51.905903,66.180477,3124292 53.859429,65.274970,3102285 55.681689,64.345850,3076957 57.383614,63.395599,3048333 58.975392,62.426411,3016446 60.466435,61.440222,2981328 61.865383,60.438744,2943018 63.180126,59.423488,2901557 64.417849,58.395791,2856988 65.585079,57.356839,2809360 66.687737,56.307683,2758724 67.731190,55.249257,2705134 68.720300,54.182394,2648646 69.659476,53.107837,2589323 70.552715,52.026251,2527227 71.403642,50.938229,2462425 72.215553,49.844307,2394986 72.991442,48.744965,2324982 73.734036,47.640639,2252489 74.445820,46.531719,2177583 75.129064,45.418562,2100346 75.785841,44.301488,2020860 76.418050,43.180792,1939210 77.027433,42.056741,1855483 77.615587,40.929579,1769769 78.183985,39.799528,1682160 78.733981,38.666795,1592750 79.266826,37.531566,1501634 79.783676,36.394015,1408911 80.285600,35.254301,1314678 80.773592,34.112572,1219038 81.248573,32.968965,1122093 81.711402,31.823607,1023945 82.162879,30.676614,924702 82.603751,29.528097,824468 83.034716,28.378158,723351 83.456430,27.226892,621460 83.869508,26.074390,518904 84.274528,24.920734,415791 84.672036,23.766005,312234 85.062546,22.610277,208342 85.446547,21.453620,104227 85.824500,20.296100,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Seoul → Jersey City</name>
+      <description><![CDATA[<p><b>Aug 14, 2025</b><br/>
+11,075 km · mode inferred from distance</p>]]></description>
+      <styleUrl>#line-flying</styleUrl>
+      <LineString>
+        <tessellate>0</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>126.978000,37.566500,0 127.342824,38.561122,87342 127.717882,39.554580,174590 128.103832,40.546798,261652 128.501383,41.537693,348433 128.911298,42.527176,434841 129.334399,43.515151,520784 129.771574,44.501514,606169 130.223785,45.486153,690904 130.692071,46.468943,774900 131.177562,47.449752,858066 131.681486,48.428434,940314 132.205179,49.404829,1021554 132.750097,50.378764,1101700 133.317831,51.350046,1180667 133.910120,52.318465,1258370 134.528871,53.283790,1334724 135.176174,54.245764,1409650 135.854329,55.204106,1483066 136.565866,56.158501,1554895 137.313577,57.108601,1625058 138.100544,58.054017,1693481 138.930177,58.994317,1760090 139.806250,59.929015,1824815 140.732952,60.857569,1887585 141.714934,61.779367,1948335 142.757362,62.693720,2006998 143.865982,63.599850,2063512 145.047189,64.496877,2117816 146.308092,65.383800,2169853 147.656597,66.259484,2219566 149.101474,67.122633,2266902 150.652439,67.971769,2311811 152.320207,68.805205,2354244 154.116537,69.621010,2394156 156.054233,70.416976,2431505 158.147091,71.190582,2466249 160.409756,71.938949,2498353 162.857454,72.658807,2527782 165.505544,73.346456,2554503 168.368842,73.997738,2578490 171.460653,74.608034,2599715 174.791476,75.172280,2618156 178.367363,75.685026,2633794 -177.811988,76.140553,2646611 -173.755240,76.533052,2656595 -169.481215,76.856873,2663734 -165.020051,77.106838,2668020 -160.413249,77.278592,2669449 -155.712245,77.368944,2668020 -150.975429,77.376144,2663734 -146.263945,77.300053,2656595 -141.636985,77.142148,2646611 -137.147437,76.905390,2633794 -132.838660,76.593957,2618156 -128.742788,76.212909,2599715 -124.880537,75.767839,2578490 -121.262205,75.264548,2554503 -117.889395,74.708787,2527782 -114.757008,74.106060,2498353 -111.855187,73.461504,2466249 -109.171008,72.779819,2431505 -106.689839,72.065239,2394156 -104.396356,71.321544,2354244 -102.275276,70.552075,2311811 -100.311829,69.759776,2266902 -98.492060,68.947227,2219566 -96.802987,68.116688,2169853 -95.232670,67.270132,2117816 -93.770215,66.409289,2063512 -92.405740,65.535671,2006998 -91.130315,64.650600,1948335 -89.935891,63.755241,1887585 -88.815227,62.850615,1824815 -87.761809,61.937622,1760090 -86.769787,61.017057,1693481 -85.833895,60.089623,1625058 -84.949401,59.155943,1554895 -84.112039,58.216574,1483066 -83.317966,57.272007,1409650 -82.563713,56.322687,1334724 -81.846143,55.369007,1258370 -81.162418,54.411323,1180667 -80.509964,53.449954,1101700 -79.886444,52.485188,1021554 -79.289732,51.517285,940314 -78.717891,50.546481,858066 -78.169156,49.572990,774900 -77.641909,48.597006,690904 -77.134674,47.618707,606169 -76.646094,46.638254,520784 -76.174923,45.655795,434841 -75.720017,44.671467,348433 -75.280319,43.685393,261652 -74.854856,42.697688,174590 -74.442728,41.708458,87342 -74.043100,40.717800,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jersey City → San Francisco</name>
+      <description><![CDATA[<p><b>Mar 9, 2026</b><br/>
+4,124 km · mode inferred from distance</p>]]></description>
+      <styleUrl>#line-flying</styleUrl>
+      <LineString>
+        <tessellate>0</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>-74.043100,40.717800,0 -74.543139,40.794748,38981 -75.044322,40.869533,77920 -75.546622,40.942144,116775 -76.050011,41.012570,155506 -76.554460,41.080802,194070 -77.059941,41.146829,232426 -77.566424,41.210643,270533 -78.073879,41.272233,308351 -78.582274,41.331590,345838 -79.091580,41.388707,382956 -79.601763,41.443574,419663 -80.112792,41.496183,455920 -80.624634,41.546527,491690 -81.137256,41.594597,526933 -81.650623,41.640387,561611 -82.164703,41.683890,595688 -82.679460,41.725099,629128 -83.194859,41.764008,661894 -83.710865,41.800611,693951 -84.227442,41.834902,725264 -84.744554,41.866876,755802 -85.262165,41.896529,785529 -85.780238,41.923855,814416 -86.298735,41.948850,842431 -86.817621,41.971511,869543 -87.336857,41.991833,895725 -87.856405,42.009814,920947 -88.376229,42.025452,945183 -88.896288,42.038743,968407 -89.416546,42.049685,990594 -89.936964,42.058277,1011720 -90.457504,42.064517,1031763 -90.978127,42.068405,1050701 -91.498794,42.069940,1068514 -92.019467,42.069121,1085182 -92.540107,42.065949,1100689 -93.060676,42.060424,1115017 -93.581135,42.052547,1128151 -94.101446,42.042320,1140077 -94.621570,42.029743,1150782 -95.141469,42.014819,1160255 -95.661105,41.997551,1168485 -96.180440,41.977940,1175464 -96.699436,41.955990,1181185 -97.218056,41.931705,1185640 -97.736262,41.905087,1188826 -98.254017,41.876142,1190739 -98.771285,41.844874,1191377 -99.288029,41.811287,1190739 -99.804212,41.775387,1188826 -100.319800,41.737178,1185640 -100.834755,41.696668,1181185 -101.349045,41.653863,1175464 -101.862632,41.608767,1168485 -102.375485,41.561390,1160255 -102.887567,41.511737,1150782 -103.398847,41.459816,1140077 -103.909291,41.405635,1128151 -104.418867,41.349202,1115017 -104.927543,41.290525,1100689 -105.435287,41.229613,1085182 -105.942068,41.166475,1068514 -106.447857,41.101120,1050701 -106.952624,41.033558,1031763 -107.456338,40.963798,1011720 -107.958972,40.891851,990594 -108.460498,40.817726,968407 -108.960888,40.741435,945183 -109.460115,40.662987,920947 -109.958153,40.582395,895725 -110.454977,40.499669,869543 -110.950561,40.414821,842431 -111.444881,40.327862,814416 -111.937914,40.238804,785529 -112.429636,40.147660,755802 -112.920026,40.054442,725264 -113.409061,39.959162,693951 -113.896721,39.861834,661894 -114.382985,39.762468,629128 -114.867833,39.661080,595688 -115.351247,39.557682,561611 -115.833208,39.452287,526933 -116.313698,39.344909,491690 -116.792700,39.235562,455920 -117.270199,39.124259,419663 -117.746178,39.011013,382956 -118.220622,38.895841,345838 -118.693517,38.778754,308351 -119.164849,38.659768,270533 -119.634605,38.538897,232426 -120.102773,38.416156,194070 -120.569341,38.291558,155506 -121.034298,38.165119,116775 -121.497633,38.036853,77920 -121.959337,37.906775,38981 -122.419400,37.774900,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>San Francisco → Jersey City</name>
+      <description><![CDATA[<p><b>Mar 19, 2026</b><br/>
+4,124 km · mode inferred from distance</p>]]></description>
+      <styleUrl>#line-flying</styleUrl>
+      <LineString>
+        <tessellate>0</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>-122.419400,37.774900,0 -121.959337,37.906775,38981 -121.497633,38.036853,77920 -121.034298,38.165119,116775 -120.569341,38.291558,155506 -120.102773,38.416156,194070 -119.634605,38.538897,232426 -119.164849,38.659768,270533 -118.693517,38.778754,308351 -118.220622,38.895841,345838 -117.746178,39.011013,382956 -117.270199,39.124259,419663 -116.792700,39.235562,455920 -116.313698,39.344909,491690 -115.833208,39.452287,526933 -115.351247,39.557682,561611 -114.867833,39.661080,595688 -114.382985,39.762468,629128 -113.896721,39.861834,661894 -113.409061,39.959162,693951 -112.920026,40.054442,725264 -112.429636,40.147660,755802 -111.937914,40.238804,785529 -111.444881,40.327862,814416 -110.950561,40.414821,842431 -110.454977,40.499669,869543 -109.958153,40.582395,895725 -109.460115,40.662987,920947 -108.960888,40.741435,945183 -108.460498,40.817726,968407 -107.958972,40.891851,990594 -107.456338,40.963798,1011720 -106.952624,41.033558,1031763 -106.447857,41.101120,1050701 -105.942068,41.166475,1068514 -105.435287,41.229613,1085182 -104.927543,41.290525,1100689 -104.418867,41.349202,1115017 -103.909291,41.405635,1128151 -103.398847,41.459816,1140077 -102.887567,41.511737,1150782 -102.375485,41.561390,1160255 -101.862632,41.608767,1168485 -101.349045,41.653863,1175464 -100.834755,41.696668,1181185 -100.319800,41.737178,1185640 -99.804212,41.775387,1188826 -99.288029,41.811287,1190739 -98.771285,41.844874,1191377 -98.254017,41.876142,1190739 -97.736262,41.905087,1188826 -97.218056,41.931705,1185640 -96.699436,41.955990,1181185 -96.180440,41.977940,1175464 -95.661105,41.997551,1168485 -95.141469,42.014819,1160255 -94.621570,42.029743,1150782 -94.101446,42.042320,1140077 -93.581135,42.052547,1128151 -93.060676,42.060424,1115017 -92.540107,42.065949,1100689 -92.019467,42.069121,1085182 -91.498794,42.069940,1068514 -90.978127,42.068405,1050701 -90.457504,42.064517,1031763 -89.936964,42.058277,1011720 -89.416546,42.049685,990594 -88.896288,42.038743,968407 -88.376229,42.025452,945183 -87.856405,42.009814,920947 -87.336857,41.991833,895725 -86.817621,41.971511,869543 -86.298735,41.948850,842431 -85.780238,41.923855,814416 -85.262165,41.896529,785529 -84.744554,41.866876,755802 -84.227442,41.834902,725264 -83.710865,41.800611,693951 -83.194859,41.764008,661894 -82.679460,41.725099,629128 -82.164703,41.683890,595688 -81.650623,41.640387,561611 -81.137256,41.594597,526933 -80.624634,41.546527,491690 -80.112792,41.496183,455920 -79.601763,41.443574,419663 -79.091580,41.388707,382956 -78.582274,41.331590,345838 -78.073879,41.272233,308351 -77.566424,41.210643,270533 -77.059941,41.146829,232426 -76.554460,41.080802,194070 -76.050011,41.012570,155506 -75.546622,40.942144,116775 -75.044322,40.869533,77920 -74.543139,40.794748,38981 -74.043100,40.717800,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>elsewhere → Jersey City</name>
+      <description><![CDATA[<p><b>May 10, 2026</b><br/>
+4,111 km · mode inferred from distance</p>]]></description>
+      <styleUrl>#line-flying</styleUrl>
+      <LineString>
+        <tessellate>0</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>-121.900000,37.260000,0 -121.447162,37.394401,38981 -120.992708,37.527069,77920 -120.536646,37.657989,116775 -120.078983,37.787147,155506 -119.619728,37.914529,194070 -119.158892,38.040121,232426 -118.696483,38.163907,270533 -118.232514,38.285874,308351 -117.766994,38.406008,345838 -117.299935,38.524294,382956 -116.831352,38.640719,419663 -116.361255,38.755269,455920 -115.889660,38.867930,491690 -115.416580,38.978688,526933 -114.942031,39.087531,561611 -114.466028,39.194444,595688 -113.988587,39.299414,629128 -113.509726,39.402429,661894 -113.029462,39.503475,693951 -112.547813,39.602539,725264 -112.064798,39.699609,755802 -111.580436,39.794672,785529 -111.094748,39.887716,814416 -110.607754,39.978728,842431 -110.119476,40.067697,869543 -109.629936,40.154612,895725 -109.139155,40.239459,920947 -108.647159,40.322228,945183 -108.153969,40.402908,968407 -107.659612,40.481488,990594 -107.164111,40.557956,1011720 -106.667493,40.632303,1031763 -106.169783,40.704518,1050701 -105.671010,40.774590,1068514 -105.171199,40.842511,1085182 -104.670379,40.908271,1100689 -104.168578,40.971859,1115017 -103.665826,41.033268,1128151 -103.162152,41.092488,1140077 -102.657585,41.149511,1150782 -102.152158,41.204328,1160255 -101.645900,41.256932,1168485 -101.138843,41.307315,1175464 -100.631019,41.355470,1181185 -100.122461,41.401389,1185640 -99.613201,41.445066,1188826 -99.103273,41.486493,1190739 -98.592710,41.525666,1191377 -98.081547,41.562579,1190739 -97.569817,41.597224,1188826 -97.057555,41.629599,1185640 -96.544797,41.659697,1181185 -96.031577,41.687514,1175464 -95.517932,41.713046,1168485 -95.003897,41.736289,1160255 -94.489508,41.757239,1150782 -93.974801,41.775894,1140077 -93.459813,41.792250,1128151 -92.944581,41.806305,1115017 -92.429142,41.818057,1100689 -91.913532,41.827504,1085182 -91.397788,41.834644,1068514 -90.881947,41.839477,1050701 -90.366048,41.842002,1031763 -89.850126,41.842218,1011720 -89.334219,41.840126,990594 -88.818365,41.835725,968407 -88.302600,41.829016,945183 -87.786962,41.820001,920947 -87.271488,41.808680,895725 -86.756214,41.795056,869543 -86.241178,41.779131,842431 -85.726416,41.760906,814416 -85.211964,41.740385,785529 -84.697860,41.717571,755802 -84.184139,41.692468,725264 -83.670837,41.665078,693951 -83.157990,41.635407,661894 -82.645632,41.603458,629128 -82.133800,41.569237,595688 -81.622528,41.532749,561611 -81.111850,41.493999,526933 -80.601801,41.452993,491690 -80.092413,41.409737,455920 -79.583721,41.364237,419663 -79.075757,41.316501,382956 -78.568555,41.266534,345838 -78.062145,41.214346,308351 -77.556559,41.159942,270533 -77.051829,41.103331,232426 -76.547986,41.044522,194070 -76.045059,40.983522,155506 -75.543078,40.920341,116775 -75.042072,40.854988,77920 -74.542070,40.787471,38981 -74.043100,40.717800,0</coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Ground routes</name>
+    <open>0</open>
+    <visibility>1</visibility>
+    <Placemark>
+      <name>Jan 1, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.85,20.26,0 85.85,20.26,0 85.87,20.3,0 85.87,20.31,0 85.88,20.31,0 85.88,20.32,0 85.88,20.33,0 85.88,20.34,0 85.89,20.35,0 85.89,20.36,0 85.89,20.37,0 85.89,20.38,0 85.88,20.4,0 85.88,20.41,0 85.88,20.42,0 85.88,20.43,0 85.88,20.44,0 85.89,20.44,0 85.9,20.44,0 85.9,20.45,0 85.89,20.44,0 85.89,20.45,0 85.88,20.45,0 85.87,20.46,0 85.86,20.46,0 85.86,20.47,0 85.85,20.47,0 85.84,20.47,0 85.83,20.47,0 85.82,20.47,0 85.82,20.48,0 85.81,20.48,0 85.82,20.49,0 85.82,20.5,0 85.82,20.51,0 85.81,20.51,0 85.8,20.51,0 85.79,20.51,0 85.78,20.51,0 85.77,20.5,0 85.76,20.5,0 85.75,20.5,0 85.74,20.51,0 85.73,20.51,0 85.72,20.51,0 85.71,20.51,0 85.7,20.51,0 85.69,20.51,0 85.68,20.51,0 85.67,20.52,0 85.66,20.52,0 85.67,20.52,0 85.66,20.52,0 85.66,20.53,0 85.66,20.54,0 85.67,20.54,0 85.67,20.55,0 85.67,20.56,0 85.68,20.57,0 85.68,20.58,0 85.67,20.58,0 85.66,20.59,0 85.65,20.6,0 85.64,20.6,0 85.64,20.61,0 85.63,20.62,0 85.63,20.63,0 85.62,20.63,0 85.62,20.64,0 85.61,20.65,0 85.6,20.65,0 85.59,20.65,0 85.59,20.66,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jan 1, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.6,20.66,0 85.59,20.66,0 85.6,20.65,0 85.61,20.65,0 85.62,20.64,0 85.62,20.63,0 85.63,20.63,0 85.63,20.62,0 85.64,20.61,0 85.64,20.6,0 85.65,20.6,0 85.66,20.59,0 85.67,20.58,0 85.69,20.57,0 85.7,20.57,0 85.71,20.57,0 85.72,20.56,0 85.71,20.56,0 85.7,20.56,0 85.69,20.55,0 85.68,20.55,0 85.67,20.55,0 85.66,20.54,0 85.66,20.53,0 85.66,20.52,0 85.67,20.52,0 85.68,20.51,0 85.69,20.51,0 85.7,20.51,0 85.72,20.51,0 85.74,20.51,0 85.75,20.5,0 85.76,20.5,0 85.77,20.5,0 85.78,20.51,0 85.79,20.51,0 85.8,20.51,0 85.81,20.51,0 85.82,20.51,0 85.82,20.49,0 85.81,20.48,0 85.82,20.48,0 85.83,20.47,0 85.84,20.47,0 85.85,20.47,0 85.84,20.43,0 85.83,20.41,0 85.83,20.4,0 85.82,20.39,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jan 4, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.83,19.8,0 85.83,19.81,0 85.82,19.81,0 85.82,19.82,0 85.81,19.82,0 85.81,19.81,0 85.8,19.82,0 85.79,19.82,0 85.78,19.82,0 85.78,19.81,0 85.77,19.81,0 85.76,19.81,0 85.75,19.81,0 85.74,19.81,0 85.73,19.81,0 85.72,19.81,0 85.71,19.81,0 85.71,19.8,0 85.7,19.8,0 85.69,19.8,0 85.68,19.8,0 85.67,19.8,0 85.66,19.8,0 85.65,19.8,0 85.64,19.8,0 85.63,19.79,0 85.62,19.79,0 85.61,19.78,0 85.6,19.77,0 85.59,19.76,0 85.59,19.75,0 85.57,19.74,0 85.56,19.74,0 85.55,19.73,0 85.54,19.73,0 85.53,19.72,0 85.52,19.72,0 85.51,19.71,0 85.51,19.7,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jan 4, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.51,19.7,0 85.51,19.71,0 85.52,19.72,0 85.53,19.72,0 85.54,19.73,0 85.55,19.73,0 85.56,19.73,0 85.56,19.74,0 85.57,19.74,0 85.58,19.75,0 85.59,19.75,0 85.59,19.76,0 85.6,19.77,0 85.61,19.78,0 85.61,19.79,0 85.62,19.79,0 85.63,19.79,0 85.64,19.8,0 85.65,19.8,0 85.66,19.8,0 85.67,19.8,0 85.68,19.8,0 85.69,19.8,0 85.7,19.8,0 85.71,19.81,0 85.72,19.81,0 85.73,19.81,0 85.74,19.81,0 85.75,19.81,0 85.76,19.81,0 85.77,19.81,0 85.78,19.81,0 85.79,19.82,0 85.8,19.82,0 85.81,19.82,0 85.82,19.82,0 85.83,19.83,0 85.83,19.85,0 85.84,19.85,0 85.83,19.86,0 85.83,19.87,0 85.82,19.87,0 85.81,19.88,0 85.8,19.89,0 85.81,19.9,0 85.82,19.91,0 85.82,19.92,0 85.82,19.93,0 85.82,19.94,0 85.82,19.95,0 85.83,19.96,0 85.82,19.97,0 85.82,19.98,0 85.82,19.99,0 85.82,20,0 85.81,20.01,0 85.82,20.03,0 85.82,20.04,0 85.83,20.05,0 85.83,20.06,0 85.83,20.07,0 85.84,20.08,0 85.84,20.09,0 85.84,20.11,0 85.85,20.12,0 85.85,20.13,0 85.84,20.13,0 85.84,20.14,0 85.84,20.15,0 85.84,20.16,0 85.85,20.16,0 85.86,20.17,0 85.86,20.19,0 85.86,20.2,0 85.85,20.2,0 85.85,20.21,0 85.85,20.22,0 85.84,20.22,0 85.84,20.23,0 85.84,20.24,0 85.84,20.25,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jan 12, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.88,20.46,0 85.84,20.44,0 85.82,20.39,0 85.84,20.25,0 85.84,20.24,0 85.85,20.24,0 85.86,20.24,0 85.87,20.24,0 85.87,20.23,0 85.86,20.23,0 85.86,20.22,0 85.86,20.21,0 85.85,20.21,0 85.86,20.22,0 85.86,20.23,0 85.86,20.24,0 85.86,20.25,0 85.87,20.26,0 85.87,20.27,0 85.87,20.28,0 85.87,20.29,0 85.87,20.3,0 85.87,20.31,0 85.87,20.3,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jan 15, 2025 · motorcycling</name>
+      <styleUrl>#line-motorcycling</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.82,20.39,0 85.83,20.39,0 85.83,20.4,0 85.83,20.41,0 85.83,20.42,0 85.83,20.43,0 85.84,20.44,0 85.84,20.45,0 85.85,20.46,0 85.85,20.47,0 85.84,20.47,0 85.83,20.47,0 85.82,20.48,0 85.81,20.48,0 85.82,20.49,0 85.82,20.5,0 85.82,20.51,0 85.83,20.52,0 85.82,20.52,0 85.82,20.53,0 85.81,20.53,0 85.81,20.54,0 85.8,20.54,0 85.79,20.55,0 85.77,20.55,0 85.76,20.55,0 85.76,20.56,0 85.75,20.56,0 85.74,20.56,0 85.73,20.56,0 85.72,20.56,0 85.71,20.57,0 85.7,20.57,0 85.69,20.57,0 85.68,20.58,0 85.67,20.58,0 85.66,20.59,0 85.65,20.6,0 85.64,20.61,0 85.64,20.62,0 85.65,20.62,0 85.64,20.62,0 85.65,20.63,0 85.65,20.64,0 85.66,20.64,0 85.66,20.65,0 85.66,20.66,0 85.65,20.66,0 85.65,20.67,0 85.66,20.67,0 85.67,20.67,0 85.68,20.67,0 85.69,20.67,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jan 15, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.69,20.67,0 85.68,20.67,0 85.67,20.67,0 85.66,20.67,0 85.65,20.67,0 85.64,20.67,0 85.63,20.66,0 85.62,20.67,0 85.61,20.67,0 85.61,20.66,0 85.6,20.67,0 85.6,20.66,0 85.6,20.65,0 85.61,20.65,0 85.61,20.64,0 85.62,20.64,0 85.62,20.63,0 85.63,20.62,0 85.63,20.61,0 85.64,20.61,0 85.64,20.6,0 85.65,20.6,0 85.66,20.59,0 85.67,20.58,0 85.68,20.58,0 85.69,20.57,0 85.7,20.57,0 85.71,20.57,0 85.72,20.56,0 85.73,20.56,0 85.74,20.56,0 85.75,20.56,0 85.76,20.56,0 85.76,20.55,0 85.77,20.55,0 85.78,20.55,0 85.79,20.55,0 85.8,20.54,0 85.81,20.53,0 85.82,20.53,0 85.82,20.52,0 85.83,20.52,0 85.82,20.51,0 85.82,20.5,0 85.82,20.49,0 85.81,20.48,0 85.82,20.48,0 85.83,20.47,0 85.84,20.47,0 85.85,20.47,0 85.85,20.46,0 85.83,20.43,0 85.83,20.41,0 85.83,20.4,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jan 21, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.82,20.39,0 85.83,20.4,0 85.83,20.41,0 85.83,20.42,0 85.83,20.43,0 85.84,20.44,0 85.84,20.45,0 85.85,20.45,0 85.85,20.46,0 85.85,20.47,0 85.84,20.47,0 85.83,20.47,0 85.82,20.48,0 85.84,20.47,0 85.85,20.47,0 85.85,20.46,0 85.85,20.45,0 85.84,20.44,0 85.84,20.43,0 85.83,20.43,0 85.83,20.42,0 85.83,20.41,0 85.83,20.4,0 85.83,20.39,0 85.82,20.39,0 85.83,20.39,0 85.83,20.4,0 85.83,20.41,0 85.83,20.42,0 85.83,20.43,0 85.84,20.43,0 85.84,20.44,0 85.84,20.45,0 85.85,20.45,0 85.85,20.46,0 85.86,20.47,0 85.86,20.46,0 85.87,20.46,0 85.88,20.46,0 85.89,20.45,0 85.9,20.45,0 85.89,20.44,0 85.88,20.44,0 85.88,20.43,0 85.88,20.44,0 85.89,20.44,0 85.88,20.44,0 85.87,20.44,0 85.87,20.45,0 85.86,20.45,0 85.86,20.44,0 85.85,20.44,0 85.84,20.44,0 85.83,20.43,0 85.83,20.41,0 85.83,20.4,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jan 23, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.82,20.39,0 85.83,20.4,0 85.83,20.41,0 85.83,20.42,0 85.83,20.43,0 85.84,20.44,0 85.85,20.45,0 85.85,20.46,0 85.85,20.47,0 85.84,20.47,0 85.83,20.47,0 85.82,20.48,0 85.81,20.48,0 85.82,20.49,0 85.82,20.5,0 85.82,20.51,0 85.83,20.52,0 85.82,20.52,0 85.82,20.53,0 85.81,20.53,0 85.81,20.54,0 85.8,20.54,0 85.78,20.55,0 85.77,20.55,0 85.76,20.55,0 85.75,20.56,0 85.74,20.56,0 85.73,20.56,0 85.72,20.56,0 85.71,20.56,0 85.71,20.57,0 85.69,20.57,0 85.68,20.57,0 85.67,20.58,0 85.66,20.59,0 85.65,20.6,0 85.64,20.61,0 85.63,20.63,0 85.62,20.63,0 85.62,20.64,0 85.61,20.64,0 85.6,20.63,0 85.59,20.64,0 85.58,20.64,0 85.58,20.66,0 85.57,20.67,0 85.57,20.68,0 85.57,20.69,0 85.55,20.69,0 85.54,20.69,0 85.54,20.7,0 85.53,20.7,0 85.51,20.71,0 85.51,20.72,0 85.5,20.72,0 85.5,20.73,0 85.49,20.73,0 85.48,20.74,0 85.47,20.74,0 85.46,20.75,0 85.45,20.75,0 85.44,20.76,0 85.43,20.76,0 85.42,20.76,0 85.41,20.77,0 85.4,20.77,0 85.39,20.77,0 85.37,20.78,0 85.36,20.78,0 85.35,20.78,0 85.34,20.78,0 85.33,20.79,0 85.32,20.79,0 85.31,20.79,0 85.3,20.8,0 85.3,20.81,0 85.29,20.82,0 85.28,20.82,0 85.27,20.82,0 85.26,20.83,0 85.24,20.83,0 85.23,20.84,0 85.22,20.84,0 85.21,20.85,0 85.21,20.86,0 85.21,20.87,0 85.22,20.87,0 85.22,20.88,0 85.22,20.89,0 85.22,20.9,0 85.22,20.91,0 85.22,20.92,0 85.22,20.93,0 85.23,20.94,0 85.22,20.94,0 85.21,20.94,0 85.22,20.94,0 85.23,20.94,0 85.23,20.93,0 85.22,20.93,0 85.22,20.92,0 85.23,20.92,0 85.25,20.92,0 85.26,20.92,0 85.26,20.93,0 85.27,20.95,0 85.28,20.94,0 85.29,20.94,0 85.3,20.94,0 85.31,20.93,0 85.32,20.93,0 85.33,20.93,0 85.34,20.93,0 85.35,20.93,0 85.37,20.94,0 85.38,20.94,0 85.4,20.94,0 85.41,20.94,0 85.42,20.94,0 85.44,20.94,0 85.45,20.94,0 85.47,20.94,0 85.48,20.93,0 85.49,20.94,0 85.5,20.94,0 85.51,20.93,0 85.52,20.93,0 85.53,20.94,0 85.53,20.95,0 85.55,20.94,0 85.56,20.94,0 85.57,20.93,0 85.56,20.93,0 85.55,20.93,0 85.54,20.92,0 85.54,20.91,0 85.54,20.9,0 85.54,20.89,0 85.53,20.89,0 85.53,20.88,0 85.52,20.87,0 85.52,20.85,0 85.53,20.84,0 85.53,20.83,0 85.53,20.82,0 85.54,20.82,0 85.54,20.81,0 85.54,20.8,0 85.55,20.79,0 85.55,20.78,0 85.56,20.77,0 85.56,20.76,0 85.56,20.75,0 85.56,20.74,0 85.55,20.73,0 85.56,20.73,0 85.56,20.72,0 85.56,20.71,0 85.56,20.7,0 85.57,20.7,0 85.57,20.69,0 85.58,20.69,0 85.58,20.68,0 85.57,20.68,0 85.57,20.67,0 85.58,20.66,0 85.58,20.64,0 85.59,20.64,0 85.61,20.64,0 85.62,20.64,0 85.62,20.63,0 85.63,20.63,0 85.63,20.62,0 85.64,20.61,0 85.64,20.6,0 85.65,20.6,0 85.66,20.59,0 85.67,20.58,0 85.68,20.58,0 85.69,20.57,0 85.7,20.57,0 85.72,20.56,0 85.73,20.56,0 85.74,20.56,0 85.75,20.56,0 85.76,20.55,0 85.77,20.55,0 85.79,20.55,0 85.8,20.54,0 85.81,20.54,0 85.81,20.53,0 85.82,20.53,0 85.83,20.52,0 85.83,20.51,0 85.82,20.51,0 85.82,20.5,0 85.82,20.49,0 85.81,20.49,0 85.81,20.48,0 85.82,20.48,0 85.84,20.47,0 85.85,20.47,0 85.84,20.44,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jan 24, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>85.83,20.42,0 85.83,20.43,0 85.84,20.43,0 85.84,20.44,0 85.84,20.45,0 85.85,20.45,0 85.85,20.46,0 85.85,20.47,0 85.84,20.47,0 85.83,20.47,0 85.82,20.47,0 85.82,20.48,0 85.82,20.49,0 85.82,20.5,0 85.82,20.51,0 85.83,20.52,0 85.82,20.53,0 85.81,20.53,0 85.81,20.54,0 85.8,20.54,0 85.79,20.55,0 85.78,20.55,0 85.77,20.55,0 85.76,20.55,0 85.76,20.56,0 85.75,20.56,0 85.74,20.56,0 85.73,20.56,0 85.72,20.56,0 85.71,20.56,0 85.71,20.57,0 85.7,20.57,0 85.69,20.57,0 85.68,20.58,0 85.67,20.58,0 85.66,20.59,0 85.65,20.6,0 85.64,20.6,0 85.64,20.61,0 85.63,20.62,0 85.63,20.63,0 85.62,20.63,0 85.62,20.64,0 85.61,20.64,0 85.6,20.63,0 85.59,20.64,0 85.58,20.64,0 85.58,20.65,0 85.58,20.66,0 85.57,20.66,0 85.57,20.68,0 85.58,20.69,0 85.57,20.69,0 85.56,20.69,0 85.57,20.69,0 85.57,20.7,0 85.56,20.71,0 85.56,20.72,0 85.56,20.73,0 85.55,20.74,0 85.56,20.74,0 85.56,20.75,0 85.56,20.76,0 85.55,20.77,0 85.55,20.78,0 85.55,20.79,0 85.54,20.8,0 85.54,20.81,0 85.54,20.82,0 85.53,20.83,0 85.53,20.84,0 85.53,20.85,0 85.52,20.85,0 85.52,20.86,0 85.52,20.87,0 85.53,20.89,0 85.54,20.89,0 85.54,20.9,0 85.54,20.91,0 85.54,20.92,0 85.54,20.93,0 85.52,20.93,0 85.51,20.93,0 85.5,20.94,0 85.49,20.94,0 85.45,20.94,0 85.43,20.94,0 85.42,20.94,0 85.41,20.94,0 85.4,20.94,0 85.39,20.94,0 85.38,20.94,0 85.37,20.94,0 85.34,20.93,0 85.33,20.93,0 85.32,20.93,0 85.31,20.93,0 85.3,20.94,0 85.29,20.94,0 85.28,20.95,0 85.27,20.94,0 85.26,20.93,0 85.26,20.92,0 85.25,20.92,0 85.23,20.92,0 85.22,20.92,0 85.22,20.93,0 85.23,20.93,0 85.23,20.94,0 85.23,20.95,0 85.22,20.95,0 85.21,20.95,0 85.22,20.95,0 85.23,20.95,0 85.23,20.94,0 85.22,20.93,0 85.22,20.92,0 85.23,20.92,0 85.25,20.92,0 85.26,20.92,0 85.26,20.93,0 85.27,20.94,0 85.28,20.95,0 85.29,20.94,0 85.3,20.93,0 85.31,20.93,0 85.32,20.93,0 85.33,20.93,0 85.34,20.93,0 85.35,20.93,0 85.36,20.93,0 85.37,20.93,0 85.37,20.94,0 85.38,20.94,0 85.39,20.94,0 85.4,20.94,0 85.42,20.94,0 85.43,20.94,0 85.44,20.94,0 85.45,20.94,0 85.46,20.94,0 85.48,20.93,0 85.48,20.94,0 85.49,20.94,0 85.51,20.94,0 85.51,20.93,0 85.52,20.93,0 85.53,20.93,0 85.53,20.94,0 85.53,20.95,0 85.54,20.94,0 85.56,20.94,0 85.56,20.93,0 85.55,20.93,0 85.54,20.92,0 85.54,20.91,0 85.54,20.9,0 85.54,20.89,0 85.53,20.88,0 85.52,20.88,0 85.52,20.86,0 85.52,20.85,0 85.53,20.85,0 85.53,20.83,0 85.54,20.82,0 85.54,20.8,0 85.55,20.79,0 85.55,20.78,0 85.55,20.77,0 85.56,20.77,0 85.56,20.76,0 85.56,20.75,0 85.56,20.74,0 85.55,20.73,0 85.56,20.73,0 85.56,20.72,0 85.56,20.71,0 85.57,20.7,0 85.57,20.69,0 85.58,20.69,0 85.57,20.68,0 85.57,20.67,0 85.58,20.66,0 85.58,20.65,0 85.58,20.64,0 85.59,20.64,0 85.6,20.63,0 85.61,20.64,0 85.62,20.64,0 85.62,20.63,0 85.63,20.63,0 85.63,20.62,0 85.64,20.61,0 85.64,20.6,0 85.65,20.6,0 85.66,20.59,0 85.67,20.58,0 85.68,20.58,0 85.69,20.57,0 85.71,20.57,0 85.72,20.56,0 85.73,20.56,0 85.74,20.56,0 85.75,20.56,0 85.76,20.55,0 85.78,20.55,0 85.79,20.55,0 85.8,20.54,0 85.81,20.54,0 85.81,20.53,0 85.82,20.52,0 85.82,20.51,0 85.84,20.47,0 85.85,20.47,0 85.85,20.46,0 85.85,20.45,0 85.84,20.45,0 85.84,20.44,0 85.83,20.43,0 85.83,20.41,0 85.83,20.4,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jul 18, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>77.54,12.99,0 77.51,12.96,0 77.51,12.97,0 77.52,12.98,0 77.52,12.99,0 77.52,13,0 77.53,13.01,0 77.53,13.02,0 77.53,13.03,0 77.53,13.04,0 77.51,13.04,0 77.5,13.05,0 77.49,13.05,0 77.48,13.05,0 77.47,13.06,0 77.46,13.06,0 77.45,13.07,0 77.44,13.08,0 77.43,13.08,0 77.41,13.09,0 77.4,13.09,0 77.39,13.09,0 77.38,13.1,0 77.38,13.11,0 77.37,13.12,0 77.36,13.13,0 77.35,13.14,0 77.34,13.14,0 77.34,13.15,0 77.33,13.16,0 77.32,13.16,0 77.31,13.17,0 77.3,13.18,0 77.29,13.18,0 77.28,13.19,0 77.27,13.2,0 77.26,13.21,0 77.25,13.22,0 77.24,13.23,0 77.23,13.24,0 77.22,13.25,0 77.21,13.26,0 77.2,13.27,0 77.19,13.28,0 77.18,13.29,0 77.17,13.3,0 77.16,13.3,0 77.16,13.31,0 77.15,13.31,0 77.14,13.31,0 77.14,13.32,0 77.13,13.34,0 77.12,13.36,0 77.12,13.37,0 77.1,13.38,0 77.09,13.39,0 77.09,13.4,0 77.08,13.41,0 77.07,13.43,0 77.06,13.44,0 77.05,13.45,0 77.04,13.46,0 77.04,13.47,0 77.03,13.49,0 77.01,13.49,0 77.01,13.51,0 77,13.52,0 77,13.54,0 76.99,13.55,0 76.98,13.57,0 76.98,13.58,0 76.97,13.6,0 76.96,13.6,0 76.96,13.61,0 76.95,13.61,0 76.95,13.62,0 76.94,13.63,0 76.93,13.65,0 76.92,13.66,0 76.92,13.68,0 76.92,13.69,0 76.91,13.7,0 76.91,13.72,0 76.9,13.73,0 76.89,13.74,0 76.88,13.75,0 76.87,13.76,0 76.85,13.77,0 76.83,13.78,0 76.82,13.78,0 76.81,13.79,0 76.8,13.8,0 76.79,13.81,0 76.78,13.82,0 76.76,13.83,0 76.75,13.84,0 76.73,13.84,0 76.72,13.85,0 76.72,13.86,0 76.71,13.86,0 76.7,13.87,0 76.69,13.88,0 76.68,13.89,0 76.67,13.9,0 76.66,13.91,0 76.65,13.92,0 76.63,13.93,0 76.63,13.95,0 76.62,13.96,0 76.61,13.97,0 76.6,13.98,0 76.59,13.99,0 76.59,14,0 76.58,14.02,0 76.58,14.03,0 76.57,14.04,0 76.56,14.05,0 76.56,14.06,0 76.55,14.07,0 76.54,14.08,0 76.54,14.09,0 76.53,14.1,0 76.52,14.12,0 76.51,14.12,0 76.51,14.13,0 76.5,14.13,0 76.51,14.13,0 76.5,14.13,0 76.49,14.14,0 76.48,14.16,0 76.47,14.17,0 76.47,14.18,0 76.47,14.19,0 76.46,14.21,0 76.46,14.22,0 76.44,14.24,0 76.43,14.24,0 76.42,14.25,0 76.41,14.27,0 76.39,14.27,0 76.37,14.27,0 76.35,14.26,0 76.33,14.27,0 76.31,14.28,0 76.3,14.28,0 76.28,14.29,0 76.26,14.3,0 76.25,14.31,0 76.23,14.32,0 76.21,14.34,0 76.2,14.35,0 76.2,14.36,0 76.18,14.37,0 76.17,14.37,0 76.15,14.37,0 76.13,14.37,0 76.12,14.37,0 76.11,14.38,0 76.09,14.38,0 76.08,14.38,0 76.06,14.39,0 76.04,14.39,0 76.03,14.4,0 76.01,14.4,0 75.99,14.41,0 75.98,14.42,0 75.96,14.43,0 75.95,14.44,0 75.93,14.43,0 75.92,14.43,0 75.9,14.44,0 75.88,14.45,0 75.87,14.45,0 75.87,14.46,0 75.86,14.46,0 75.85,14.46,0 75.83,14.47,0 75.81,14.48,0 75.8,14.48,0 75.78,14.49,0 75.77,14.51,0 75.77,14.53,0 75.76,14.54,0 75.75,14.55,0 75.73,14.56,0 75.72,14.56,0 75.71,14.56,0 75.69,14.57,0 75.67,14.58,0 75.66,14.59,0 75.64,14.59,0 75.63,14.6,0 75.56,14.66,0 75.55,14.67,0 75.51,14.71,0 75.48,14.72,0 75.47,14.73,0 75.29,14.9,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jul 20, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>74.31,14.55,0 74.32,14.55,0 74.32,14.56,0 74.32,14.57,0 74.32,14.58,0 74.31,14.58,0 74.31,14.59,0 74.31,14.6,0 74.31,14.61,0 74.31,14.62,0 74.3,14.63,0 74.3,14.64,0 74.3,14.65,0 74.3,14.66,0 74.31,14.66,0 74.31,14.67,0 74.32,14.68,0 74.31,14.68,0 74.31,14.69,0 74.3,14.71,0 74.29,14.71,0 74.29,14.72,0 74.28,14.73,0 74.26,14.74,0 74.25,14.75,0 74.24,14.76,0 74.23,14.76,0 74.22,14.76,0 74.2,14.77,0 74.19,14.77,0 74.18,14.77,0 74.16,14.77,0 74.15,14.77,0 74.15,14.78,0 74.14,14.78,0 74.13,14.79,0 74.12,14.79,0 74.12,14.8,0 74.13,14.81,0 74.13,14.82,0 74.13,14.83,0 74.13,14.84,0 74.13,14.85,0 74.13,14.86,0 74.12,14.87,0 74.12,14.88,0 74.11,14.89,0 74.1,14.9,0 74.1,14.91,0 74.07,14.93,0 74.06,14.93,0 74.06,14.94,0 74.06,14.95,0 74.05,14.97,0 74.05,14.98,0 74.05,14.99,0 74.04,15,0 74.04,15.01,0 74.03,15.02,0 74.03,15.03,0 74.03,15.05,0 74.03,15.06,0 74.03,15.07,0 74.03,15.08,0 74.03,15.09,0 74.03,15.1,0 74.04,15.11,0 74.03,15.12,0 74.03,15.14,0 74.02,15.15,0 74.01,15.16,0 74.01,15.17,0 74,15.17,0 74,15.18,0 74,15.19,0 74,15.2,0 73.99,15.2,0 73.99,15.21,0 73.98,15.21,0 73.98,15.22,0 73.98,15.23,0 73.98,15.24,0 73.97,15.24,0 73.97,15.25,0 73.96,15.25,0 73.95,15.26,0 73.95,15.27,0 73.95,15.29,0 73.95,15.3,0 73.94,15.31,0 73.93,15.33,0 73.93,15.34,0 73.93,15.35,0 73.93,15.36,0 73.93,15.37,0 73.92,15.38,0 73.91,15.38,0 73.9,15.38,0 73.89,15.37,0 73.89,15.38,0 73.88,15.38,0 73.87,15.39,0 73.86,15.39,0 73.85,15.39,0 73.84,15.39,0 73.83,15.39,0 73.82,15.39,0 73.82,15.38,0 73.81,15.39,0 73.8,15.4,0 73.8,15.41,0 73.79,15.41,0 73.8,15.41,0 73.8,15.4,0 73.81,15.39,0 73.81,15.4,0 73.8,15.4,0 73.81,15.4,0 73.82,15.4,0 73.83,15.4,0 73.84,15.4,0 73.85,15.4,0 73.86,15.4,0 73.87,15.4,0 73.88,15.4,0 73.9,15.4,0 73.91,15.4,0 73.91,15.41,0 73.9,15.42,0 73.89,15.43,0 73.88,15.44,0 73.87,15.44,0 73.86,15.45,0 73.87,15.46,0 73.86,15.46,0 73.85,15.47,0 73.85,15.48,0 73.84,15.49,0 73.84,15.5,0 73.83,15.51,0 73.83,15.52,0 73.83,15.53,0 73.82,15.53,0 73.82,15.54,0 73.81,15.54,0 73.8,15.55,0 73.79,15.55,0 73.78,15.55,0 73.78,15.56,0 73.77,15.56,0 73.76,15.56,0 73.76,15.57,0 73.77,15.57,0 73.76,15.57,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jul 21, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>73.76,15.58,0 73.76,15.57,0 73.76,15.56,0 73.77,15.56,0 73.78,15.56,0 73.78,15.55,0 73.79,15.55,0 73.8,15.55,0 73.81,15.54,0 73.82,15.54,0 73.82,15.53,0 73.83,15.53,0 73.83,15.52,0 73.84,15.51,0 73.84,15.5,0 73.84,15.49,0 73.85,15.49,0 73.86,15.5,0 73.87,15.5,0 73.89,15.49,0 73.9,15.49,0 73.91,15.49,0 73.92,15.5,0 73.93,15.5,0 73.94,15.5,0 73.94,15.49,0 73.95,15.49,0 73.96,15.49,0 73.96,15.48,0 73.97,15.45,0 73.97,15.44,0 73.98,15.44,0 73.99,15.43,0 73.99,15.42,0 73.99,15.41,0 74.01,15.41,0 74.02,15.41,0 74.03,15.41,0 74.04,15.42,0 74.06,15.42,0 74.07,15.42,0 74.08,15.41,0 74.09,15.41,0 74.1,15.4,0 74.22,15.37,0 74.23,15.37,0 74.23,15.36,0 74.24,15.35,0 74.24,15.34,0 74.25,15.34,0 74.24,15.34,0 74.24,15.35,0 74.23,15.36,0 74.24,15.37,0 74.23,15.37,0 74.23,15.38,0 74.3,15.44,0 74.32,15.44,0 74.38,15.43,0 74.38,15.44,0 74.39,15.44,0 74.4,15.45,0 74.41,15.45,0 74.43,15.44,0 74.44,15.44,0 74.45,15.43,0 74.47,15.43,0 74.48,15.43,0 74.48,15.42,0 74.49,15.42,0 74.5,15.42,0 74.5,15.43,0 74.88,15.44,0 74.9,15.45,0 74.91,15.45,0 74.92,15.45,0 74.93,15.46,0 74.96,15.46,0 74.97,15.46,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jul 24, 2025 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>126.45,37.45,0 126.55,37.52,0 126.6,37.55,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>May 28, 2026 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-75.1,40.93,0 -75.09,40.93,0 -75.09,40.92,0 -75.1,40.92,0 -75.58,41.08,0 -75.57,41.07,0 -75.42,41.07,0 -75.4,41.07,0 -75.39,41.08,0 -76.17,43.05,0 -76.16,43.05,0 -76.15,43.05,0 -76.15,43.04,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>May 29, 2026 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-79.05,43.08,0 -79.06,43.08,0 -79.06,43.09,0 -79.07,43.09,0 -79.06,43.09,0 -78.83,42.95,0 -78.82,42.95,0 -78.81,42.94,0 -78.81,42.93,0 -78.76,42.93,0 -78.74,42.93,0 -78.7,42.94,0 -78.7,42.96,0 -78.69,42.97,0 -77.08,42.16,0 -77.07,42.16,0 -76.41,42.03,0 -76.41,42.02,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jun 19, 2026 · in passenger vehicle</name>
+      <styleUrl>#line-in-passenger-vehicle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-121.7,38.55,0 -121.13,38.87,0 -121.08,38.91,0</coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Places</name>
+    <open>1</open>
+    <visibility>1</visibility>
+  <Folder>
+    <name>India</name>
+    <open>0</open>
+    <Folder>
+      <name>Odisha (35d)</name>
+      <open>0</open>
+      <Placemark>
+        <name>Bhubaneswar</name>
+        <description><![CDATA[<p>Home</p>
+<p><b>143</b> visits · <b>34</b> days<br/>
+Dec 29, 2024 — Jul 8, 2025</p>
+<p style="color:#8C9AA8">Odisha, India</p>]]></description>
+        <styleUrl>#pl-in-od-bbi</styleUrl>
+        <Point><coordinates>85.8245,20.2961,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Puri</name>
+        <description><![CDATA[<p>Go-to place for a weekend getaway. This city belongs to Lord Jagannath. <i>Kalia</i>, beaches, mountains, and forests keep me alive; and I get two of them here. Mu ultimate place of rest.</p>
+<p><b>5</b> visits · <b>2</b> days<br/>
+Jan 4, 2025 — Jun 29, 2025</p>
+<p style="color:#8C9AA8">Odisha, India</p>]]></description>
+        <styleUrl>#pl-in-od-pur</styleUrl>
+        <Point><coordinates>85.8315,19.8134,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Jajpur</name>
+        <description><![CDATA[<p>Lived here from 2009-2010. A quiet town in Odisha where Dad was posted.</p>
+<p style="color:#8C9AA8">Odisha, India</p>]]></description>
+        <styleUrl>#pl-in-od-jjp</styleUrl>
+        <Point><coordinates>86.33,20.85,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Cuttack</name>
+        <description><![CDATA[<p>Lived here from 2010-2011. The silver city of Odisha, known for its filigree work and the Barabati Fort.</p>
+<p><b>10</b> visits · <b>7</b> days<br/>
+Jan 1, 2025 — Jan 25, 2025</p>
+<p style="color:#8C9AA8">Odisha, India</p>]]></description>
+        <styleUrl>#pl-in-od-ctc</styleUrl>
+        <Point><coordinates>85.883,20.4625,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>West Bengal</name>
+      <open>0</open>
+      <Placemark>
+        <name>Kolkata</name>
+        <description><![CDATA[<p>Dad got transferred here in 2004. I was 4 years old. I don't remember much of it. I remember the house we lived in, the park, the school, and the friends I made. Kol was my first home away from home. It was the first flash of a metro life, a fast and busy life. I loved it here.</p>
+<p style="color:#8C9AA8">West Bengal, India</p>]]></description>
+        <styleUrl>#pl-in-wb-kol</styleUrl>
+        <Point><coordinates>88.3639,22.5726,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Darjeeling</name>
+        <description><![CDATA[<p>Visited here with my uncle, parents, and family friends. We visited Darjeeling, Gangtok, and Kalimpong. The trip was amazing. I love mountains and I remember a guide showing us Tiger Hill, the highest point in Darjeeling.</p>
+<p style="color:#8C9AA8">West Bengal, India</p>]]></description>
+        <styleUrl>#pl-in-wb-drl</styleUrl>
+        <Point><coordinates>88.2627,27.036,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Asansol</name>
+        <description><![CDATA[<p>Lived here from 2007-2009. An industrial city in West Bengal where Dad was posted.</p>
+<p style="color:#8C9AA8">West Bengal, India</p>]]></description>
+        <styleUrl>#pl-in-wb-asn</styleUrl>
+        <Point><coordinates>86.9833,23.6833,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Jharkhand</name>
+      <open>0</open>
+      <Placemark>
+        <name>Jamshedpur</name>
+        <description><![CDATA[<p>We came here from Jajpur in 2011. JSR has been the place of ultimate growth for me, both physically and emotionally. I stayed here for 5 years, during high school and lived my whole school life here. I made some of the best friends here. I became what I am here. Love this place.</p>
+<p style="color:#8C9AA8">Jharkhand, India</p>]]></description>
+        <styleUrl>#pl-in-jh-jsr</styleUrl>
+        <Point><coordinates>86.1833,22.8,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Telangana</name>
+      <open>0</open>
+      <Placemark>
+        <name>Hyderabad</name>
+        <description><![CDATA[<p>Lived here from 2016- 2018. We came here since Dad wanted me to prepare for JEE and he got us transferred from JSR. While the place is nice and lovely, I felt mostly lonely here. Made some best friends here. Started binge-watching TV shows here. I was 16 when I came here.</p>
+<p style="color:#8C9AA8">Telangana, India</p>]]></description>
+        <styleUrl>#pl-in-ts-hyd</styleUrl>
+        <Point><coordinates>78.4744,17.3753,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Chandigarh</name>
+      <open>0</open>
+      <Placemark>
+        <name>Chandigarh</name>
+        <description><![CDATA[<p>After 2018, not being able to get into IIT, I initially came here alone to study at Allen Career Institute. Later on, my mom came with me. The city is structured, disciplined, and organized, unlike other Indian cities.</p>
+<p style="color:#8C9AA8">Chandigarh, India</p>]]></description>
+        <styleUrl>#pl-in-ch-chd</styleUrl>
+        <Point><coordinates>76.7794,30.7333,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Karnataka (11d)</name>
+      <open>0</open>
+      <Placemark>
+        <name>Bangalore</name>
+        <description><![CDATA[<p>Lived and worked here from 2018- 2020, and 2023-2024. The weather is amazing.</p>
+<p><b>31</b> visits · <b>9</b> days<br/>
+Jul 9, 2025 — Jul 22, 2025</p>
+<p style="color:#8C9AA8">Karnataka, India</p>]]></description>
+        <styleUrl>#pl-in-ka-blr</styleUrl>
+        <Point><coordinates>77.5946,12.9716,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Gokarna</name>
+        <description><![CDATA[<p>The ultimate StackIt trip. The trip was amazing. The beaches were absolutely clean and beautiful.</p>
+<p><b>4</b> visits · <b>2</b> days<br/>
+Jul 19, 2025 — Jul 20, 2025</p>
+<p style="color:#8C9AA8">Karnataka, India</p>]]></description>
+        <styleUrl>#pl-in-ka-gkr</styleUrl>
+        <Point><coordinates>74.3184,14.5479,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Mangalore</name>
+        <description><![CDATA[<p>An escape from reality. Visited here with Abinash, the true partner in trips. This trip was an interlude, a thought back to the past, a break from whatever was happening.</p>
+<p style="color:#8C9AA8">Karnataka, India</p>]]></description>
+        <styleUrl>#pl-in-ka-mlr</styleUrl>
+        <Point><coordinates>74.856,12.9141,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Himachal Pradesh</name>
+      <open>0</open>
+      <Placemark>
+        <name>Shimla</name>
+        <description><![CDATA[<p>Visited here in 2019 while living in Chandigarh. The city is beautiful. I love mountains and the city is surrounded by them. I remember the mall road, the church, and the toy train. I was 18.</p>
+<p style="color:#8C9AA8">Himachal Pradesh, India</p>]]></description>
+        <styleUrl>#pl-in-hp-sml</styleUrl>
+        <Point><coordinates>77.1734,31.1048,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Delhi</name>
+      <open>0</open>
+      <Placemark>
+        <name>New Delhi</name>
+        <description><![CDATA[<p>The heart of the country. Been here tons of times. Love the city, the history, the culture, the food, and the people.</p>
+<p style="color:#8C9AA8">Delhi, India</p>]]></description>
+        <styleUrl>#pl-in-dl-del</styleUrl>
+        <Point><coordinates>77.209,28.6139,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Goa (2d)</name>
+      <open>0</open>
+      <Placemark>
+        <name>Goa</name>
+        <description><![CDATA[<p>The ultimate boys trip with my boi Abinash. Awesome get out. Visited in lockdown and had a ton of fun for 3- 4 days. Been here three times now. Twice with Mahak and Tushar! The ultimate getaway.</p>
+<p><b>11</b> visits · <b>2</b> days<br/>
+Jul 20, 2025 — Jul 21, 2025</p>
+<p style="color:#8C9AA8">Goa, India</p>]]></description>
+        <styleUrl>#pl-in-ga-goa</styleUrl>
+        <Point><coordinates>74.124,15.2993,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Sikkim</name>
+      <open>0</open>
+      <Placemark>
+        <name>Gangtok</name>
+        <description><![CDATA[<p>Visited here with my uncle, parents, and family friends. I was 8-9 years old.</p>
+<p style="color:#8C9AA8">Sikkim, India</p>]]></description>
+        <styleUrl>#pl-in-sk-gtg</styleUrl>
+        <Point><coordinates>88.6167,27.3333,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Jammu &amp; Kashmir</name>
+      <open>0</open>
+      <Placemark>
+        <name>Jammu</name>
+        <description><![CDATA[<p>A classic childhood trip with parents, family and family friends. We visited Vaishno Devi temple, a sacred Hindu temple dedicated to the Hindu Goddess, located in Katra at the Trikuta Mountains within Jammu and Kashmir. The temple is at an altitude of 5200 ft and a distance of approximately 12 km from Katra. I saw and sat on helicopters for the first time. I was 10.</p>
+<p style="color:#8C9AA8">Jammu &amp; Kashmir, India</p>]]></description>
+        <styleUrl>#pl-in-jk-jmu</styleUrl>
+        <Point><coordinates>74.85,32.7333,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Kashmir</name>
+        <description><![CDATA[<p>A classic autumn break with my family. Jannat agar kahi hai toh yahi hai.</p>
+<p style="color:#8C9AA8">Jammu &amp; Kashmir, India</p>]]></description>
+        <styleUrl>#pl-in-jk-ksh</styleUrl>
+        <Point><coordinates>74.7973,34.0837,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Puducherry</name>
+      <open>0</open>
+      <Placemark>
+        <name>Puducherry</name>
+        <description><![CDATA[<p>Visited here when I was small. The French colony is beautiful. The beaches are amazing. Recently, I visited here with Abinash. The city is calm and peaceful, albeit a little dirty.</p>
+<p style="color:#8C9AA8">Puducherry, India</p>]]></description>
+        <styleUrl>#pl-in-py-pud</styleUrl>
+        <Point><coordinates>79.8333,11.9333,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Uttar Pradesh</name>
+      <open>0</open>
+      <Placemark>
+        <name>Agra</name>
+        <description><![CDATA[<p>Part of the Jammu trip. A classic childhood trip with parents, family and family friends. I love old cities, the magic, the history and the charisma mesmerizes me. There are stories imprinted everywhere in old cities like Agra, and Delhi. Loved it here.</p>
+<p style="color:#8C9AA8">Uttar Pradesh, India</p>]]></description>
+        <styleUrl>#pl-in-up-agr</styleUrl>
+        <Point><coordinates>78.0081,27.1767,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Mathura</name>
+        <description><![CDATA[<p>Part of the Agra trip. The birthplace of Lord Krishna. The city is steeped in mythology and devotion.</p>
+<p style="color:#8C9AA8">Uttar Pradesh, India</p>]]></description>
+        <styleUrl>#pl-in-up-mth</styleUrl>
+        <Point><coordinates>77.6737,27.4924,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Vrindavan</name>
+        <description><![CDATA[<p>Part of the Agra trip. The land where Krishna spent his childhood. Temples everywhere and an atmosphere of pure bhakti.</p>
+<p style="color:#8C9AA8">Uttar Pradesh, India</p>]]></description>
+        <styleUrl>#pl-in-up-vrn</styleUrl>
+        <Point><coordinates>77.7,27.58,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Uttarakhand</name>
+      <open>0</open>
+      <Placemark>
+        <name>Haridwar</name>
+        <description><![CDATA[<p>Part of the Kedarnath trip. Visited here for a day. The Ganga Aarti was amazing. It made me so calm and peaceful. If I had one wish, I would spend it living near the Ganga ghat.</p>
+<p style="color:#8C9AA8">Uttarakhand, India</p>]]></description>
+        <styleUrl>#pl-in-uk-hrd</styleUrl>
+        <Point><coordinates>78.1642,29.9457,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Kedarnath</name>
+        <description><![CDATA[<p>My ultimate ZNMD trip with my best mates from high school. Trekked, partied, chilled and had a ton of fun. The trek was amazing and the view from the top was breathtaking. It is an extremely important and pious Hindu pilgrimage site. Booking tickets for my parents right now! :p</p>
+<p style="color:#8C9AA8">Uttarakhand, India</p>]]></description>
+        <styleUrl>#pl-in-uk-ked</styleUrl>
+        <Point><coordinates>79.0661,30.7342,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Rishikesh</name>
+        <description><![CDATA[<p>The yoga capital of the world. A spiritual town on the banks of the Ganga, surrounded by the Himalayas.</p>
+<p style="color:#8C9AA8">Uttarakhand, India</p>]]></description>
+        <styleUrl>#pl-in-uk-rsh</styleUrl>
+        <Point><coordinates>78.2676,30.0869,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Maharashtra (1d)</name>
+      <open>0</open>
+      <Placemark>
+        <name>Mumbai</name>
+        <description><![CDATA[<p>One of the best trips I had with Abinash and Smruti. We couldn't crack IIT, but got to visit Mood Indigo IIT Bombay xD, one of the best fests in India. We partied a lot! I got to know a lot about myself here.</p>
+<p><b>2</b> visits · <b>1</b> day<br/>
+Dec 28, 2024 — Dec 28, 2024</p>
+<p style="color:#8C9AA8">Maharashtra, India</p>]]></description>
+        <styleUrl>#pl-in-mh-mum</styleUrl>
+        <Point><coordinates>72.8777,19.076,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Gujarat</name>
+      <open>0</open>
+      <Placemark>
+        <name>Ahmedabad</name>
+        <description><![CDATA[<p>Visited here with my family. The city is beautiful. I was here because Sneha had a test here. The city is clean and organized.</p>
+<p style="color:#8C9AA8">Gujarat, India</p>]]></description>
+        <styleUrl>#pl-in-gj-ahm</styleUrl>
+        <Point><coordinates>72.5714,23.0225,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Dwarka</name>
+        <description><![CDATA[<p>The holy city. This was a part of the Gujarat trip. The city, the people, and I, belong to the one and only Krishna, the creator of the universe.</p>
+<p style="color:#8C9AA8">Gujarat, India</p>]]></description>
+        <styleUrl>#pl-in-gj-dwk</styleUrl>
+        <Point><coordinates>68.9678,22.2394,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Andhra Pradesh</name>
+      <open>0</open>
+      <Placemark>
+        <name>Vishakhapatnam</name>
+        <description><![CDATA[<p>A weekend getaway with a friend. The city of destiny with beautiful beaches and a vibrant port.</p>
+<p style="color:#8C9AA8">Andhra Pradesh, India</p>]]></description>
+        <styleUrl>#pl-in-ap-vtz</styleUrl>
+        <Point><coordinates>83.2185,17.6868,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Tamil Nadu</name>
+      <open>0</open>
+      <Placemark>
+        <name>Rameshwaram</name>
+        <description><![CDATA[<p>The holy city. This was a part of the Tamil Nadu trip. The city is beautiful. The beaches are amazing. The city is calm and peaceful.</p>
+<p style="color:#8C9AA8">Tamil Nadu, India</p>]]></description>
+        <styleUrl>#pl-in-tn-rms</styleUrl>
+        <Point><coordinates>79.3129,9.2876,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Madurai</name>
+        <description><![CDATA[<p>Visited here with my family. The old Meenakshi temple is beautiful. Part of the Tamil Nadu trip.</p>
+<p style="color:#8C9AA8">Tamil Nadu, India</p>]]></description>
+        <styleUrl>#pl-in-tn-mad</styleUrl>
+        <Point><coordinates>78.2769,10.9273,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+  </Folder>
+  <Folder>
+    <name>United Arab Emirates</name>
+    <open>0</open>
+    <Folder>
+      <name>Dubai</name>
+      <open>0</open>
+      <Placemark>
+        <name>Dubai</name>
+        <description><![CDATA[<p>My first international trip and Smruti brought me here. Dubai is so calm, clean and beautiful. I loved the city and would be visiting again.</p>
+<p style="color:#8C9AA8">Dubai, United Arab Emirates</p>]]></description>
+        <styleUrl>#pl-ae-du-dxb</styleUrl>
+        <Point><coordinates>55.296249,25.276987,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+  </Folder>
+  <Folder>
+    <name>South Korea</name>
+    <open>0</open>
+    <Folder>
+      <name>Seoul (18d)</name>
+      <open>0</open>
+      <Placemark>
+        <name>Seoul</name>
+        <description><![CDATA[<p>Internship at Authentic: 1 month at Seoul- a workation. Amazing experience- explored the city, the culture and loved working with an amazing team of engineers and designers. The culture is vibrant, the food is delicious, and the people are friendly. Also attended Kanye's concert here</p>
+<p><b>35</b> visits · <b>18</b> days<br/>
+Jul 24, 2025 — Aug 14, 2025</p>
+<p style="color:#8C9AA8">Seoul, South Korea</p>]]></description>
+        <styleUrl>#pl-kr-se-icn</styleUrl>
+        <Point><coordinates>126.978,37.5665,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+  </Folder>
+  <Folder>
+    <name>USA</name>
+    <open>0</open>
+    <Folder>
+      <name>New York (6d)</name>
+      <open>0</open>
+      <Placemark>
+        <name>New York City</name>
+        <description><![CDATA[<p>New Home</p>
+<p><b>5</b> visits · <b>4</b> days<br/>
+Mar 23, 2025 — Jan 3, 2026</p>
+<p style="color:#8C9AA8">New York, USA</p>]]></description>
+        <styleUrl>#pl-us-ny-nyc</styleUrl>
+        <Point><coordinates>-73.7797,40.6446,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Finger Lakes</name>
+        <description><![CDATA[<p>A trip with friends in early December to experience fresh snowfall and hike in a snow-covered mountain in upstate NY. The winter landscape was breathtaking.</p>
+<p style="color:#8C9AA8">New York, USA</p>]]></description>
+        <styleUrl>#pl-us-ny-flx</styleUrl>
+        <Point><coordinates>-76.8,42.7,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Niagara Falls</name>
+        <description><![CDATA[<p><i>Not yet written up.</i></p>
+<p><b>3</b> visits · <b>1</b> day<br/>
+May 28, 2026 — May 28, 2026</p>
+<p style="color:#8C9AA8">New York, USA</p>]]></description>
+        <styleUrl>#pl-us-ny-nfl</styleUrl>
+        <Point><coordinates>-79.0377,43.0962,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Buffalo</name>
+        <description><![CDATA[<p><i>Not yet written up.</i></p>
+<p><b>1</b> visit · <b>1</b> day<br/>
+May 29, 2026 — May 29, 2026</p>
+<p style="color:#8C9AA8">New York, USA</p>]]></description>
+        <styleUrl>#pl-us-ny-buf</styleUrl>
+        <Point><coordinates>-78.8784,42.8864,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Pennsylvania (3d)</name>
+      <open>0</open>
+      <Placemark>
+        <name>Philadelphia</name>
+        <description><![CDATA[<p>A classic field trip by school. The city of brotherly love with rich American history.</p>
+<p><b>1</b> visit · <b>1</b> day<br/>
+Sep 13, 2025 — Sep 13, 2025</p>
+<p style="color:#8C9AA8">Pennsylvania, USA</p>]]></description>
+        <styleUrl>#pl-us-pa-phl</styleUrl>
+        <Point><coordinates>-75.1652,39.9526,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Poconos</name>
+        <description><![CDATA[<p>A trip to a ski resort where I learned snowboarding. My first time on the slopes and an unforgettable experience in the mountains.</p>
+<p><b>4</b> visits · <b>2</b> days<br/>
+Jan 9, 2026 — May 28, 2026</p>
+<p style="color:#8C9AA8">Pennsylvania, USA</p>]]></description>
+        <styleUrl>#pl-us-pa-poc</styleUrl>
+        <Point><coordinates>-75.2479,41.0534,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>New Jersey (177d)</name>
+      <open>0</open>
+      <Placemark>
+        <name>Atlantic City</name>
+        <description><![CDATA[<p>The gambling capital of the East Coast. Boardwalks, casinos, and ocean views.</p>
+<p><b>1</b> visit · <b>1</b> day<br/>
+Nov 2, 2025 — Nov 2, 2025</p>
+<p style="color:#8C9AA8">New Jersey, USA</p>]]></description>
+        <styleUrl>#pl-us-nj-acy</styleUrl>
+        <Point><coordinates>-74.4229,39.3643,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Jersey City</name>
+        <description><![CDATA[<p>Home &lt;3</p>
+<p><b>361</b> visits · <b>176</b> days<br/>
+Sep 30, 2024 — May 30, 2026</p>
+<p style="color:#8C9AA8">New Jersey, USA</p>]]></description>
+        <styleUrl>#pl-us-nj-jcy</styleUrl>
+        <Point><coordinates>-74.0431,40.7178,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>California (52d)</name>
+      <open>0</open>
+      <Placemark>
+        <name>San Francisco</name>
+        <description><![CDATA[<p>Summer Internship here for a month in 2025. The city is beautiful. SF has more country vibes than NY. Came back in 2026 — New Home &lt;3</p>
+<p><b>63</b> visits · <b>40</b> days<br/>
+Jun 9, 2025 — Aug 21, 2026</p>
+<p style="color:#8C9AA8">California, USA</p>]]></description>
+        <styleUrl>#pl-us-ca-sfo</styleUrl>
+        <Point><coordinates>-122.4194,37.7749,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Healdsburg</name>
+        <description><![CDATA[<p>Part of World Builder residency in Edge City Esmeralda. A month-long expedition exploring creativity and community in the heart of Sonoma wine country.</p>
+<p><b>24</b> visits · <b>12</b> days<br/>
+May 25, 2025 — Jun 20, 2025</p>
+<p style="color:#8C9AA8">California, USA</p>]]></description>
+        <styleUrl>#pl-us-ca-hlb</styleUrl>
+        <Point><coordinates>-122.8697,38.6105,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+  </Folder>
+  </Folder>
+  <Folder>
+    <name>Regions</name>
+    <open>0</open>
+    <visibility>0</visibility>
+    <Placemark>
+      <name>Odisha</name>
+      <description><![CDATA[<p>Bhubaneswar · Puri · Jajpur · Cuttack</p><p><b>35</b> days · Dec 29, 2024 — Jul 8, 2025</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>85.8245,20.2961,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>West Bengal</name>
+      <description><![CDATA[<p>Kolkata · Darjeeling · Asansol</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>88.3639,22.5726,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Jharkhand</name>
+      <description><![CDATA[<p>Jamshedpur</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>86.1833,22.8,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Telangana</name>
+      <description><![CDATA[<p>Hyderabad</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>78.4744,17.3753,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Chandigarh</name>
+      <description><![CDATA[<p>Chandigarh</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>76.7794,30.7333,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Karnataka</name>
+      <description><![CDATA[<p>Bangalore · Gokarna · Mangalore</p><p><b>11</b> days · Jul 9, 2025 — Jul 22, 2025</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>77.5946,12.9716,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Himachal Pradesh</name>
+      <description><![CDATA[<p>Shimla</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>77.1734,31.1048,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Delhi</name>
+      <description><![CDATA[<p>New Delhi</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>77.209,28.6139,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Goa</name>
+      <description><![CDATA[<p>Goa</p><p><b>2</b> days · Jul 20, 2025 — Jul 21, 2025</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>74.124,15.2993,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Sikkim</name>
+      <description><![CDATA[<p>Gangtok</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>88.6167,27.3333,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Jammu &amp; Kashmir</name>
+      <description><![CDATA[<p>Jammu · Kashmir</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>74.85,32.7333,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Puducherry</name>
+      <description><![CDATA[<p>Puducherry</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>79.8333,11.9333,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Uttar Pradesh</name>
+      <description><![CDATA[<p>Agra · Mathura · Vrindavan</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>78.0081,27.1767,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Uttarakhand</name>
+      <description><![CDATA[<p>Haridwar · Kedarnath · Rishikesh</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>78.1642,29.9457,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Maharashtra</name>
+      <description><![CDATA[<p>Mumbai</p><p><b>1</b> days · Dec 28, 2024 — Dec 28, 2024</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>72.8777,19.076,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Gujarat</name>
+      <description><![CDATA[<p>Ahmedabad · Dwarka</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>72.5714,23.0225,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Andhra Pradesh</name>
+      <description><![CDATA[<p>Vishakhapatnam</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>83.2185,17.6868,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Tamil Nadu</name>
+      <description><![CDATA[<p>Rameshwaram · Madurai</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>79.3129,9.2876,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Dubai</name>
+      <description><![CDATA[<p>Dubai</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>55.296249,25.276987,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Seoul</name>
+      <description><![CDATA[<p>Seoul</p><p><b>18</b> days · Jul 24, 2025 — Aug 14, 2025</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>126.978,37.5665,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>New York</name>
+      <description><![CDATA[<p>New York City · Finger Lakes · Niagara Falls · Buffalo</p><p><b>6</b> days · Mar 23, 2025 — May 29, 2026</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>-73.7797,40.6446,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Pennsylvania</name>
+      <description><![CDATA[<p>Philadelphia · Poconos</p><p><b>3</b> days · Sep 13, 2025 — May 28, 2026</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>-75.2479,41.0534,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>New Jersey</name>
+      <description><![CDATA[<p>Atlantic City · Jersey City</p><p><b>177</b> days · Sep 30, 2024 — May 30, 2026</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>-74.0431,40.7178,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>California</name>
+      <description><![CDATA[<p>San Francisco · Healdsburg</p><p><b>52</b> days · May 25, 2025 — Aug 21, 2026</p>]]></description>
+      <styleUrl>#region</styleUrl>
+      <Point><coordinates>-122.4194,37.7749,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Archived stops</name>
+    <open>0</open>
+    <visibility>0</visibility>
+    <Placemark>
+      <name></name>
+      <styleUrl>#archived</styleUrl>
+      <Point><coordinates>85.2164,20.9165,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name></name>
+      <styleUrl>#archived</styleUrl>
+      <Point><coordinates>85.5455,20.9253,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name></name>
+      <styleUrl>#archived</styleUrl>
+      <Point><coordinates>76.9538,13.6118,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name></name>
+      <styleUrl>#archived</styleUrl>
+      <Point><coordinates>76.5049,14.1289,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name></name>
+      <styleUrl>#archived</styleUrl>
+      <Point><coordinates>74.8836,15.44,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name></name>
+      <styleUrl>#archived</styleUrl>
+      <Point><coordinates>-76.1728,43.0534,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

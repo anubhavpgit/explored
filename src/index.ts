@@ -10,6 +10,10 @@ import {
   PointLight,
 } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+// three-globe renders labels as 3D TextGeometry built from a typeface font,
+// so CSS font-weight cannot reach them — the weight has to come from the
+// face itself. three ships a bold helvetiker; no extra asset needed.
+import boldTypeFace from "three/examples/fonts/helvetiker_bold.typeface.json";
 import countries from "./files/globe-data-min.json";
 import {
   archivedMarkers,
@@ -80,6 +84,8 @@ const ZOOM_REVEAL_FRACTION = 0.72;
 let citySpheres: THREE.Mesh[] = []; // Collision spheres for cities
 let regionSpheres: THREE.Mesh[] = [];
 let archivedDots: THREE.Mesh[] = [];
+let regionDots: THREE.Mesh[] = [];
+let cityDots: THREE.Mesh[] = [];
 // Only these are tested on hover; archived dots are deliberately absent.
 let hoverTargets: THREE.Mesh[] = [];
 let isZoomedIn = false;
@@ -218,6 +224,12 @@ function trackSun() {
 const ROUTE_ALTITUDE = 0.006;
 
 /**
+ * Marker discs sit just above the surface — high enough to clear the land
+ * dots, low enough to stay under the ground routes at ROUTE_ALTITUDE.
+ */
+const MARKER_ALTITUDE = 0.004;
+
+/**
  * Distance at which the whole globe fits the viewport.
  *
  * On a phone the limiting field is the HORIZONTAL one, and it is much narrower
@@ -299,6 +311,40 @@ function createStarfield(count = 550, radius = 900): THREE.Points {
   // Never a hover target, and never culled when the globe fills the frame.
   stars.frustumCulled = false;
   return stars;
+}
+
+/**
+ * A marker disc lying flat on the globe.
+ *
+ * MeshBasicMaterial on purpose: unlit, so a marker stays legible on the night
+ * side. Radius is constant and intensity is carried by opacity — scaling the
+ * disc as well would make rarely-visited places vanish.
+ */
+/** World units. */
+const MARKER_RADIUS = 0.3;
+/** Archived stops are texture, not destinations — smaller and quieter. */
+const ARCHIVED_RADIUS = 0.16;
+
+function addMarkerDot(lat: number, lng: number, color: string, opacity: number,
+                      radius = MARKER_RADIUS): THREE.Mesh {
+  const dot = new THREE.Mesh(
+    new THREE.CircleGeometry(radius, 20),
+    new THREE.MeshBasicMaterial({
+      color: new THREE.Color(color),
+      side: THREE.DoubleSide,
+      // Solid unless explicitly asked otherwise. Any transparency at all lets
+      // the globe show through and the marker stops reading as a mark.
+      transparent: opacity < 1,
+      opacity,
+    })
+  );
+  const position = Globe.getCoords(lat, lng, MARKER_ALTITUDE);
+  dot.position.set(position.x, position.y, position.z);
+  dot.lookAt(0, 0, 0);
+  dot.rotateX(Math.PI);
+  dot.visible = false;
+  Globe.add(dot);
+  return dot;
 }
 
 // SECTION Initializing core ThreeJS elements
@@ -451,6 +497,7 @@ function initGlobe() {
     .pathDashAnimateTime(0)
     .pathTransitionDuration(0)
 
+    .labelTypeFace(boldTypeFace)
     .labelColor(() => "#EDF1F5")
     .labelDotOrientation("right")
     // Text only. The mark is drawn separately and carries the encoding;
@@ -462,18 +509,11 @@ function initGlobe() {
     .labelAltitude(0)
     .labelsTransitionDuration(0)
 
-    .pointColor((e: any) => e.color ?? "#FFB000")
-    // Not merged: the zoom swap replaces this layer's data, and a merged
-    // layer disposes the single combined mesh out from under three-globe's
-    // digest. A few dozen points cost nothing unmerged.
-    .pointsMerge(false)
-    .pointAltitude(0.002)
-    .pointRadius((e: any) => 0.045 + 0.05 * (e.exposure ?? 0.4))
     .pointsTransitionDuration(0);
 
   // Data only, once the build-in animation has played.
   setTimeout(() => {
-    Globe.labelsData(layerData(false)).pointsData(layerData(false));
+    Globe.labelsData(layerData(false));
     applyLayerVisibility();
     routeMaterialsStale = true;
   }, 1000);
@@ -527,26 +567,20 @@ function initGlobe() {
     hoverTargets.push(sphere);
   });
 
-  // Archived stops: the minor pauses a journey was assembled from. They get
-  // NO userData, so a raycast hit falls through to the "nothing here" branch
-  // and no tooltip appears — they are texture, not destinations.
+  // Every marker — region, place, archived stop — is drawn here, so they can
+  // never drift apart in appearance again. The points layer used to draw the
+  // region and place markers instead, as LIT extruded cylinders at a third
+  // this radius, which is why they read as muddy specks next to the archived
+  // dots while these flat unlit discs stayed crisp on the night side too.
+  regionViews.forEach((r) => {
+    regionDots.push(addMarkerDot(r.lat, r.lng, r.color, 1));
+  });
+  placeMarkers.forEach((p) => {
+    cityDots.push(addMarkerDot(p.lat, p.lng, p.color, 1));
+  });
   archivedMarkers.forEach((stop) => {
-    const dot = new THREE.Mesh(
-      new THREE.CircleGeometry(0.22, 16),
-      new THREE.MeshBasicMaterial({
-        color: 0xD6DEE6,
-        side: THREE.DoubleSide,
-        transparent: true,
-        opacity: 0.5,
-      })
-    );
-    const position = Globe.getCoords(stop.lat, stop.lng, 0.004);
-    dot.position.set(position.x, position.y, position.z);
-    dot.lookAt(0, 0, 0);
-    dot.rotateX(Math.PI);
-    dot.visible = false;
-    Globe.add(dot);
-    archivedDots.push(dot);
+    // Archived stops carry no userData anywhere, so nothing can hover them.
+    archivedDots.push(addMarkerDot(stop.lat, stop.lng, "#8D99A6", 0.45, ARCHIVED_RADIUS));
   });
 
   scene.add(Globe);
@@ -642,9 +676,11 @@ function animate() {
     // than stack — showing both drew a state marker next to its own cities and
     // made a three-city region look like four places.
     citySpheres.forEach((sphere) => { sphere.visible = shouldShowCities; });
+    cityDots.forEach((dot) => { dot.visible = shouldShowCities; });
+    regionDots.forEach((dot) => { dot.visible = !shouldShowCities; });
     regionSpheres.forEach((sphere) => { sphere.visible = !shouldShowCities; });
     if (Globe) {
-      Globe.labelsData(layerData(shouldShowCities)).pointsData(layerData(shouldShowCities));
+      Globe.labelsData(layerData(shouldShowCities));
     }
   }
 
